@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一只饺子</title><link>https://example.com/post/</link><description>Recent content in Posts on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Fri, 28 Feb 2025 14:32:22 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Swing</title><link>https://example.com/p/java-swing/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/java-swing/</guid><description>&lt;h2 id="1-简介">1. 简介
+&lt;/h2>&lt;p>Java Swing 是 Java 用于构建 &lt;strong>图形用户界面（GUI）&lt;/strong> 的核心工具包，它是 Java Foundation Classes（JFC）的一部分。&lt;/p>
+&lt;p>&lt;strong>Swing与AWT的关系&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>特性&lt;/th>
+&lt;th>AWT&lt;/th>
+&lt;th>Swing&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>实现方式&lt;/td>
+&lt;td>依赖本地GUI库&lt;/td>
+&lt;td>纯Java绘制&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>组件类型&lt;/td>
+&lt;td>重量级&lt;/td>
+&lt;td>轻量级&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>跨平台一致性&lt;/td>
+&lt;td>低（外观随系统变化）&lt;/td>
+&lt;td>高（可统一风格）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>性能&lt;/td>
+&lt;td>较高（直接调用系统API）&lt;/td>
+&lt;td>较低（纯Java绘制）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>组件丰富度&lt;/td>
+&lt;td>基础组件&lt;/td>
+&lt;td>高级组件&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>现代开发中通常使用 Swing 而非 AWT，但 AWT 的布局管理器（如 &lt;code>BorderLayout&lt;/code>）仍常与 Swing 配合使用。&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Swing组件层级结构&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Java" data-lang="Java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Object&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">awt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Component&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">awt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Container&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">javax&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">swing&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">JComponent&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">├─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">JButton&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">├─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">JLabel&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="2-swing实战">2. Swing实战
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Java" data-lang="Java">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JButton&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JFrame&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JLabel&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JPanel&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JPasswordField&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>机器学习约等于寻找一个函数。比如：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>speech recognition:&lt;/strong> 输入一段“How are you”的语音，我们得到$f(音频) = &amp;ldquo;How are you&amp;rdquo;$&lt;/li>
+&lt;li>&lt;strong>image recognition&lt;/strong>: 输入一张猫的图片，我们得到$f(cat.jpg)= &amp;ldquo;cat&amp;rdquo;$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>函数的不同类型有：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>regression&lt;/strong>：回归函数。该函数输出一个标量。比如，当我们预测第二天的$PM2.5$，我们输入：$PM2.5today, temperature, Concentration of O_3$，经过一个函数得到$PM2.5 of tomorrow$&lt;/li>
+&lt;li>&lt;strong>Classification&lt;/strong>: 分类函数。给定一些选项，该函数会输出正确的选项&lt;/li>
+&lt;li>&lt;strong>structure learning&lt;/strong>：结构学习。让机器学会创造这件事情&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="如何使用机器寻找一个函数">如何使用机器寻找一个函数？
+&lt;/h3>&lt;p>总的来说分为三步:&lt;/p>
+&lt;ol>
+&lt;li>定义带函数的参数&lt;/li>
+&lt;li>定义损失函数&lt;/li>
+&lt;li>优化参数&lt;/li>
+&lt;/ol>
+&lt;p>这里引入了一个例子。一youtuber根据自己从前每日视频播放量，预测第二天的视频播放量&lt;/p>
+&lt;h4 id="1-定义带参数的函数">1. 定义带参数的函数
+&lt;/h4>&lt;p>我们有$y=f(数据集)-&amp;gt;y=b+wx_1$&lt;/p>
+&lt;p>$w$和$b$是未知参数，对于初始$w_0$和$b_0$，我们通过&lt;del>猜&lt;/del>&lt;mark>domain knowledge&lt;/mark>（专业领域知识）来进行推测&lt;/p>
+&lt;h4 id="2-定义损失函数">2. 定义损失函数
+&lt;/h4>&lt;ul>
+&lt;li>损失函数是一个带参数的函数：$L(b, w)$&lt;/li>
+&lt;li>损失函数能评测一组数据的优劣如何&lt;/li>
+&lt;/ul>
+&lt;p>我们假设$L(0.5k, 1)$，则$y = b + wx_1 - &amp;gt;y=0.5k+1x_1$
+该youtuber的2017/01/01的播放量是$4.8k$，01/02的播放量为$4.9k$，01/03的播放量为$7.5k$&lt;/p>
+&lt;p>带入01/01的数据，我们预测01/02为$y=0.5+1\times 4.8=5.3$&lt;/p>
+&lt;p>那么我们可得:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>$e=|y-\widehat{y}|$，$L$是&lt;mark>平均绝对误差&lt;/mark>(absolute error, MAE)，且有$MAE = \frac{1}{N}\sum_{i= 1}^{N}|y_{pred}^{(i)}-y_{true}^{(i)}|$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$e=(y-\widehat y)^2$，$L$是&lt;mark>均方误差&lt;/mark>(mean square error, MSE)，且有$MSE=\frac{1}{N}\sum_{i=1}^N(y_{pred}^{(i)}-y_{true}^{(i)})^2$&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>$y=b+\sum_i c_isigmoid(b_i+\sum_j w_{ij}x_j)$&lt;/p></description></item><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;h3 id="what-is-nosql">What is NoSQL?
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>NoSQL&lt;/strong> stands for &lt;strong>Not Only SQL&lt;/strong>&lt;/li>
+&lt;li>Designed for &lt;strong>unstructured&lt;/strong> (such as &lt;code>video&lt;/code>, &lt;code>audio&lt;/code>) and &lt;strong>semi-structured&lt;/strong> (such as &lt;code>json&lt;/code>, &lt;code>csv&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>Flexible data models&lt;/strong>, &lt;strong>horizontal scaling&lt;/strong>, and &lt;strong>high performance&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Flexible data models&lt;/strong>:
+&lt;ul>
+&lt;li>Key-value&lt;/li>
+&lt;li>Graph&lt;/li>
+&lt;li>Document&lt;/li>
+&lt;li>Column Store&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Horizontal scaling&lt;/strong>: data scalings are stored in mang machines, and throw adds nodes to expand the ability of computing&lt;/li>
+&lt;li>&lt;strong>High Performance&lt;/strong>: For example, Redis stores data in memory, and its read and write speed can reach the microsecond level.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-nosql-databases">Types of NoSQL Databases
+&lt;/h3>&lt;ul>
+&lt;li>Key-value database&lt;/li>
+&lt;li>Document database&lt;/li>
+&lt;li>Wide-column database&lt;/li>
+&lt;li>Graph database&lt;/li>
+&lt;/ul>
+&lt;h3 id="nosql-vs-rdbms">NoSQL vs RDBMS
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>NoSQL&lt;/strong>: Flexible schema, horizontal scaling, high availability&lt;/li>
+&lt;li>&lt;strong>RDBMS&lt;/strong>: Rigid schema, vertical scaling, ACID compilance
+&lt;ul>
+&lt;li>ACID: Atomicity, Consistency, Isolation, Durability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-features-of-nosql">Key Features of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>Schema flexibility&lt;/li>
+&lt;li>Horizontal scalability&lt;/li>
+&lt;li>High availability and fault tolerance&lt;/li>
+&lt;li>Diverse data models&lt;/li>
+&lt;li>Cost-effectiveness&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-overview">MongoDB Overview
+&lt;/h3>&lt;ul>
+&lt;li>Document-oriented NoSQL database&lt;/li>
+&lt;li>Stores data in JSON-like BSON(Binary Json) format&lt;/li>
+&lt;li>Flexible schema, horizontal scaling, and high performance&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-features">MongoDB Features
+&lt;/h3>&lt;ul>
+&lt;li>Document-oriented storage&lt;/li>
+&lt;li>Flexible schema&lt;/li>
+&lt;li>Scalability(sharding)&lt;/li>
+&lt;li>Indexing and aggregation framework&lt;/li>
+&lt;li>Replication and high availability&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-vs-rdbms">MongoDB vs RDBMS
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>MongoDB&lt;/strong>: Document-based, dynamic schema, horizontal scaling&lt;/li>
+&lt;li>&lt;strong>RDBMS&lt;/strong>: Row-based, rigid schema, vertical scaling&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-overview">Redis Overview
+&lt;/h3>&lt;ul>
+&lt;li>In-memory data structure store&lt;/li>
+&lt;li>Used as a database, cache, and message broker&lt;/li>
+&lt;li>Supports strings, hashes, lists, sets, and stored sets&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-features">Redis Features
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Speed&lt;/strong>: In-memory storage for fast readd/write operations&lt;/li>
+&lt;li>&lt;strong>Persistence&lt;/strong>: RDB and AOF for data durability&lt;/li>
+&lt;li>&lt;strong>Replication&lt;/strong>: Master-slave replication for high avaliablity&lt;/li>
+&lt;li>&lt;strong>Luad scripting&lt;/strong>: Complex operations can be executed atomically&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>RDB&lt;/strong>: Redis Database. Snapshot is the process by which Redis saves the data in &lt;mark>memory&lt;/mark> to the &lt;mark>disk&lt;/mark> in the form of a binary file at a &lt;mark>certain point&lt;/mark> in time. This binary file is the snapshot file.
+&lt;strong>Master-slave Replication&lt;/strong>: It allows the data of one redis instance (&lt;mark>master node&lt;/mark>) to be automatically to one or more other Redis instances (&lt;mark>slave nodes&lt;/mark>).&lt;/p>&lt;/blockquote>
+&lt;h3 id="redis-vs-mongodb">Redis vs MongoDB
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Redis&lt;/strong>: Key-value store, in-memory, fast read/write&lt;/li>
+&lt;li>MongoDB: Document store, on-disk, flexible schema&lt;/li>
+&lt;/ul>
+&lt;h3 id="in-memory-databases">In-memory Databases
+&lt;/h3>&lt;ul>
+&lt;li>Data stored in RAM for low latency and high throughput&lt;/li>
+&lt;li>Ideal for real-time applications like gaming and analytics&lt;/li>
+&lt;li>Redis is a popular in-memory database&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-history">Redis History
+&lt;/h3>&lt;ul>
+&lt;li>Created in 2009 by Salvatore Sanfilippo&lt;/li>
+&lt;li>Key releases: Redis 3.0 (Cluster mode), Redis 6.0 (ACL, multi-threaded I/O).&lt;/li>
+&lt;li>Used by companies like Twitter, Airbnb, and GitHub&lt;/li>
+&lt;/ul>
+&lt;h3 id="when-to-use-nosql">When to Use NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>Large volumes of unstructured data&lt;/li>
+&lt;li>Need for horizontal scaling&lt;/li>
+&lt;li>Real-time applications with low latency&lt;/li>
+&lt;li>Dynamic data models&lt;/li>
+&lt;/ul></description></item><item><title>git</title><link>https://example.com/p/git/</link><pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate><guid>https://example.com/p/git/</guid><description>&lt;h2 id="1-与github仓库建立连接并提交修改">1. 与GitHub仓库建立连接并提交修改
+&lt;/h2>&lt;ol>
+&lt;li>SSH密钥配备完成且有相关权限&lt;/li>
+&lt;li>初始化本地仓库：&lt;code>git init&lt;/code>&lt;/li>
+&lt;li>关联远程仓库：
+&lt;ol>
+&lt;li>HTTPS: &lt;code>git remote add origin https://github.com/username/repositoryname.git&lt;/code>&lt;/li>
+&lt;li>SSH:&lt;code>git remote add origin git@github.com:username/repositoryname.git&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>首次拉取文件：&lt;code>git pull origin main&lt;/code>&lt;/li>
+&lt;li>更改文件&lt;/li>
+&lt;li>提交更改到本地：
+&lt;ol>
+&lt;li>添加所有更改：&lt;code>git add .&lt;/code>&lt;/li>
+&lt;li>添加提交说明：&lt;code>git commit -m &amp;quot;你的提交说明&amp;quot;&lt;/code>&lt;/li>
+&lt;li>推送到远程仓库：&lt;code>git push -u origin main&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="2-更改分支">2. 更改分支
+&lt;/h2>&lt;ol>
+&lt;li>查看本地分支（当前分支会用&lt;code>*&lt;/code>标出）：&lt;code>git branch&lt;/code>&lt;/li>
+&lt;li>查看所有分支（本地+远程跟踪分支）：&lt;code>git branch -a&lt;/code>&lt;/li>
+&lt;li>切换现有分支
+&lt;ol>
+&lt;li>直接切换：&lt;code>git checkout 分支名&lt;/code>。如：切换到&lt;code>develop&lt;/code>分支：&lt;code>git checkout develop&lt;/code>&lt;/li>
+&lt;li>拉取远程分支并切换：&lt;code>git checkout -b 本地分支名 origin/远程分支名&lt;/code>。如：同步远程的&lt;code>feature/login&lt;/code>分支到本地：&lt;code>git checkout -b feature/login origin/feature/login&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>创建并切换到新分支：
+&lt;ol>
+&lt;li>创建新分支并立即切换：&lt;code>git checkout -b 新分支名&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>推送新分支到远程仓库：&lt;code>git push orign 分支名&lt;/code>&lt;/li>
+&lt;/ol></description></item><item><title>对于机器学习公式的例子</title><link>https://example.com/p/%E5%AF%B9%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%AC%E5%BC%8F%E7%9A%84%E4%BE%8B%E5%AD%90/</link><pubDate>Tue, 20 Feb 2024 15:30:00 +0800</pubDate><guid>https://example.com/p/%E5%AF%B9%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%AC%E5%BC%8F%E7%9A%84%E4%BE%8B%E5%AD%90/</guid><description>&lt;h2 id="得到权重的值">得到权重的值
+&lt;/h2>&lt;p>以下是一个 &lt;strong>单层神经网络（感知机）&lt;/strong> 的完整示例，通过 &lt;strong>手动模拟训练过程&lt;/strong>，展示如何从数据中学习权重。我们以 &lt;strong>房价预测&lt;/strong> 为例，假设数据仅包含一个样本，目标是让模型学会调整权重和偏置。&lt;/p>
+&lt;h3 id="1-问题设定">&lt;strong>1. 问题设定&lt;/strong>
+&lt;/h3>&lt;h4 id="输入特征">&lt;strong>输入特征&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>$ x_1 $（面积）：1（标准化后的值，如100平方米）&lt;/li>
+&lt;li>$ x_2 $（房龄）：1（标准化后的值，如5年）&lt;/li>
+&lt;/ul>
+&lt;h4 id="真实输出">&lt;strong>真实输出&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>$ y_{\text{true}} = 3 $（单位：万元）&lt;/li>
+&lt;/ul>
+&lt;h4 id="模型结构">&lt;strong>模型结构&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>线性模型&lt;/strong>：$ y_{\text{pred}} = w_1 x_1 + w_2 x_2 + b $&lt;/li>
+&lt;li>&lt;strong>初始参数&lt;/strong>（随机初始化）：
+&lt;ul>
+&lt;li>权重：$ w_1 = 0.5 $, $ w_2 = -0.3 $&lt;/li>
+&lt;li>偏置：$ b = 0.2 $&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="目标">&lt;strong>目标&lt;/strong>
+&lt;/h4>&lt;p>通过梯度下降，调整 $ w_1, w_2, b $，使得 $ y_{\text{pred}} $ 接近真实值 3。&lt;/p>
+&lt;h3 id="2-训练过程">&lt;strong>2. 训练过程&lt;/strong>
+&lt;/h3>&lt;h4 id="1-前向传播计算预测值">&lt;strong>(1) 前向传播（计算预测值）&lt;/strong>
+&lt;/h4>$$
+y_{\text{pred}} = w_1 x_1 + w_2 x_2 + b = 0.5 \times 1 + (-0.3) \times 1 + 0.2 = 0.5 - 0.3 + 0.2 = 0.4
+$$&lt;p>
+此时预测值为 0.4 万元，与真实值 3 相差较大。&lt;/p>
+&lt;h4 id="2-计算损失均方误差">&lt;strong>(2) 计算损失（均方误差）&lt;/strong>
+&lt;/h4>$$
+\text{Loss} = (y_{\text{true}} - y_{\text{pred}})^2 = (3 - 0.4)^2 = 6.76
+$$&lt;h4 id="3-反向传播计算梯度">&lt;strong>(3) 反向传播（计算梯度）&lt;/strong>
+&lt;/h4>&lt;p>对每个参数求偏导（链式法则）：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>损失对 $ w_1 $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial w_1} = 2(y_{\text{pred}} - y_{\text{true}}) \cdot x_1 = 2(0.4 - 3) \times 1 = -5.2
+$$&lt;/li>
+&lt;li>&lt;strong>损失对 $ w_2 $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial w_2} = 2(y_{\text{pred}} - y_{\text{true}}) \cdot x_2 = 2(0.4 - 3) \times 1 = -5.2
+$$&lt;/li>
+&lt;li>&lt;strong>损失对 $ b $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial b} = 2(y_{\text{pred}} - y_{\text{true}}) = 2(0.4 - 3) = -5.2
+$$&lt;/li>
+&lt;/ul>
+&lt;h4 id="4-更新参数梯度下降">&lt;strong>(4) 更新参数（梯度下降）&lt;/strong>
+&lt;/h4>$$
+w_{\text{new}} = w_{\text{old}} - \eta \cdot \frac{\partial \text{Loss}}{\partial w}
+$$&lt;ul>
+&lt;li>&lt;strong>更新 $ w_1 $&lt;/strong>：
+$$
+w_1 = 0.5 - 0.1 \times (-5.2) = 0.5 + 0.52 = 1.02
+$$&lt;/li>
+&lt;li>&lt;strong>更新 $ w_2 $&lt;/strong>：
+$$
+w_2 = -0.3 - 0.1 \times (-5.2) = -0.3 + 0.52 = 0.22
+$$&lt;/li>
+&lt;li>&lt;strong>更新 $ b $&lt;/strong>：
+$$
+b = 0.2 - 0.1 \times (-5.2) = 0.2 + 0.52 = 0.72
+$$&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-更新后的预测">&lt;strong>3. 更新后的预测&lt;/strong>
+&lt;/h3>$$
+y_{\text{pred}} = 1.02 \times 1 + 0.22 \times 1 + 0.72 = 1.02 + 0.22 + 0.72 = 1.96
+$$$$
+\text{Loss} = (3 - 1.96)^2 = 1.08
+$$&lt;p>
+&lt;strong>仅一次迭代，损失从 6.76 下降到 1.08&lt;/strong>，说明权重调整有效。&lt;/p>
+&lt;h3 id="4-多轮迭代后的结果">&lt;strong>4. 多轮迭代后的结果&lt;/strong>
+&lt;/h3>&lt;p>重复上述过程（假设学习率不变）：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>迭代次数&lt;/th>
+&lt;th>$ w_1 $&lt;/th>
+&lt;th>$ w_2 $&lt;/th>
+&lt;th>$ b $&lt;/th>
+&lt;th>$ y_{\text{pred}} $&lt;/th>
+&lt;th>Loss&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;td>-0.3&lt;/td>
+&lt;td>0.2&lt;/td>
+&lt;td>0.4&lt;/td>
+&lt;td>6.76&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>1.02&lt;/td>
+&lt;td>0.22&lt;/td>
+&lt;td>0.72&lt;/td>
+&lt;td>1.96&lt;/td>
+&lt;td>1.08&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>1.45&lt;/td>
+&lt;td>0.65&lt;/td>
+&lt;td>1.17&lt;/td>
+&lt;td>2.60&lt;/td>
+&lt;td>0.16&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>1.68&lt;/td>
+&lt;td>0.89&lt;/td>
+&lt;td>1.43&lt;/td>
+&lt;td>2.96&lt;/td>
+&lt;td>0.0016&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>经过3次迭代，预测值 $ y_{\text{pred}} = 2.96 $ 接近真实值3，损失降至0.0016。&lt;/p>
+&lt;h3 id="5-关键结论">&lt;strong>5. 关键结论&lt;/strong>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>权重的本质&lt;/strong>：模型通过梯度下降，沿着损失减小的方向调整权重，逐步逼近真实值。&lt;/li>
+&lt;li>&lt;strong>学习率的作用&lt;/strong>：学习率 $ \eta $ 控制参数更新步幅（过大可能导致震荡，过小收敛慢）。&lt;/li>
+&lt;li>&lt;strong>实际训练&lt;/strong>：真实场景中需使用大量数据分批训练，而非单个样本。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>附：Python代码模拟&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 初始参数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">w1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">w2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mf">0.3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">0.2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">x1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y_true&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">eta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">epoch&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 前向传播&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">y_pred&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">w1&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">w2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x2&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">b&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">y_true&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_pred&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 计算梯度&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_dw1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_dw2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_db&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 更新参数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">w1&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_dw1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">w2&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_dw2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">b&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_db&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;Epoch &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">epoch&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">: w1=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">w1&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, w2=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">w2&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, b=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, y_pred=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">y_pred&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, Loss=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">loss&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.4f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="y--b--sum_i-c_i--textsigmoidb_i--sum_j-w_ij-x_j">$y = b + \sum_i c_i , \text{sigmoid}(b_i + \sum_j w_{ij} x_j)$
+&lt;/h2>&lt;p>假设我们要根据房屋的两个特征预测房价&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>特征1($x_1$)&lt;/strong>：面积（平方米）&lt;/li>
+&lt;li>&lt;strong>特征2($x_2$)&lt;/strong>：房龄（年）&lt;/li>
+&lt;/ul>
+&lt;p>我们设计一个简单的神经网络，结构如下：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>输入层：&lt;/strong> 两个特征（$x_1,x_2$）&lt;/li>
+&lt;li>&lt;strong>隐藏层&lt;/strong>： 2个神经元（$i=1,2$）&lt;/li>
+&lt;li>&lt;strong>输出层&lt;/strong>： 1个输出（房价$y$）&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-1设定参数值">step 1：设定参数值
+&lt;/h3>&lt;p>假设模型已经训练完成，参数如下：&lt;/p>
+&lt;p>&lt;strong>隐藏层参数&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>神经元&lt;/th>
+&lt;th>权重$w_{i1}$（面积权重）&lt;/th>
+&lt;th>权重$w_{i2}$(房龄权重)&lt;/th>
+&lt;th>偏置$b_i$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1$(i=1)$&lt;/td>
+&lt;td>0.8&lt;/td>
+&lt;td>-0.2&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2$(i=2)$&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;td>-0.6&lt;/td>
+&lt;td>-0.3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>输出层参数&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>权重$c_i$&lt;/th>
+&lt;th>偏置$b$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$c_1=10$&lt;/td>
+&lt;td>$b=5$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$c_2=-8$&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="step-2输出数据">step 2：输出数据
+&lt;/h3>&lt;p>假设有一套房子的特征值为：&lt;/p>
+&lt;ul>
+&lt;li>面积$x_1=100m^2$&lt;/li>
+&lt;li>房龄$x_2=5年$&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-3计算隐藏层输出">step 3：计算隐藏层输出
+&lt;/h3>&lt;p>对每个隐藏层神经元，计算$z_i,=,b_i,+,w_{i1}x_1,+,w_{i2}x_2$，然后通过$sigmoid$激活函数得到$a_i=sigmoid(z_i)$&lt;/p>
+&lt;p>&lt;strong>神经元1($i=1$)的计算&lt;/strong>&lt;/p>
+$$
+\begin{aligned}
+z_1 = b_1 + w_{11}x_1 + w_{12}x_2 = 0.5 + 0.8 \times 100 + (-0.2) \times 5 = 0.5 + 80 - 1 = 79.5\\
+a_1 = \text{sigmoid}(79.5) = \frac{1}{1 + e^{-79.5}} \approx 1.0 \quad (\text{几乎完全激活})
+\end{aligned}
+$$&lt;p>&lt;strong>神经元2($i=2$)的计算&lt;/strong>&lt;/p>
+$$
+\begin{aligned}
+z_2 = b_2 + w_{21}x_1 + w_{22}x_2 = -0.3 + 0.5 \times 100 + (-0.6) \times 5 = -0.3 + 50 - 3 = 46.7\\
+a_2 = \text{sigmoid}(46.7) = \frac{1}{1 + e^{-46.7}} \approx 1.0 \quad (\text{几乎完全激活})
+\end{aligned}
+$$&lt;h3 id="step-4计算输出层结果">step 4：计算输出层结果
+&lt;/h3>$$
+y = b + c_1 a_1 + c_2 a_2 = 5 + 10 \times 1.0 + (-8) \times 1.0 = 5 + 10 - 8 = 7
+$$&lt;h2 id="lthetaapprox-ltheta-ltheta---thetagfrac12theta-thetaththeta-theta-">$L(\theta)\approx L(\theta ^{&amp;rsquo;})+L(\theta - \theta^{&amp;rsquo;})g+\frac{1}{2}(\theta-\theta^{&amp;rsquo;})^{T}H(\theta-\theta ^{&amp;rsquo;})$
+&lt;/h2>&lt;p>由于&lt;del>线性代数学艺不精&lt;/del>热爱线性代数，重新推导这个公式&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>回忆一维泰勒展开&lt;/strong>&lt;/li>
+&lt;/ol>
+$$
+f(x)\approx f(x')+f'(x')(x-x')+\frac{1}{2}f"(x')(x-x')^2
+$$$$
+f(x_0,x)=\sum_{i=0}^n \frac{f^{(i)}(x_0)}{i!}(x-x_0)^i
+$$&lt;ol start="2">
+&lt;li>&lt;strong>扩展到多维情况（参数$\theta$是向量）&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>$L(\theta)\approx L(\theta ^{&amp;rsquo;})+L(\theta - \theta^{&amp;rsquo;})g+\frac{1}{2}(\theta-\theta^{&amp;rsquo;})^{T}H(\theta-\theta ^{&amp;rsquo;})$&lt;/p>
+&lt;p>在多维情况下，参数是向量$\theta = [\theta_1,\theta_2,&amp;hellip;\theta_n]^T$，梯度$g$是一阶导数的推广&lt;/p>
+$$
+H = \nabla^2 f = \begin{bmatrix}
+\frac{\partial^2 f}{\partial \theta_1^2} &amp; \frac{\partial^2 f}{\partial \theta_1 \partial \theta_2} &amp; \cdots &amp; \frac{\partial^2 f}{\partial \theta_1 \partial \theta_n} \\
+\frac{\partial^2 f}{\partial \theta_2 \partial \theta_1} &amp; \frac{\partial^2 f}{\partial \theta_2^2} &amp; \cdots &amp; \frac{\partial^2 f}{\partial \theta_2 \partial \theta_n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\frac{\partial^2 f}{\partial \theta_n \partial \theta_1} &amp; \frac{\partial^2 f}{\partial \theta_n \partial \theta_2} &amp; \cdots &amp; \frac{\partial^2 f}{\partial \theta_n^2}
+\end{bmatrix}
+$$&lt;p>&lt;strong>为什么需要转置 $(\theta - \theta&amp;rsquo;)^\top$？&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>维度匹配&lt;/strong>：假设 $\theta$ 是 $n \times 1$ 向量，梯度 $g$ 也是 $n \times 1$，Hessian H$ $H$是 $n \times n$。
+&lt;ul>
+&lt;li>一阶项：$(\theta - \theta &amp;lsquo;)^Tg$是$n \times 1$向量，梯度$g$也是$n\times 1$，Hessian $H$是$n \times n$（标量）
+&lt;ul>
+&lt;li>一阶项：$(\theta - \theta &amp;lsquo;)g$是$1\times n*n\times n * n \times 1=1\times 1$（标量）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数学必要性&lt;/strong>：转置确保矩阵乘法维度相容。&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>&lt;strong>一个具体的例子&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;h5 id="1-定义函数">&lt;strong>1. 定义函数&lt;/strong>
+&lt;/h5>&lt;p>设损失函数 $L(\theta) = \theta_1^2 + 2\theta_2^2 + \theta_1\theta_2$，参考点 $\theta&amp;rsquo; = [0, 0]^\top$。&lt;/p>
+&lt;h5 id="2-计算梯度-g">&lt;strong>2. 计算梯度 $g$&lt;/strong>
+&lt;/h5>$$
+g = \nabla L(\theta') = \begin{bmatrix} 2\theta_1 + \theta_2 \\ 4\theta_2 + \theta_1 \end{bmatrix} \bigg|_{\theta'=[0,0]} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$&lt;h5 id="3-计算-hessian-矩阵-h">&lt;strong>3. 计算 Hessian 矩阵 $H$&lt;/strong>
+&lt;/h5>$$
+H = \nabla^2 L(\theta') = \begin{bmatrix}
+\frac{\partial^2 L}{\partial \theta_1^2} &amp; \frac{\partial^2 L}{\partial \theta_1 \partial \theta_2} \\
+\frac{\partial^2 L}{\partial \theta_2 \partial \theta_1} &amp; \frac{\partial^2 L}{\partial \theta_2^2}
+\end{bmatrix} = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 4 \end{bmatrix}
+$$&lt;h5 id="4-泰勒展开公式">&lt;strong>4. 泰勒展开公式&lt;/strong>
+&lt;/h5>$$
+L(\theta) \approx \underbrace{0}_{L(\theta')} + \underbrace{(\theta - 0)^\top \begin{bmatrix} 0 \\ 0 \end{bmatrix}}_{\text{一阶项}} + \frac{1}{2}(\theta - 0)^\top \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 4 \end{bmatrix} (\theta - 0)
+$$$$
+L(\theta) \approx \frac{1}{2}\theta^\top \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 4 \end{bmatrix} \theta = \frac{1}{2}(2\theta_1^2 + 2\theta_1\theta_2 + 4\theta_2^2)
+$$$$
+L(\theta) = \theta_1^2 + 2\theta_2^2 + \theta_1\theta_2
+$$</description></item><item><title>机器学习（李宏毅）笔记 4：局部最小值与鞍点</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-4%E5%B1%80%E9%83%A8%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E9%9E%8D%E7%82%B9/</link><pubDate>Tue, 20 Feb 2024 15:30:00 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-4%E5%B1%80%E9%83%A8%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E9%9E%8D%E7%82%B9/</guid><description>&lt;h2 id="1-critical-point情况">1. Critical Point情况
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>局部最小值（local minima）&lt;/strong>。如果是**卡在local minima,那可能就没有路可以走了，**因为四周都比较高，你现在所在的位置已经是最低的点，loss最低的点了，往四周走 loss都会比较高，你会不知道怎么走到其他地方去。&lt;/li>
+&lt;li>&lt;strong>鞍点（saddle point）&lt;/strong>。（如图可看出，左右是比红点高，前后比红点低，红点既不是local minima,也不是local maxima的地方）如果是卡在saddle point，saddle point旁边还是有其他路可以让你的loss更低的，你只要逃离saddle point，你就有可能让你的loss更低。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://example.com/img/%e5%b1%80%e9%83%a8%e6%9c%80%e5%b0%8f%e5%80%bc.png"
+loading="lazy"
+alt="局部最小值"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e9%9e%8d%e7%82%b9.png"
+loading="lazy"
+alt="鞍点"
+>&lt;/p>
+&lt;h2 id="2-确定critical-point类型">2. 确定Critical Point类型
+&lt;/h2>$$
+L(\theta)\approx L(\theta ^{'})+L(\theta - \theta^{'})g+\frac{1}{2}(\theta-\theta^{'})^{T}H(\theta-\theta ^{'})
+$$&lt;p>
+&lt;strong>计算Hessian矩阵的特征值&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>正定&lt;/strong>（所有特征值 &amp;gt; 0）→ &lt;strong>局部极小值&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>负定&lt;/strong>（所有特征值 &amp;lt; 0）→ &lt;strong>局部极大值&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>不定&lt;/strong>（特征值有正有负）→ &lt;strong>鞍点&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>半正定/半负定&lt;/strong>（存在零特征值）→ &lt;strong>需更高阶分析&lt;/strong>（如退化临界点）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>具体例子&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>案例1：正定Hessian → 局部极小值&lt;/strong>&lt;/li>
+&lt;/ol>
+$$
+H=\begin{bmatrix}
+2 &amp; 1 \\
+1 &amp; 2
+\end{bmatrix}
+$$&lt;ul>
+&lt;li>&lt;strong>特征值&lt;/strong>：3和1（均 &amp;gt; 0）→ 正定&lt;/li>
+&lt;li>&lt;strong>结论&lt;/strong>：局部极小值&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>&lt;strong>案例2：负定Hessian → 局部极大值&lt;/strong>&lt;/li>
+&lt;/ol>
+$$
+H=\begin{bmatrix}
+-2 &amp; 0 \\
+0 &amp; -2
+\end{bmatrix}
+$$&lt;ul>
+&lt;li>&lt;strong>特征值&lt;/strong>：-2 和 -2（均 &amp;lt; 0）→ 负定&lt;/li>
+&lt;li>&lt;strong>结论&lt;/strong>：局部极大值。&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>&lt;strong>案例3：不定Hessian → 鞍点&lt;/strong>&lt;/li>
+&lt;/ol>
+$$
+H = \begin{bmatrix}
+2 &amp; 0 \\
+0 &amp; -2
+\end{bmatrix}
+$$&lt;ul>
+&lt;li>&lt;strong>特征值&lt;/strong>：2 和 -2（有正有负）→ 不定&lt;/li>
+&lt;li>&lt;strong>结论&lt;/strong>：鞍点&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-逃离saddle-point">3. 逃离Saddle Point
+&lt;/h2>&lt;h3 id="31-利用hessian矩阵逃离鞍点saddle-point">3.1 利用Hessian矩阵逃离鞍点（Saddle Point）
+&lt;/h3>&lt;p>&lt;strong>核心思想&lt;/strong>：通过Hessian矩阵的负特征值对应的特征向量方向更新参数，使优化方向逃离鞍点。&lt;/p>
+&lt;p>&lt;strong>具体步骤&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>1. 检测鞍点&lt;/strong>
+&lt;ul>
+&lt;li>计算梯度$\nabla f$，若$||\nabla f|| \approx 0$，则可能为临界点&lt;/li>
+&lt;li>计算Hessian矩阵$H$，并分析其特征值&lt;/li>
+&lt;li>若存在负特征值，则为鞍点。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>2. 找到负曲率方向&lt;/strong>
+&lt;ul>
+&lt;li>对Hessian矩阵进行特征分解，找到最小特征值$\lambda_{\min} &amp;lt; 0$及其对应的特征向量$v_{\min}$。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>3. 沿负曲率方向更新参数&lt;/strong>
+&lt;ul>
+&lt;li>选择步长$\eta$（通常与学习率相关），沿$v_{min}$方向更新参数：$\theta_{new}=\theta_{old}+\eta v_{min}$&lt;/li>
+&lt;li>**验证方向：**通过计算$\theta_{new}=\theta_{old}+\eta v_{min}$和$\theta_{new}=\theta_{old}-\eta v_{min}$，选择使函数值下降的方向&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>4. 迭代直至逃离&lt;/strong>
+&lt;ul>
+&lt;li>重复步骤1-3，直到梯度不再接近0或Hessian矩阵变为正定（局部最小值）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="32-利用momentum逃离鞍点">3.2 利用momentum逃离鞍点
+&lt;/h3>&lt;h4 id="1-动量法的基本原理">&lt;strong>1. 动量法的基本原理&lt;/strong>
+&lt;/h4>$$
+v_t = \beta v_{t-1} + (1-\beta) \nabla f(\theta_t)
+$$$$
+\theta{t+1} = \theta_t - \eta v_t
+$$&lt;ul>
+&lt;li>&lt;strong>动量系数&lt;/strong>：$$\beta \in [0, 1)$$，通常取0.9或0.99。&lt;/li>
+&lt;li>&lt;strong>核心思想&lt;/strong>：梯度方向被赋予“惯性”，在平坦区域（如鞍点）积累动量，帮助逃离。&lt;/li>
+&lt;/ul>
+&lt;h4 id="2-动量如何帮助逃离鞍点">&lt;strong>2. 动量如何帮助逃离鞍点？&lt;/strong>
+&lt;/h4>$$\nabla f \approx 0$$&lt;p>，但Hessian矩阵存在&lt;strong>负曲率方向&lt;/strong>。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>梯度下降的缺陷&lt;/strong>：在鞍点附近，梯度接近零，参数更新停滞。&lt;/li>
+&lt;li>&lt;strong>动量的优势&lt;/strong>：
+&lt;ol>
+&lt;li>&lt;strong>历史梯度累积&lt;/strong>：即使当前梯度为零，动量项$$v_t$$仍可能保留之前方向的惯性。&lt;/li>
+&lt;li>&lt;strong>噪声放大&lt;/strong>：随机梯度（如SGD的小批量噪声）会被动量放大，打破对称性。&lt;/li>
+&lt;li>&lt;strong>负曲率方向探索&lt;/strong>：动量推动参数沿历史梯度方向移动，可能进入负曲率区域。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="3-动量逃离鞍点的数学解释">&lt;strong>3. 动量逃离鞍点的数学解释&lt;/strong>
+&lt;/h4>$$\epsilon_t$$$$
+\nabla f(\theta_t) = \epsilon_t \quad (\mathbb{E}[\epsilon_t] = 0, \text{Var}(\epsilon_t) = \sigma^2)
+$$$$
+v_t = \beta v_{t-1} + (1-\beta) \epsilon_t
+$$&lt;ul>
+&lt;li>&lt;strong>动量积累&lt;/strong>：经过$$k$$步后，动量近似为：
+$$
+v_t \approx (1-\beta) \sum_{i=0}^{k} \beta^{k-i} \epsilon_i
+$$&lt;/li>
+&lt;li>&lt;strong>逃离机制&lt;/strong>：噪声的加权和可能指向负曲率方向，使参数突破鞍点。&lt;/li>
+&lt;/ul>
+&lt;h4 id="4-具体步骤与算法">&lt;strong>4. 具体步骤与算法&lt;/strong>
+&lt;/h4>&lt;h5 id="步骤1初始化动量">&lt;strong>步骤1：初始化动量&lt;/strong>
+&lt;/h5>$$v_0 = 0$$&lt;p>，选择动量系数$\beta$和学习率$\eta$。&lt;/p>
+&lt;h5 id="步骤2迭代更新">&lt;strong>步骤2：迭代更新&lt;/strong>
+&lt;/h5>&lt;p>对每次迭代$t$：&lt;/p>
+&lt;ol>
+&lt;li>计算当前梯度$\nabla f(\theta_t)$（可含噪声，如SGD）。&lt;/li>
+&lt;li>更新动量：
+$$
+v_t = \beta v_{t-1} + (1-\beta) \nabla f(\theta_t)
+$$&lt;/li>
+&lt;li>更新参数：
+$$
+\theta_{t+1} = \theta_t - \eta v_t
+$$&lt;/li>
+&lt;/ol>
+&lt;h5 id="步骤3逃离鞍点的动态">&lt;strong>步骤3：逃离鞍点的动态&lt;/strong>
+&lt;/h5>&lt;ul>
+&lt;li>&lt;strong>鞍点附近&lt;/strong>：梯度$\nabla f \approx 0$，但动量$v_t$可能因历史梯度或噪声不为零。&lt;/li>
+&lt;li>&lt;strong>持续更新&lt;/strong>：动量推动参数离开平坦区域，进入梯度较大的区域。&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="5-实验案例动量法逃离二元鞍点">&lt;strong>5. 实验案例：动量法逃离二元鞍点&lt;/strong>
+&lt;/h4>&lt;h5 id="目标函数">&lt;strong>目标函数&lt;/strong>
+&lt;/h5>$$
+f(x, y) = x^2 - y^2
+$$&lt;ul>
+&lt;li>&lt;strong>鞍点&lt;/strong>：$(0, 0)$，Hessian矩阵特征值为$2$和$-2$。&lt;/li>
+&lt;/ul>
+&lt;h5 id="参数设置">&lt;strong>参数设置&lt;/strong>
+&lt;/h5>&lt;ul>
+&lt;li>初始点：$(0.1, 0.1)$，学习率$\eta = 0.1$，动量系数$\beta = 0.9$。&lt;/li>
+&lt;/ul>
+&lt;h5 id="迭代过程">&lt;strong>迭代过程&lt;/strong>
+&lt;/h5>&lt;ol>
+&lt;li>&lt;strong>第1步&lt;/strong>：梯度$\nabla f = (0.2, -0.2)$，动量$v_1 = 0.1 \times (0.2, -0.2)$，更新后点$(0.08, 0.12)$。&lt;/li>
+&lt;li>&lt;strong>第2步&lt;/strong>：梯度$\nabla f = (0.16, -0.24)$，动量$v_2 = 0.9v_1 + 0.1 \times (0.16, -0.24)$，更新后点$(0.064, 0.144)$。&lt;/li>
+&lt;li>&lt;strong>持续迭代&lt;/strong>：动量在$y$方向逐渐积累，推动逃离鞍点区域。&lt;/li>
+&lt;/ol>
+&lt;h4 id="6-动量法的理论支持">&lt;strong>6. 动量法的理论支持&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>收敛性证明&lt;/strong>：在凸函数中，动量法可加速收敛（Nesterov加速）。&lt;/li>
+&lt;li>&lt;strong>逃离鞍点能力&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;strong>随机梯度（SGD）&lt;/strong>：噪声+动量可概率性逃离鞍点（Ge et al., 2015）。&lt;/li>
+&lt;li>&lt;strong>确定性梯度&lt;/strong>：动量法需依赖Hessian的负曲率方向隐含在历史梯度中。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="7-与其他方法的对比">&lt;strong>7. 与其他方法的对比&lt;/strong>
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>方法&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>逃离鞍点机制&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>计算成本&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>适用场景&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>动量法&lt;/strong>&lt;/td>
+&lt;td>历史梯度惯性 + 噪声放大&lt;/td>
+&lt;td>低（一阶）&lt;/td>
+&lt;td>高维、随机优化（如深度学习）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Hessian矩阵法&lt;/strong>&lt;/td>
+&lt;td>显式利用负曲率方向&lt;/td>
+&lt;td>高（二阶）&lt;/td>
+&lt;td>低维、确定性优化&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>SGD + 扰动&lt;/strong>&lt;/td>
+&lt;td>纯随机噪声探索&lt;/td>
+&lt;td>低（一阶）&lt;/td>
+&lt;td>大规模非凸优化&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="8-实际应用技巧">&lt;strong>8. 实际应用技巧&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>动量系数选择&lt;/strong>：$\beta$越大，惯性越强，但可能“冲过头”。常用$\beta=0.9$。&lt;/li>
+&lt;li>&lt;strong>与自适应方法结合&lt;/strong>：如Adam（动量+RMSProp），平衡方向与步长。&lt;/li>
+&lt;li>&lt;strong>学习率调整&lt;/strong>：在鞍点附近可短暂增大学习率以加速逃离。&lt;/li>
+&lt;/ul>
+&lt;h4 id="9-优缺点分析">&lt;strong>9. 优缺点分析&lt;/strong>
+&lt;/h4>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>优点&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>缺点&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>低计算成本，适合高维问题。&lt;/td>
+&lt;td>无显式二阶信息，依赖噪声或历史梯度。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>天然抗噪声，适合随机优化。&lt;/td>
+&lt;td>对某些鞍点（如高阶退化点）可能失效。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>易与其他优化器结合（如Adam）。&lt;/td>
+&lt;td>需调参（$\beta$, $\eta$）。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;h3 id="1-增">1. 增
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;uesr&amp;#39;).insert({&amp;#34;userId&amp;#34; : &amp;#34;014&amp;#34;,&amp;#34;uclass&amp;#34; : &amp;#34;B&amp;#34;,&amp;#34;name&amp;#34; : &amp;#34;Back&amp;#34;,&amp;#34;age&amp;#34; : 11,&amp;#34;email&amp;#34; : &amp;#34;b14@sina.com&amp;#34;,&amp;#34;birthday&amp;#34; : ISODate(&amp;#34;2018-07-31T03:46:13.885Z&amp;#34;),&amp;#34;dataStatus&amp;#34; : 1})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-删">2. 删
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).remove({&amp;#34;userId&amp;#34;:&amp;#34;014&amp;#34;})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3-改">3. 改
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).update({&amp;#34;userId&amp;#34;:&amp;#34;013&amp;#34;},{$set:{&amp;#34;email&amp;#34;:&amp;#34;b13@sina.com&amp;#34;, &amp;#34;age&amp;#34;:20}})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>在MongoDB中，&lt;code>$set&lt;/code>是一个更新操作符，用于修改文档中某个字段的值，或向文档中添加新的字段，而不会影响其他字段。&lt;/p>&lt;/blockquote>
+&lt;h3 id="4-查">4. 查
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}); // 查询所有
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}); // 查询条件:=
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).fing({&amp;#34;name&amp;#34;:/Ba/}); // 查询条件:like
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).distinct({&amp;#34;name&amp;#34;}); // 查询条件:distinct
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;age&amp;#34;:&amp;#34;{$gt:16}&amp;#34;}) // 查询条件:$gt//greater than
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:{$in:[&amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;]}}); // 查询条件: in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;B&amp;#34;,&amp;#34;age&amp;#34;:{$gt:16}}) // 查询条件: and
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({$or:[{&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;},{&amp;#34;class&amp;#34;:&amp;#34;B&amp;#34;}]});// 查询条件: or
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;birthday&amp;#34;:{$gt: new Date(&amp;#34;2008-08-14T06:24:40.110Z&amp;#34;), $lt: new Date(&amp;#34;2015-08-14T06:14:40.089Z&amp;#34;)}}); // 查询条件: 时间
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}).count(); // 查询条件: count
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:1}); // 查询条件: sort升序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:-1}); // 查询条件: sort降序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:&amp;#34;$uclass&amp;#34;,num:{$sum:1}}}]); // 聚合查询: count单列
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:{uclass:&amp;#34;$uclass&amp;#34;, age:&amp;#34;$age&amp;#34;},num:{$sum:1}}}]); // 聚合查询: count多列
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5); // 分页查询: limit in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5).skip(5); // 分页查询: limit m, n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}, {userId:1, name:1}); // 查询指定字段
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}, {dataStatus:0, _id:0}); // 排查指定字段
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>正则表达式语法：
+&lt;code>/^Ba/&lt;/code>:匹配以&lt;code>Ba&lt;/code>开头的字符串
+&lt;code>/Ba$/&lt;/code>:匹配以&lt;code>Ba&lt;/code>结尾的字符串
+&lt;code>/[Bb]a/&lt;/code>:匹配&lt;code>Ba&lt;/code>或&lt;code>ba&lt;/code>
+&lt;code>/ba/i&lt;/code>:查找&lt;code>name&lt;/code>字段的值包含字符串&lt;code>ba&lt;/code>的文档，不区分大小写&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>distinct的意思是去重&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;code>$gt&lt;/code>: $&amp;gt;$
+&lt;code>$gte&lt;/code>: $\ge$
+&lt;code>$lt&lt;/code>: $\le$
+&lt;code>$lte&lt;/code>: $\le$
+&lt;code>$ne&lt;/code>: $!=$
+&lt;code>$eq&lt;/code>: $==$&lt;/p>&lt;/blockquote></description></item><item><title>操作系统（王道）第一章：计算机系统概述</title><link>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="11-操作系统的基本概念">1.1 操作系统的基本概念
+&lt;/h2>&lt;h3 id="111-操作系统的基本概念">1.1.1 操作系统的基本概念
+&lt;/h3>&lt;p>&lt;mark>操作系统&lt;/mark>是指&lt;mark>控制和管理&lt;/mark>整个计算机系统的&lt;mark>硬件与软件资源&lt;/mark>，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件&lt;mark>提供方便接口与环境&lt;/mark>的程序集合。操作系统是计算机系统中最基本的系统软件&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84.png"
+loading="lazy"
+alt="计算机系统的层次结构"
+>&lt;/p>
+&lt;h3 id="112-操作系统的功能和目标">1.1.2 操作系统的功能和目标
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>操作系统作为计算机系统资源的管理者&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>处理机管理&lt;/li>
+&lt;li>存储器管理&lt;/li>
+&lt;li>文件管理&lt;/li>
+&lt;li>设备管理&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>操作系统作为用户与计算机硬件系统之间的接口&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>命令接口&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>联机命令接口&lt;/strong>：也称&lt;strong>交互式命令接口&lt;/strong>，适用于分时或实时系统的接口（说一句话，做一件事）&lt;/li>
+&lt;li>&lt;strong>脱机命令接口&lt;/strong>：也称&lt;strong>批处理命令接口&lt;/strong>，适用于批处理系统（说一堆话，做一堆事）&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>程序接口&lt;/strong>
+&lt;ol>
+&lt;li>由一组&lt;strong>系统调用&lt;/strong>（也称&lt;strong>广义指令&lt;/strong>）组成。用户在程序中使用这些系统调用来请求操作系统为其提供服务&lt;/li>
+&lt;li>图形接口不是操作系统的一部分，但图形接口所调用的系统调用命令是操作系统的一部分&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>操作系统实现了对计算机资源的扩充&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>我们通常将覆盖了软件的机器称为&lt;strong>扩充机器&lt;/strong>或&lt;strong>虚拟机&lt;/strong>&lt;/li>
+&lt;li>没有任何软件支持的计算机称为裸机&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="113-操作系统的特征">1.1.3 操作系统的特征
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>并发&lt;/strong>：两个或多个事件在同一时间间隔内发生。注意区分并发和并行[^1]&lt;/li>
+&lt;li>&lt;strong>共享&lt;/strong>：指系统中的资源可供内存中多个并发执行的进程共同使用
+&lt;ol>
+&lt;li>&lt;strong>互斥共享&lt;/strong>：一段时间内只允许一个进程访问&lt;/li>
+&lt;li>&lt;strong>同时访问&lt;/strong>：宏观上“同时”，微观上可能是交替的对该资源进行访问，即“分时共享”&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>虚拟&lt;/strong>：将一个物理上的实体变为若干逻辑上的对应物。实现虚拟的技术称为&lt;mark>虚拟技术&lt;/mark>
+&lt;ol>
+&lt;li>&lt;strong>时分复用技术&lt;/strong>：如虚拟处理器。将物理资源（如CPU）的使用时间划分为多个时间片（Time Slice），供多个用户或进程轮流使用。让每个进程误以为自己独占CPU资源，而实际是分时共享。&lt;/li>
+&lt;li>&lt;strong>空分复用技术&lt;/strong>：如虚拟存储器。将物理资源（如内存或磁盘）划分为独立区域，分配给不同进程使用。为每个进程提供连续且独立的地址空间，隐藏物理内存的碎片化和容量限制。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>异步&lt;/strong>：多道程序环境允许多个程序并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停的，他以不可预知的速度向前推进，这就是进程的异步性&lt;/li>
+&lt;/ol>
+&lt;p>并发和共享是操作系统两个&lt;mark>最基本&lt;/mark>的特征，两者之间互为存在的条件&lt;/p>
+&lt;h2 id="12-操作系统发展历程">1.2 操作系统发展历程
+&lt;/h2>&lt;h3 id="121-手工操作阶段">1.2.1 手工操作阶段
+&lt;/h3>&lt;ul>
+&lt;li>此阶段无操作系统&lt;/li>
+&lt;li>两个突出的缺点：
+&lt;ol>
+&lt;li>用户独占全机，资源利用率低&lt;/li>
+&lt;li>CPU等待手工操作，CPU的利用不充分&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="122-批处理阶段">1.2.2 批处理阶段
+&lt;/h3>&lt;ul>
+&lt;li>操作系统开始出现&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-单道批处理系统">1. 单道批处理系统
+&lt;/h4>&lt;p>&lt;strong>主要特征&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>自动性&lt;/strong>：在顺利的情况下，磁带上的一批作业能自动的逐个运行，而无须人工干预&lt;/li>
+&lt;li>&lt;strong>顺序性&lt;/strong>：磁带上的各道作业顺序地进入内存，先调入内存的先完成&lt;/li>
+&lt;li>&lt;strong>单道性&lt;/strong>：内存中仅有一道程序运行&lt;/li>
+&lt;/ol>
+&lt;h4 id="2-多道批处理系统">2. 多道批处理系统
+&lt;/h4>&lt;p>&lt;strong>主要特征&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>多道&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>宏观上并行&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>微观上串行&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>优点&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>资源利用率高&lt;/strong>，多道程序共享计算机资源，从而使各种资源得到充分的利用&lt;/li>
+&lt;li>&lt;strong>系统吞吐量大&lt;/strong>，CPU和其他资源保持“忙碌”状态&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>缺点&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>用户时间响应较长&lt;/li>
+&lt;li>不提供人机交互能力&lt;/li>
+&lt;li>用户既不能了解自己的程序的运行情况，又不能控制计算机&lt;/li>
+&lt;/ol>
+&lt;h3 id="123-分时操作系统">1.2.3 分时操作系统
+&lt;/h3>&lt;p>所谓&lt;mark>分时技术&lt;/mark>，是指将处理器的运行时间分成很短的时间片，按时间片轮流将处理器分配给各联机作业使用&lt;/p>
+&lt;p>分时系统的主要特点：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>同时性&lt;/strong>。同时性也称&lt;mark>多路性&lt;/mark>，指允许多个终端用户同时使用一台计算机&lt;/li>
+&lt;li>&lt;strong>交互性&lt;/strong>。用户使用终端采用人机对话的方式直接控制程序运行，与同程序进行交互&lt;/li>
+&lt;li>&lt;strong>独立性&lt;/strong>。系统中多个用户独立的进行操作，互不干扰&lt;/li>
+&lt;li>&lt;strong>及时性&lt;/strong>。用户请求能在很短时间内获得响应&lt;/li>
+&lt;/ol>
+&lt;h3 id="124-实时操作系统">1.2.4 实时操作系统
+&lt;/h3>&lt;p>为了能在某个时间限制内完成某些紧急任务而不需要时间片排队，诞生了实时操作系统&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>硬实时系统&lt;/strong>。某个动作必须在&lt;/li>
+&lt;/ol></description></item><item><title>机器学习（李宏毅）笔记 2：预测本频道观测人数（下）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</guid><description>&lt;p>使用线性模型有很多缺点，比如&lt;strong>Model Bias&lt;/strong>（模型偏差）&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e5%87%bd%e6%95%b0.png"
+loading="lazy"
+alt="函数"
+>&lt;/p>
+&lt;p>红色的曲线可以表示为一系列蓝色曲线的和&lt;/p>
+&lt;p>对于连续曲线函数，可以用一条分段线性函数来近似。为了有好的相似，我们需要足够多的片段&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e5%88%86%e6%ae%b5%e5%87%bd%e6%95%b0%e7%9a%84%e8%bf%91%e4%bc%bc.png"
+loading="lazy"
+alt="对于分段函数的近似"
+>&lt;/p>
+$$
+y\,=\,c \frac{1}{1\,+\,e^{-(b+wx_1)}}
+$$$$
+曲线1：c_1sigmoid(b_1\,+\,w_1x_1)
+$$$$
+曲线2：c_2sigmoid(b_2\,+\,w_2x_2)
+$$$$
+...
+$$$$
+曲线i: c_isigmoid(b_i\,+\,w_ix_i)
+$$$$
+y\,=\,b\,+\,\sum_i c_isigmoid(b_i\,+\,w_ix_i)
+$$&lt;blockquote>
+&lt;p>$w_{ij}$: 对于第$i$个$Sigmoid$函数来说，$x_j$的权重 。&lt;/p>&lt;/blockquote>
+$$
+y\,=\,b\,+\,\sum_i c_isigmoid(b_i\,+\sum_j\,w_{ij}x_i)
+$$&lt;p>
+$i:1, 2, 3$: no. of sigmoid
+$j: 1, 2,3$: no. of features&lt;/p>
+&lt;p>（说实话第一次看见这个公式的时候还是比较懵的，之后通过一个具体的例子了解了这个公式）&lt;/p>
+&lt;p>&lt;a class="link" href="https://xn--8mr985eba830aiye.vip/p/%e5%af%b9%e4%ba%8e%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0%e5%85%ac%e5%bc%8f%e7%9a%84%e4%be%8b%e5%ad%90/" target="_blank" rel="noopener"
+>对于机器学习公式的例子&lt;/a>&lt;/p>
+$$
+r_1\,=\,b_1\,+\,w_{11}x_1\,+\,w_{12}x_2\,+\,w_{13}x_3
+$$$$
+r_2\,=\,b_2\,+\,w_{21}x_1\,+\,w_{22}x_2\,+\,w_{23}x_3
+$$$$
+r_3\,=\,b_3\,+\,w_{31}x_1\,+\,w_{32}x_2\,+\,w_{33}x_3
+$$&lt;p>也即&lt;/p>
+$$
+\begin{bmatrix}
+r_1\\
+r_2\\
+r_3
+\end{bmatrix}=\begin{bmatrix}
+b_1\\
+b_2\\
+b_3
+\end{bmatrix}+
+\begin{bmatrix}
+w_{11} &amp; w_{12} &amp; w_{13}\\
+w_{21} &amp; w_{22} &amp; w_{23}\\
+w_{31} &amp; w_{32} &amp; w_{33}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2\\
+x_3
+\end{bmatrix}
+$$&lt;p>
+故有&lt;/p>
+$$
+\mathbf{r}\,=\,\mathbf{b}\,+\,W\,\mathbf{x}
+$$&lt;p>不妨设$\mathbf{a}=\sigma{(r)}$
+则有$y,=,b,+,\mathbf{c}^T\mathbf{a}$&lt;/p></description></item><item><title>机器学习（李宏毅）笔记 3：机器学习任务攻略</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E6%94%BB%E7%95%A5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E6%94%BB%E7%95%A5/</guid><description>&lt;h2 id="机器学习的框架">机器学习的框架
+&lt;/h2>&lt;p>训练集：${(x^1,\widehat{y}^1),(x^2,\widehat{y}^2),&amp;hellip;,{x^n,\widehat{y}^n}}$&lt;/p>
+&lt;p>测试集：${x^{n+1},x^{n+2}},&amp;hellip;,x^{n+m}$&lt;/p>
+&lt;p>&lt;strong>训练步骤&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>带有未知参数的函数：$y=f_{\theta}(x)$&lt;/li>
+&lt;li>根据训练数据定义损失函数：$L(\theta)$&lt;/li>
+&lt;li>优化：$\theta ^{*}=arg min_{\theta}L$&lt;/li>
+&lt;/ol>
+&lt;h2 id="通用指南">通用指南
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;div id="" class="mindmap mindmap-md">&lt;ul>
+&lt;li>loss on training data
+&lt;ul>
+&lt;li>large
+&lt;ul>
+&lt;li>model bias
+&lt;ul>
+&lt;li>make your model complex&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>optimization
+&lt;ul>
+&lt;li>next lecture&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>small
+&lt;ul>
+&lt;li>loss on testing data
+&lt;ul>
+&lt;li>small
+&lt;ul>
+&lt;li>＜（＾－＾）＞&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>large
+&lt;ul>
+&lt;li>overfitting
+&lt;ul>
+&lt;li>more training data&lt;/li>
+&lt;li>data augmentation&lt;/li>
+&lt;li>make your model simpler&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>mismatch&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="模型偏差和优化问题的对比">模型偏差和优化问题的对比
+&lt;/h2>&lt;h3 id="模型偏差">模型偏差
+&lt;/h3>&lt;ul>
+&lt;li>模型过简单&lt;/li>
+&lt;li>解决方式：重新设置你的模型，使其更加有弹性&lt;/li>
+&lt;/ul>
+&lt;h3 id="优化问题">优化问题
+&lt;/h3>&lt;ol>
+&lt;li>通过对比获得洞见
+&lt;ol>
+&lt;li>当深层网络效果不如浅层网络时，需排除模型容量不足的可能。&lt;/li>
+&lt;li>若浅层网络能拟合训练数据，而深层网络不能，说明优化存在问题（而非模型表达能力不足）。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>从较浅的网络开始训练
+&lt;ol>
+&lt;li>浅层网络更容易优化（梯度传播路径短，参数少）。&lt;/li>
+&lt;li>若浅层网络能正常训练，但加深后效果变差，可定位到优化问题（如梯度消失/爆炸）。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>深层网络训练损失不降
+&lt;ol>
+&lt;li>深层网络的假设空间包含浅层网络（例如深层网络的前几层可模拟浅层网络）。&lt;/li>
+&lt;li>理论上，深层网络在训练数据上的损失应 ≤ 浅层网络损失（因其模型容量更大）。&lt;/li>
+&lt;li>若实际训练中深层网络损失更高，说明优化器未能找到更优解（而非模型能力不足）。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="模型复杂度和损失的关系">模型复杂度和损失的关系
+&lt;/h3>&lt;h4 id="1-训练损失training-loss">&lt;strong>1. 训练损失（Training Loss）&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>规律&lt;/strong>：随着模型复杂度增加，训练损失单调递减。&lt;/li>
+&lt;li>&lt;strong>原因&lt;/strong>：复杂模型有更强的拟合能力，可以逼近甚至完美拟合训练数据。&lt;/li>
+&lt;li>&lt;strong>极端情况&lt;/strong>：过参数化模型（如深度神经网络）可实现训练损失趋近于零（记忆训练样本）。&lt;/li>
+&lt;/ul>
+&lt;h4 id="2-验证测试损失validationtest-loss">&lt;strong>2. 验证/测试损失（Validation/Test Loss）&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>
+&lt;p>规律&lt;/p>
+&lt;p>：先降低后升高，形成U型曲线。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>低复杂度&lt;/strong>：模型无法捕捉数据规律（欠拟合），损失较高。&lt;/li>
+&lt;li>&lt;strong>适当复杂度&lt;/strong>：模型拟合数据真实分布，损失最低。&lt;/li>
+&lt;li>&lt;strong>高复杂度&lt;/strong>：模型过度拟合噪声（过拟合），损失回升。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+$$
+泛化误差=偏差^2+方差+不可约方差
+$$&lt;h3 id="训练资料和测试资料的mismatch">训练资料和测试资料的mismatch
+&lt;/h3>&lt;p>&lt;strong>原因：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>训练集和测试集的特征（如数值范围、类别比例）差异大。&lt;/li>
+&lt;li>分类任务中类别比例差异，或回归任务中目标值范围不同。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>体现：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>训练集表现&lt;/strong>：模型损失低、准确率高（看似“表现优秀”）。&lt;/li>
+&lt;li>&lt;strong>测试集表现&lt;/strong>：损失显著升高、准确率骤降（模型无法泛化）。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>解决办法（举例）&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>将数据集分为A, B, C三份&lt;/li>
+&lt;li>首先用A, B作为训练集，C为测试集&lt;/li>
+&lt;li>第二次用A, C作为训练集，B为测试集&lt;/li>
+&lt;li>第三次用B, C作为训练集，A为测试集&lt;/li>
+&lt;/ol></description></item><item><title>机器学习（李宏毅）笔记 5：批次与动量</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-5%E6%89%B9%E6%AC%A1%E4%B8%8E%E5%8A%A8%E9%87%8F/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-5%E6%89%B9%E6%AC%A1%E4%B8%8E%E5%8A%A8%E9%87%8F/</guid><description>&lt;h2 id="1-批次batch与动量momentum">1. 批次（batch）与动量（momentum）
+&lt;/h2>&lt;h3 id="11-批次">1.1 批次
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>小批量梯度下降（Mini-batch Gradient Descent）&lt;/strong>
+&lt;ol>
+&lt;li>在训练模型时，不直接使用全部数据计算梯度，而是将数据划分为多个小批量（batch），每次用一个batch的数据计算损失（Loss）和梯度，并更新模型参数。&lt;/li>
+&lt;li>相比全量梯度下降（计算所有数据），减少内存占用和计算量，同时比随机梯度下降（单个样本）更稳定。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>Batch（批次）与Epoch（轮次）&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>Batch&lt;/strong>：将训练数据分成若干固定大小的子集（如B个样本），每个子集称为一个batch。&lt;/li>
+&lt;li>&lt;strong>Epoch&lt;/strong>：完整遍历一次全部训练数据的过程（即所有batch被计算一遍）。每个epoch结束后，模型完成一次完整训练。&lt;/li>
+&lt;li>&lt;strong>关系&lt;/strong>：1个epoch = 所有batch依次计算并更新参数。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>参数更新机制&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>逐batch更新&lt;/strong>：每个batch计算一次Loss和梯度后，立即更新参数（而非累积所有batch的梯度再更新）。&lt;/li>
+&lt;li>&lt;strong>优点&lt;/strong>：加快收敛速度，避免全量数据计算的资源瓶颈。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>Shuffle&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>作用&lt;/strong>：在每个epoch开始前，随机打乱训练数据的顺序，再划分batch。&lt;/li>
+&lt;li>&lt;strong>目的&lt;/strong>：防止模型因数据顺序产生偏差（如学习到数据排列规律），增强泛化能力。&lt;/li>
+&lt;li>&lt;strong>结果&lt;/strong>：每个epoch的batch组成不同，提升训练随机性。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://example.com/img/batch.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>为什么训练时需要用batch？&lt;/p>
+&lt;p>参数更新更快，每看一笔资料即会更新一次参数&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/batch%e6%af%94%e8%be%83.png"
+loading="lazy"
+alt="左侧无batch，右侧的batch size为1"
+>&lt;/p>
+&lt;h3 id="small-batch-vs-large-batch">Small batch vs Large batch
+&lt;/h3>&lt;ul>
+&lt;li>没有平行运算时，Small Batch比Large Batch更有效&lt;/li>
+&lt;li>有平行运算时，Small Batch与Large Batch运算时间没有太大差距，除非大的超出一定界限&lt;/li>
+&lt;li>在一个epoch时间内，Large Batch比Small Batch更快，Large Batch更有效率&lt;/li>
+&lt;li>Small Batch比较陡，Large Batch比较稳定&lt;/li>
+&lt;li>比较noisy的batch size比比较stable 的batch size在训练和测试时占有优势&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-自动调整学习率">2. 自动调整学习率
+&lt;/h2>&lt;p>随着参数的更新，loss值逐渐变小并保持在一定值不再下降&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e8%b0%83%e6%95%b4%e5%ad%a6%e4%b9%a0%e7%8e%87.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>将gradient decent做的更好的方法是设置每一个参数的学习效率&lt;/p>
+&lt;ul>
+&lt;li>如果在某一个方向上，gradient值很小（比较平稳），那么应该把学习效率调高；&lt;/li>
+&lt;li>如果在某一个方向上，gradient值很大（比较陡峭），那么应该把学习效率调低。&lt;/li>
+&lt;/ul></description></item></channel></rss>

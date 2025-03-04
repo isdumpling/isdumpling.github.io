@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on 一只饺子</title><link>https://example.com/tags/java/</link><description>Recent content in Java on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Fri, 28 Feb 2025 14:32:22 +0800</lastBuildDate><atom:link href="https://example.com/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Swing</title><link>https://example.com/p/java-swing/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/java-swing/</guid><description>&lt;h2 id="1-简介">1. 简介
+&lt;/h2>&lt;p>Java Swing 是 Java 用于构建 &lt;strong>图形用户界面（GUI）&lt;/strong> 的核心工具包，它是 Java Foundation Classes（JFC）的一部分。&lt;/p>
+&lt;p>&lt;strong>Swing与AWT的关系&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>特性&lt;/th>
+&lt;th>AWT&lt;/th>
+&lt;th>Swing&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>实现方式&lt;/td>
+&lt;td>依赖本地GUI库&lt;/td>
+&lt;td>纯Java绘制&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>组件类型&lt;/td>
+&lt;td>重量级&lt;/td>
+&lt;td>轻量级&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>跨平台一致性&lt;/td>
+&lt;td>低（外观随系统变化）&lt;/td>
+&lt;td>高（可统一风格）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>性能&lt;/td>
+&lt;td>较高（直接调用系统API）&lt;/td>
+&lt;td>较低（纯Java绘制）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>组件丰富度&lt;/td>
+&lt;td>基础组件&lt;/td>
+&lt;td>高级组件&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>现代开发中通常使用 Swing 而非 AWT，但 AWT 的布局管理器（如 &lt;code>BorderLayout&lt;/code>）仍常与 Swing 配合使用。&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Swing组件层级结构&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Java" data-lang="Java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Object&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">awt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Component&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">awt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">Container&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">javax&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">swing&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">JComponent&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">├─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">JButton&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">├─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">JLabel&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">└─&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="2-swing实战">2. Swing实战
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Java" data-lang="Java">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JButton&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JFrame&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JLabel&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JPanel&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">javax.swing.JPasswordField&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
