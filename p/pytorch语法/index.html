@@ -1,0 +1,174 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="在Anaconda中使用PyTorch\r查看CUDA版本的三种方法 1 2 3 nvcc -V nvcc --version nvidia -smi 快速搭建虚拟环境 1 2 3 4 5 6 7 8 9 10 11 # 创建环境并指定Python版本 conda create -n <env_name> python=3.9 # 激活环境 conda activate <env_name> # 安装PyTorch版本 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia # 退出虚拟环境 conda deactivate 使用Python代码进行验证是否安装成功torch 1 2 3 4 import torch # 如果pytorch安装成功即可导入 print(torch.cuda.is_available) # 查看CUDA是否可用 print(torch.cuda.device_count) # 查看可用的CUDA数量 print(torch.version.cuda) # 查看CUDA的版本号 张量（Tensor）\r在PyTorch中，张量类似于Numpy中的数组，但PyTorch中的张量可以运行在不同设备，如CPU和GPU，Numpy数组只能在CPU上运行\n"><title>PyTorch语法</title>
+<link rel=canonical href=https://example.com/p/pytorch%E8%AF%AD%E6%B3%95/><link rel=stylesheet href=/scss/style.min.2deeca980d2b0d58c1f28cdfd20b96c62f8357ef57495cd2d99f0054e39d1d6f.css><meta property='og:title' content="PyTorch语法"><meta property='og:description' content="在Anaconda中使用PyTorch\r查看CUDA版本的三种方法 1 2 3 nvcc -V nvcc --version nvidia -smi 快速搭建虚拟环境 1 2 3 4 5 6 7 8 9 10 11 # 创建环境并指定Python版本 conda create -n <env_name> python=3.9 # 激活环境 conda activate <env_name> # 安装PyTorch版本 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia # 退出虚拟环境 conda deactivate 使用Python代码进行验证是否安装成功torch 1 2 3 4 import torch # 如果pytorch安装成功即可导入 print(torch.cuda.is_available) # 查看CUDA是否可用 print(torch.cuda.device_count) # 查看可用的CUDA数量 print(torch.version.cuda) # 查看CUDA的版本号 张量（Tensor）\r在PyTorch中，张量类似于Numpy中的数组，但PyTorch中的张量可以运行在不同设备，如CPU和GPU，Numpy数组只能在CPU上运行\n"><meta property='og:url' content='https://example.com/p/pytorch%E8%AF%AD%E6%B3%95/'><meta property='og:site_name' content='一只饺子'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='机器学习'><meta property='article:tag' content='语法'><meta property='article:tag' content='代码实践'><meta name=twitter:title content="PyTorch语法"><meta name=twitter:description content="在Anaconda中使用PyTorch\r查看CUDA版本的三种方法 1 2 3 nvcc -V nvcc --version nvidia -smi 快速搭建虚拟环境 1 2 3 4 5 6 7 8 9 10 11 # 创建环境并指定Python版本 conda create -n <env_name> python=3.9 # 激活环境 conda activate <env_name> # 安装PyTorch版本 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia # 退出虚拟环境 conda deactivate 使用Python代码进行验证是否安装成功torch 1 2 3 4 import torch # 如果pytorch安装成功即可导入 print(torch.cuda.is_available) # 查看CUDA是否可用 print(torch.cuda.device_count) # 查看可用的CUDA数量 print(torch.version.cuda) # 查看CUDA的版本号 张量（Tensor）\r在PyTorch中，张量类似于Numpy中的数组，但PyTorch中的张量可以运行在不同设备，如CPU和GPU，Numpy数组只能在CPU上运行\n"><script type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js></script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/1fc88c9ce946a5621185d27c512d6ae_hu_bc1d6b840fc37823.jpg width=300 height=328 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>一只饺子</a></h1><h2 class=site-description>奶龙也是龙</h2></div></header><ol class=menu-social><li><a href=https://github.com/isdumpling target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language title=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://example.com/en/>English</option><option value=https://example.com/ selected>中文</option><option value=https://example.com/ar/>عربي</option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>暗色模式</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#在anaconda中使用pytorch>在Anaconda中使用PyTorch</a></li><li><a href=#张量tensor>张量（Tensor）</a><ol><li><a href=#张量创建>张量创建</a></li><li><a href=#常见张量操作>常见张量操作</a></li></ol></li><li><a href=#自动求导autograd>自动求导(Autograd)</a><ol><li><a href=#反向传播backpropagation>反向传播(Backpropagation)</a></li><li><a href=#停止梯度计算>停止梯度计算</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/>机器学习</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/pytorch%E8%AF%AD%E6%B3%95/>PyTorch语法</a></h2></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 3 分钟</time></div></footer></div></header><section class=article-content><h2 id=在anaconda中使用pytorch>在Anaconda中使用PyTorch</h2><ol><li>查看CUDA版本的三种方法</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>nvcc -V
+</span></span><span class=line><span class=cl>nvcc --version
+</span></span><span class=line><span class=cl>nvidia -smi
+</span></span></code></pre></td></tr></table></div></div><ol start=2><li>快速搭建虚拟环境</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 创建环境并指定Python版本</span>
+</span></span><span class=line><span class=cl>conda create -n &lt;env_name&gt; <span class=nv>python</span><span class=o>=</span>3.9 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 激活环境</span>
+</span></span><span class=line><span class=cl>conda activate &lt;env_name&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 安装PyTorch版本</span>
+</span></span><span class=line><span class=cl>conda install pytorch torchvision torchaudio pytorch-cuda<span class=o>=</span>12.1 -c pytorch -c nvidia
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 退出虚拟环境</span>
+</span></span><span class=line><span class=cl>conda deactivate
+</span></span></code></pre></td></tr></table></div></div><ol start=3><li>使用Python代码进行验证是否安装成功torch</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>torch</span> <span class=c1># 如果pytorch安装成功即可导入</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>torch</span><span class=o>.</span><span class=n>cuda</span><span class=o>.</span><span class=n>is_available</span><span class=p>)</span> <span class=c1># 查看CUDA是否可用</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>torch</span><span class=o>.</span><span class=n>cuda</span><span class=o>.</span><span class=n>device_count</span><span class=p>)</span> <span class=c1># 查看可用的CUDA数量</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>torch</span><span class=o>.</span><span class=n>version</span><span class=o>.</span><span class=n>cuda</span><span class=p>)</span> <span class=c1># 查看CUDA的版本号</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=张量tensor>张量（Tensor）</h2><p>在PyTorch中，张量类似于Numpy中的数组，但PyTorch中的张量可以运行在不同设备，如CPU和GPU，Numpy数组只能在CPU上运行</p><ul><li><strong>维度（Dimensionality）</strong>：张量的维度指的是数据的多维数组结构。例如，一个标量（0维张量）是一个单独的数字，一个向量（1维张量）是一个一维数组，一个矩阵（2维张量）是一个二维数组，以此类推。</li><li><strong>形状（Shape）</strong>：张量的形状是指每个维度上的大小。例如，一个形状为<code>(3, 4)</code>的张量意味着它有3行4列。</li><li><strong>数据类型（Dtype）</strong>：张量中的数据类型定义了存储每个元素所需的内存大小和解释方式。PyTorch支持多种数据类型，包括整数型（如<code>torch.int8</code>、<code>torch.int32</code>）、浮点型（如<code>torch.float32</code>、<code>torch.float64</code>）和布尔型（<code>torch.bool</code>）。</li></ul><h3 id=张量创建>张量创建</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>torch</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 创建一个 2x3 的全 0 张量</span>
+</span></span><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>zeros</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 创建一个 2x3 的全 1 张量</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>ones</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 创建一个 2x3 的随机数张量</span>
+</span></span><span class=line><span class=cl><span class=n>c</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>c</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 从 NumPy 数组创建张量</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
+</span></span><span class=line><span class=cl><span class=n>numpy_array</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>array</span><span class=p>([[</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>],</span> <span class=p>[</span><span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>]])</span>
+</span></span><span class=line><span class=cl><span class=n>tensor_from_numpy</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>from_numpy</span><span class=p>(</span><span class=n>numpy_array</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>tensor_from_numpy</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 在指定设备（CPU/GPU）上创建张量</span>
+</span></span><span class=line><span class=cl><span class=n>device</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>device</span><span class=p>(</span><span class=s2>&#34;cuda&#34;</span> <span class=k>if</span> <span class=n>torch</span><span class=o>.</span><span class=n>cuda</span><span class=o>.</span><span class=n>is_available</span><span class=p>()</span> <span class=k>else</span> <span class=s2>&#34;cpu&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>d</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=n>device</span><span class=o>=</span><span class=n>device</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>d</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>输出结果</p><p><img src=/img/tensor_output.jpg loading=lazy alt=输出结果></p><h3 id=常见张量操作>常见张量操作</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 张量相加</span>
+</span></span><span class=line><span class=cl><span class=n>e</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>f</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>e</span> <span class=o>+</span> <span class=n>f</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 逐元素乘法</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>e</span> <span class=o>*</span> <span class=n>f</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 张量的转置</span>
+</span></span><span class=line><span class=cl><span class=n>g</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>3</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>g</span><span class=o>.</span><span class=n>t</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 张量的形状</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>g</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>输出结果</p><p><img src=/img/tensor_output1.jpg loading=lazy alt=输出结果></p><p><code>item()</code>方法</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 将包含单个元素的张量转换为Python标量</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>forward</span><span class=p>(</span><span class=mi>4</span><span class=p>))</span> <span class=c1># 输出：tensor([0.8], grad_fn=&lt;SigmoidBackward&gt;)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>forward</span><span class=p>(</span><span class=mi>4</span><span class=p>)</span><span class=o>.</span><span class=n>item</span><span class=p>())</span> <span class=c1># 输出：0.8</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>仅限单元素张量。如果张量包含多个元素，调用<code>item()</code>会报错</p></blockquote><h2 id=自动求导autograd>自动求导(Autograd)</h2><p>自动求导允许计算机自动计算数学函数的导数</p><p>在深度学习中，自动求导主要用于两个方面</p><ol><li>训练神经网络时计算梯度</li><li>进行反向传播算法的实现</li></ol><p><strong>动态图与静态图</strong></p><ul><li><strong>动态图(Dynamic Graph)</strong>：在动态图中，计算图在运行时动态构建。每次执行操作时，计算图都会更新，这使得调试和修改模型变得更加容易。PyTorch使用的是动态图。</li><li><strong>静态图（Static Graph）</strong>：在静态图中，计算图在开始执行之前构建完成，并且不会改变。TensorFlow最初使用的是静态图，但后来也支持动态图。</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 创建一个需要计算梯度的张量</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=n>torch</span><span class=o>.</span><span class=n>randn</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=n>requires_grad</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 执行某些操作</span>
+</span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=n>x</span> <span class=o>+</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl><span class=n>z</span> <span class=o>=</span> <span class=n>y</span> <span class=o>*</span> <span class=n>y</span> <span class=o>*</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl><span class=n>out</span> <span class=o>=</span> <span class=n>z</span><span class=o>.</span><span class=n>mean</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>out</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>输出结果</p><p><img src=/img/autograd.jpg loading=lazy alt=输出结果></p><h3 id=反向传播backpropagation>反向传播(Backpropagation)</h3><p>一旦定义了计算图，可以通过<code>.backward()</code>方法来计算梯度</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># 反向传播，计算梯度
+</span></span><span class=line><span class=cl>out.backward()
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># 查看x的梯度
+</span></span><span class=line><span class=cl>print(x.gred)
+</span></span></code></pre></td></tr></table></div></div><p>输出结果</p><p><img src=/img/autograd1.jpg loading=lazy alt=输出结果></p><h3 id=停止梯度计算>停止梯度计算</h3><p>如果你不希望某些张量的梯度被计算（例如，当你不需要反向传播时），可以使用 <code>torch.no_grad()</code> 或设置 <code>requires_grad=False</code>。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 使用 torch.no_grad() 禁用梯度计算</span>
+</span></span><span class=line><span class=cl><span class=k>with</span> <span class=n>torch</span><span class=o>.</span><span class=n>no_grad</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>y</span> <span class=o>=</span> <span class=n>x</span> <span class=o>*</span> <span class=mi>2</span>
+</span></span></code></pre></td></tr></table></div></div></section><footer class=article-footer><section class=article-tags><a href=/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/>机器学习</a>
+<a href=/tags/%E8%AF%AD%E6%B3%95/>语法</a>
+<a href=/tags/%E4%BB%A3%E7%A0%81%E5%AE%9E%E8%B7%B5/>代码实践</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section><section class=article-pageviews><svg fill="none" viewBox="0 0 24 24" stroke="currentcolor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+<span>页面浏览量<span id=busuanzi_value_page_pv>Loading</span></span></section></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous defer></script><script>window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".main-article");renderMathInElement(e,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],ignoredClasses:["gist"]})})</script></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/pytorch%E5%AE%9E%E8%B7%B5%E5%88%98%E4%BA%8C%E5%A4%A7%E4%BA%BA1%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/><div class=article-details><h2 class=article-title>Pytorch实践（刘二大人）1：线性模型</h2></div></a></article><article><a href=/p/pytorch%E5%AE%9E%E8%B7%B5%E5%88%98%E4%BA%8C%E5%A4%A7%E4%BA%BA2%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/><div class=article-details><h2 class=article-title>Pytorch实践（刘二大人）2：梯度下降算法</h2></div></a></article><article><a href=/p/pytorch%E5%AE%9E%E8%B7%B5%E5%88%98%E4%BA%8C%E5%A4%A7%E4%BA%BA3%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/><div class=article-details><h2 class=article-title>Pytorch实践（刘二大人）3：反向传播</h2></div></a></article><article><a href=/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/><div class=article-details><h2 class=article-title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</h2></div></a></article><article><a href=/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-4%E5%B1%80%E9%83%A8%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E9%9E%8D%E7%82%B9/><div class=article-details><h2 class=article-title>机器学习（李宏毅）笔记 4：局部最小值与鞍点</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2025 一只饺子</section><section class=powerby><div class=site-stats><span class=stat-item><i class="fas fa-users"></i> 访客数：<span id=busuanzi_value_site_uv>Loading</span>
+</span><span class=stat-item><i class="fas fa-eye"></i> 访问量：<span id=busuanzi_value_site_pv>Loading</span>
+</span><span class=stat-item><a href=https://eu.umami.is/share/y6kXo4CE3oYHXQ37/farb.github.io target=_blank rel=noopener><i class="fas fa-chart-line"></i> 详细统计</a></span></div><br>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.30.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script><style>#backTopBtn{display:none;position:fixed;bottom:30px;z-index:99;cursor:pointer;width:30px;height:30px;background-image:url(https://example.com/icons/backTop.svg)}</style><script>function initScrollTop(){let t=document.querySelector(".right-sidebar");if(!t)return;let e=document.createElement("div");e.id="backTopBtn",e.onclick=backToTop,t.appendChild(e),window.onscroll=function(){document.body.scrollTop>20||document.documentElement.scrollTop>20?e.style.display="block":e.style.display="none"}}function backToTop(){window.scrollTo({top:0,behavior:"smooth"})}initScrollTop()</script><script defer src=https://cn.vercount.one/js></script></body></html>

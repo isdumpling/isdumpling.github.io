@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大数据 on 一只饺子</title><link>https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link><description>Recent content in 大数据 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Fri, 28 Feb 2025 14:32:22 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;h3 id="what-is-nosql">What is NoSQL?
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>NoSQL&lt;/strong> stands for &lt;strong>Not Only SQL&lt;/strong>&lt;/li>
+&lt;li>Designed for &lt;strong>unstructured&lt;/strong> (such as &lt;code>video&lt;/code>, &lt;code>audio&lt;/code>) and &lt;strong>semi-structured&lt;/strong> (such as &lt;code>json&lt;/code>, &lt;code>csv&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>Flexible data models&lt;/strong>, &lt;strong>horizontal scaling&lt;/strong>, and &lt;strong>high performance&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Flexible data models&lt;/strong>:
+&lt;ul>
+&lt;li>Key-value&lt;/li>
+&lt;li>Graph&lt;/li>
+&lt;li>Document&lt;/li>
+&lt;li>Column Store&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Horizontal scaling&lt;/strong>: data scalings are stored in mang machines, and throw adds nodes to expand the ability of computing&lt;/li>
+&lt;li>&lt;strong>High Performance&lt;/strong>: For example, Redis stores data in memory, and its read and write speed can reach the microsecond level.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-nosql-databases">Types of NoSQL Databases
+&lt;/h3>&lt;ul>
+&lt;li>Key-value database&lt;/li>
+&lt;li>Document database&lt;/li>
+&lt;li>Wide-column database&lt;/li>
+&lt;li>Graph database&lt;/li>
+&lt;/ul>
+&lt;h3 id="nosql-vs-rdbms">NoSQL vs RDBMS
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>NoSQL&lt;/strong>: Flexible schema, horizontal scaling, high availability&lt;/li>
+&lt;li>&lt;strong>RDBMS&lt;/strong>: Rigid schema, vertical scaling, ACID compilance
+&lt;ul>
+&lt;li>ACID: Atomicity, Consistency, Isolation, Durability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-features-of-nosql">Key Features of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>Schema flexibility&lt;/li>
+&lt;li>Horizontal scalability&lt;/li>
+&lt;li>High availability and fault tolerance&lt;/li>
+&lt;li>Diverse data models&lt;/li>
+&lt;li>Cost-effectiveness&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-overview">MongoDB Overview
+&lt;/h3>&lt;ul>
+&lt;li>Document-oriented NoSQL database&lt;/li>
+&lt;li>Stores data in JSON-like BSON(Binary Json) format&lt;/li>
+&lt;li>Flexible schema, horizontal scaling, and high performance&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-features">MongoDB Features
+&lt;/h3>&lt;ul>
+&lt;li>Document-oriented storage&lt;/li>
+&lt;li>Flexible schema&lt;/li>
+&lt;li>Scalability(sharding)&lt;/li>
+&lt;li>Indexing and aggregation framework&lt;/li>
+&lt;li>Replication and high availability&lt;/li>
+&lt;/ul>
+&lt;h3 id="mongodb-vs-rdbms">MongoDB vs RDBMS
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>MongoDB&lt;/strong>: Document-based, dynamic schema, horizontal scaling&lt;/li>
+&lt;li>&lt;strong>RDBMS&lt;/strong>: Row-based, rigid schema, vertical scaling&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-overview">Redis Overview
+&lt;/h3>&lt;ul>
+&lt;li>In-memory data structure store&lt;/li>
+&lt;li>Used as a database, cache, and message broker&lt;/li>
+&lt;li>Supports strings, hashes, lists, sets, and stored sets&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-features">Redis Features
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Speed&lt;/strong>: In-memory storage for fast readd/write operations&lt;/li>
+&lt;li>&lt;strong>Persistence&lt;/strong>: RDB and AOF for data durability&lt;/li>
+&lt;li>&lt;strong>Replication&lt;/strong>: Master-slave replication for high avaliablity&lt;/li>
+&lt;li>&lt;strong>Luad scripting&lt;/strong>: Complex operations can be executed atomically&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>RDB&lt;/strong>: Redis Database. Snapshot is the process by which Redis saves the data in &lt;mark>memory&lt;/mark> to the &lt;mark>disk&lt;/mark> in the form of a binary file at a &lt;mark>certain point&lt;/mark> in time. This binary file is the snapshot file.
+&lt;strong>Master-slave Replication&lt;/strong>: It allows the data of one redis instance (&lt;mark>master node&lt;/mark>) to be automatically to one or more other Redis instances (&lt;mark>slave nodes&lt;/mark>).&lt;/p>&lt;/blockquote>
+&lt;h3 id="redis-vs-mongodb">Redis vs MongoDB
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Redis&lt;/strong>: Key-value store, in-memory, fast read/write&lt;/li>
+&lt;li>MongoDB: Document store, on-disk, flexible schema&lt;/li>
+&lt;/ul>
+&lt;h3 id="in-memory-databases">In-memory Databases
+&lt;/h3>&lt;ul>
+&lt;li>Data stored in RAM for low latency and high throughput&lt;/li>
+&lt;li>Ideal for real-time applications like gaming and analytics&lt;/li>
+&lt;li>Redis is a popular in-memory database&lt;/li>
+&lt;/ul>
+&lt;h3 id="redis-history">Redis History
+&lt;/h3>&lt;ul>
+&lt;li>Created in 2009 by Salvatore Sanfilippo&lt;/li>
+&lt;li>Key releases: Redis 3.0 (Cluster mode), Redis 6.0 (ACL, multi-threaded I/O).&lt;/li>
+&lt;li>Used by companies like Twitter, Airbnb, and GitHub&lt;/li>
+&lt;/ul>
+&lt;h3 id="when-to-use-nosql">When to Use NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>Large volumes of unstructured data&lt;/li>
+&lt;li>Need for horizontal scaling&lt;/li>
+&lt;li>Real-time applications with low latency&lt;/li>
+&lt;li>Dynamic data models&lt;/li>
+&lt;/ul></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;h3 id="1-增">1. 增
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;uesr&amp;#39;).insert({&amp;#34;userId&amp;#34; : &amp;#34;014&amp;#34;,&amp;#34;uclass&amp;#34; : &amp;#34;B&amp;#34;,&amp;#34;name&amp;#34; : &amp;#34;Back&amp;#34;,&amp;#34;age&amp;#34; : 11,&amp;#34;email&amp;#34; : &amp;#34;b14@sina.com&amp;#34;,&amp;#34;birthday&amp;#34; : ISODate(&amp;#34;2018-07-31T03:46:13.885Z&amp;#34;),&amp;#34;dataStatus&amp;#34; : 1})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-删">2. 删
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).remove({&amp;#34;userId&amp;#34;:&amp;#34;014&amp;#34;})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3-改">3. 改
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).update({&amp;#34;userId&amp;#34;:&amp;#34;013&amp;#34;},{$set:{&amp;#34;email&amp;#34;:&amp;#34;b13@sina.com&amp;#34;, &amp;#34;age&amp;#34;:20}})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>在MongoDB中，&lt;code>$set&lt;/code>是一个更新操作符，用于修改文档中某个字段的值，或向文档中添加新的字段，而不会影响其他字段。&lt;/p>&lt;/blockquote>
+&lt;h3 id="4-查">4. 查
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}); // 查询所有
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}); // 查询条件:=
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).fing({&amp;#34;name&amp;#34;:/Ba/}); // 查询条件:like
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).distinct({&amp;#34;name&amp;#34;}); // 查询条件:distinct
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;age&amp;#34;:&amp;#34;{$gt:16}&amp;#34;}) // 查询条件:$gt//greater than
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:{$in:[&amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;]}}); // 查询条件: in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;B&amp;#34;,&amp;#34;age&amp;#34;:{$gt:16}}) // 查询条件: and
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({$or:[{&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;},{&amp;#34;class&amp;#34;:&amp;#34;B&amp;#34;}]});// 查询条件: or
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;birthday&amp;#34;:{$gt: new Date(&amp;#34;2008-08-14T06:24:40.110Z&amp;#34;), $lt: new Date(&amp;#34;2015-08-14T06:14:40.089Z&amp;#34;)}}); // 查询条件: 时间
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}).count(); // 查询条件: count
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:1}); // 查询条件: sort升序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:-1}); // 查询条件: sort降序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:&amp;#34;$uclass&amp;#34;,num:{$sum:1}}}]); // 聚合查询: count单列
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:{uclass:&amp;#34;$uclass&amp;#34;, age:&amp;#34;$age&amp;#34;},num:{$sum:1}}}]); // 聚合查询: count多列
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5); // 分页查询: limit in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5).skip(5); // 分页查询: limit m, n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}, {userId:1, name:1}); // 查询指定字段
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">db.getCollection(&amp;#39;user&amp;#39;).find({}, {dataStatus:0, _id:0}); // 排查指定字段
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>正则表达式语法：
+&lt;code>/^Ba/&lt;/code>:匹配以&lt;code>Ba&lt;/code>开头的字符串
+&lt;code>/Ba$/&lt;/code>:匹配以&lt;code>Ba&lt;/code>结尾的字符串
+&lt;code>/[Bb]a/&lt;/code>:匹配&lt;code>Ba&lt;/code>或&lt;code>ba&lt;/code>
+&lt;code>/ba/i&lt;/code>:查找&lt;code>name&lt;/code>字段的值包含字符串&lt;code>ba&lt;/code>的文档，不区分大小写&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>distinct的意思是去重&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;code>$gt&lt;/code>: $&amp;gt;$
+&lt;code>$gte&lt;/code>: $\ge$
+&lt;code>$lt&lt;/code>: $\le$
+&lt;code>$lte&lt;/code>: $\le$
+&lt;code>$ne&lt;/code>: $!=$
+&lt;code>$eq&lt;/code>: $==$&lt;/p>&lt;/blockquote></description></item></channel></rss>
