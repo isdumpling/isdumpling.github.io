@@ -6,6 +6,7 @@ date: 2025-02-25T16:32:11+08:00
 tags:
 - 大数据
 categories: 大数据
+image: post/img/10.avif
 ---
 
 ### What is NoSQL?

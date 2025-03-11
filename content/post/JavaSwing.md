@@ -1,14 +1,16 @@
 ---
-title: Java Swing
+title: "Java Swing"
 params:
   author: 一只饺子
 date: 2025-02-25T17:21:44+08:00
 tags:
-- Java
+  - Java
+  - 语法
 categories: Java
+draft: true
 ---
 
-## 1. 简介
+## 简介
 
 Java Swing 是 Java 用于构建 **图形用户界面（GUI）** 的核心工具包，它是 Java Foundation Classes（JFC）的一部分。
 
@@ -41,7 +43,7 @@ java.lang.Object
 
 
 
-## 2. Swing实战
+## Swing实战
 
 ```Java
 import javax.swing.JButton;

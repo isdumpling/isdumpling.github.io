@@ -5,9 +5,11 @@ params:
   author: 一只饺子
 tags:
 - git
+categories: git
+image: post/img/2.jpg
 ---
 
-## 1. 与GitHub仓库建立连接并提交修改
+## 与GitHub仓库建立连接并提交修改
 
 1. SSH密钥配备完成且有相关权限
 2. 初始化本地仓库：`git init`
@@ -21,7 +23,7 @@ tags:
 	2. 添加提交说明：`git commit -m "你的提交说明"`
 	3. 推送到远程仓库：`git push -u origin main`
 
-## 2. 更改分支
+## 更改分支
 
 1. 查看本地分支（当前分支会用`*`标出）：`git branch`
 2. 查看所有分支（本地+远程跟踪分支）：`git branch -a`
