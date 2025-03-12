@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>高级数据库及应用 on 一只饺子</title><link>https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/</link><description>Recent content in 高级数据库及应用 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Thu, 13 Mar 2025 01:24:12 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;p>The important features of NoSQL:&lt;/p>
+&lt;ul>
+&lt;li>Schema Flexibility&lt;/li>
+&lt;li>Horizontal Scalability&lt;/li>
+&lt;li>High Availability&lt;/li>
+&lt;li>Performance&lt;/li>
+&lt;li>Diverse Data Models&lt;/li>
+&lt;li>Cost-Effectiveness&lt;/li>
+&lt;/ul>
+&lt;p>MongoDB features:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>data aggregation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ACID transactions&lt;/p>
+&lt;ul>
+&lt;li>Atomicity&lt;/li>
+&lt;li>Consistency&lt;/li>
+&lt;li>Isolation&lt;/li>
+&lt;li>Durability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>horizontal scaling&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Charts&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Relational Database VS NoSQL:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Relational Database&lt;/th>
+&lt;th>NoSQL&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

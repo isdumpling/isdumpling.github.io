@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 一只饺子</title><link>https://example.com/categories/git/</link><description>Recent content in Git on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 11 Mar 2025 15:19:48 +0800</lastBuildDate><atom:link href="https://example.com/categories/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git</title><link>https://example.com/p/git/</link><pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate><guid>https://example.com/p/git/</guid><description>&lt;img src="https://example.com/post/img/2.jpg" alt="Featured image of post git" />&lt;h2 id="与github仓库建立连接并提交修改">与GitHub仓库建立连接并提交修改
+&lt;/h2>&lt;ol>
+&lt;li>SSH密钥配备完成且有相关权限&lt;/li>
+&lt;li>初始化本地仓库：&lt;code>git init&lt;/code>&lt;/li>
+&lt;li>关联远程仓库：
+&lt;ol>
+&lt;li>HTTPS: &lt;code>git remote add origin https://github.com/username/repositoryname.git&lt;/code>&lt;/li>
+&lt;li>SSH:&lt;code>git remote add origin git@github.com:username/repositoryname.git&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>首次拉取文件：&lt;code>git pull origin main&lt;/code>&lt;/li>
+&lt;li>更改文件&lt;/li>
+&lt;li>提交更改到本地：
+&lt;ol>
+&lt;li>添加所有更改：&lt;code>git add .&lt;/code>&lt;/li>
+&lt;li>添加提交说明：&lt;code>git commit -m &amp;quot;你的提交说明&amp;quot;&lt;/code>&lt;/li>
+&lt;li>推送到远程仓库：&lt;code>git push -u origin main&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="更改分支">更改分支
+&lt;/h2>&lt;ol>
+&lt;li>查看本地分支（当前分支会用&lt;code>*&lt;/code>标出）：&lt;code>git branch&lt;/code>&lt;/li>
+&lt;li>查看所有分支（本地+远程跟踪分支）：&lt;code>git branch -a&lt;/code>&lt;/li>
+&lt;li>切换现有分支
+&lt;ol>
+&lt;li>直接切换：&lt;code>git checkout 分支名&lt;/code>。如：切换到&lt;code>develop&lt;/code>分支：&lt;code>git checkout develop&lt;/code>&lt;/li>
+&lt;li>拉取远程分支并切换：&lt;code>git checkout -b 本地分支名 origin/远程分支名&lt;/code>。如：同步远程的&lt;code>feature/login&lt;/code>分支到本地：&lt;code>git checkout -b feature/login origin/feature/login&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>创建并切换到新分支：
+&lt;ol>
+&lt;li>创建新分支并立即切换：&lt;code>git checkout -b 新分支名&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>推送新分支到远程仓库：&lt;code>git push orign 分支名&lt;/code>&lt;/li>
+&lt;/ol></description></item></channel></rss>

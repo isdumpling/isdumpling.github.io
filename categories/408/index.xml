@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>408 on 一只饺子</title><link>https://example.com/categories/408/</link><description>Recent content in 408 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><atom:link href="https://example.com/categories/408/index.xml" rel="self" type="application/rss+xml"/><item><title>操作系统（王道）第一章：计算机系统概述</title><link>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid><description>&lt;img src="https://example.com/post/img/11.jpg" alt="Featured image of post 操作系统（王道）第一章：计算机系统概述" />&lt;h2 id="操作系统的基本概念">操作系统的基本概念
+&lt;/h2>&lt;h3 id="操作系统的基本概念-1">操作系统的基本概念
+&lt;/h3>&lt;p>&lt;!-- raw HTML omitted -->操作系统&lt;!-- raw HTML omitted -->是指&lt;!-- raw HTML omitted -->控制和管理&lt;!-- raw HTML omitted -->整个计算机系统的&lt;!-- raw HTML omitted -->硬件与软件资源&lt;!-- raw HTML omitted -->，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件&lt;!-- raw HTML omitted -->提供方便接口与环境&lt;!-- raw HTML omitted -->的程序集合。操作系统是计算机系统中最基本的系统软件&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84.png"
+loading="lazy"
+alt="计算机系统的层次结构"
+>&lt;/p>
+&lt;h3 id="操作系统的功能和目标">操作系统的功能和目标
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>操作系统作为计算机系统资源的管理者&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>处理机管理&lt;/li>
+&lt;li>存储器管理&lt;/li>
+&lt;li>文件管理&lt;/li>
+&lt;li>设备管理&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>操作系统作为用户与计算机硬件系统之间的接口&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>命令接口&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>联机命令接口&lt;/strong>：也称&lt;strong>交互式命令接口&lt;/strong>，适用于分时或实时系统的接口（说一句话，做一件事）&lt;/li>
+&lt;li>&lt;strong>脱机命令接口&lt;/strong>：也称&lt;strong>批处理命令接口&lt;/strong>，适用于批处理系统（说一堆话，做一堆事）&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>程序接口&lt;/strong>
+&lt;ol>
+&lt;li>由一组&lt;strong>系统调用&lt;/strong>（也称&lt;strong>广义指令&lt;/strong>）组成。用户在程序中使用这些系统调用来请求操作系统为其提供服务&lt;/li>
+&lt;li>图形接口不是操作系统的一部分，但图形接口所调用的系统调用命令是操作系统的一部分&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>操作系统实现了对计算机资源的扩充&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>我们通常将覆盖了软件的机器称为&lt;strong>扩充机器&lt;/strong>或&lt;strong>虚拟机&lt;/strong>&lt;/li>
+&lt;li>没有任何软件支持的计算机称为裸机&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="操作系统的特征">操作系统的特征
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>并发&lt;/strong>：两个或多个事件在同一时间间隔内发生。注意区分并发和并行[^1]&lt;/li>
+&lt;li>&lt;strong>共享&lt;/strong>：指系统中的资源可供内存中多个并发执行的进程共同使用
+&lt;ol>
+&lt;li>&lt;strong>互斥共享&lt;/strong>：一段时间内只允许一个进程访问&lt;/li>
+&lt;li>&lt;strong>同时访问&lt;/strong>：宏观上“同时”，微观上可能是交替的对该资源进行访问，即“分时共享”&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>虚拟&lt;/strong>：将一个物理上的实体变为若干逻辑上的对应物。实现虚拟的技术称为&lt;!-- raw HTML omitted -->虚拟技术&lt;!-- raw HTML omitted -->
+&lt;ol>
+&lt;li>&lt;strong>时分复用技术&lt;/strong>：如虚拟处理器。将物理资源（如CPU）的使用时间划分为多个时间片（Time Slice），供多个用户或进程轮流使用。让每个进程误以为自己独占CPU资源，而实际是分时共享。&lt;/li>
+&lt;li>&lt;strong>空分复用技术&lt;/strong>：如虚拟存储器。将物理资源（如内存或磁盘）划分为独立区域，分配给不同进程使用。为每个进程提供连续且独立的地址空间，隐藏物理内存的碎片化和容量限制。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>异步&lt;/strong>：多道程序环境允许多个程序并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停的，他以不可预知的速度向前推进，这就是进程的异步性&lt;/li>
+&lt;/ol>
+&lt;p>并发和共享是操作系统两个&lt;!-- raw HTML omitted -->最基本&lt;!-- raw HTML omitted -->的特征，两者之间互为存在的条件&lt;/p>
+&lt;h2 id="操作系统发展历程">操作系统发展历程
+&lt;/h2>&lt;h3 id="手工操作阶段">手工操作阶段
+&lt;/h3>&lt;ul>
+&lt;li>此阶段无操作系统&lt;/li>
+&lt;li>两个突出的缺点：
+&lt;ol>
+&lt;li>用户独占全机，资源利用率低&lt;/li>
+&lt;li>CPU等待手工操作，CPU的利用不充分&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="批处理阶段">批处理阶段
+&lt;/h3>&lt;ul>
+&lt;li>操作系统开始出现&lt;/li>
+&lt;/ul>
+&lt;h4 id="单道批处理系统">单道批处理系统
+&lt;/h4>&lt;p>&lt;strong>主要特征&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>自动性&lt;/strong>：在顺利的情况下，磁带上的一批作业能自动的逐个运行，而无须人工干预&lt;/li>
+&lt;li>&lt;strong>顺序性&lt;/strong>：磁带上的各道作业顺序地进入内存，先调入内存的先完成&lt;/li>
+&lt;li>&lt;strong>单道性&lt;/strong>：内存中仅有一道程序运行&lt;/li>
+&lt;/ol>
+&lt;h4 id="多道批处理系统">多道批处理系统
+&lt;/h4>&lt;p>&lt;strong>主要特征&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>多道&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>宏观上并行&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>微观上串行&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>优点&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>资源利用率高&lt;/strong>，多道程序共享计算机资源，从而使各种资源得到充分的利用&lt;/li>
+&lt;li>&lt;strong>系统吞吐量大&lt;/strong>，CPU和其他资源保持“忙碌”状态&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>缺点&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>用户时间响应较长&lt;/li>
+&lt;li>不提供人机交互能力&lt;/li>
+&lt;li>用户既不能了解自己的程序的运行情况，又不能控制计算机&lt;/li>
+&lt;/ol>
+&lt;h3 id="分时操作系统">分时操作系统
+&lt;/h3>&lt;p>所谓&lt;!-- raw HTML omitted -->分时技术&lt;!-- raw HTML omitted -->，是指将处理器的运行时间分成很短的时间片，按时间片轮流将处理器分配给各联机作业使用&lt;/p>
+&lt;p>分时系统的主要特点：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>同时性&lt;/strong>。同时性也称&lt;!-- raw HTML omitted -->多路性&lt;!-- raw HTML omitted -->，指允许多个终端用户同时使用一台计算机&lt;/li>
+&lt;li>&lt;strong>交互性&lt;/strong>。用户使用终端采用人机对话的方式直接控制程序运行，与同程序进行交互&lt;/li>
+&lt;li>&lt;strong>独立性&lt;/strong>。系统中多个用户独立的进行操作，互不干扰&lt;/li>
+&lt;li>&lt;strong>及时性&lt;/strong>。用户请求能在很短时间内获得响应&lt;/li>
+&lt;/ol>
+&lt;h3 id="实时操作系统">实时操作系统
+&lt;/h3>&lt;p>为了能在某个时间限制内完成某些紧急任务而不需要时间片排队，诞生了实时操作系统&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>硬实时系统&lt;/strong>：某个动作必须绝对地在规定的时刻发生&lt;/li>
+&lt;li>&lt;strong>软实时系统&lt;/strong>：能够接受偶尔违反时间规定且不会引起任何永久性的损害&lt;/li>
+&lt;/ol>
+&lt;h3 id="网络操作系统和分布式计算机系统">网络操作系统和分布式计算机系统
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>网络操作系统&lt;/strong>把网络中的各台计算机有机地结合起来，实现各台计算机之间的通信和数据传输等功能，实现网络中各种资源的共享&lt;/li>
+&lt;li>&lt;strong>分布式计算机系统&lt;/strong>由多台计算机组成，并满足以下条件
+&lt;ul>
+&lt;li>系统中任意两台计算机通过通信方式交换信息&lt;/li>
+&lt;li>每台计算机都具有同等的地位&lt;/li>
+&lt;li>每台计算机上的资源为所有用户共享&lt;/li>
+&lt;li>系统中的任意台计算机都可以构成一个子系统，并且能够重构&lt;/li>
+&lt;li>任何有工作都可以分布在几台计算机上，由它们并行工作、协同完成&lt;/li>
+&lt;li>&lt;strong>特点&lt;/strong>：分布性和并行性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="个人计算机操作系统">个人计算机操作系统
+&lt;/h3>&lt;p>如Windows、Linux和MacOS&lt;/p>
+&lt;h2 id="操作系统的运行环境">操作系统的运行环境
+&lt;/h2>&lt;h3 id="处理器运行模式">处理器运行模式
+&lt;/h3>&lt;blockquote>
+&lt;p>计算机“指令”和高级语言“代码”是两码事。CPU看不懂高级语言程序的含义，需要将它们“翻译”成CPU能懂的机器语言，即一条条“指令”&lt;/p>&lt;/blockquote>
+&lt;p>计算机系统中，通常CPU执行两种程序&lt;/p>
+&lt;ol>
+&lt;li>操作系统内核程序&lt;/li>
+&lt;li>用户自编程序&lt;/li>
+&lt;/ol>
+&lt;p>前者是后者的管理者，要执行一些&lt;!-- raw HTML omitted -->特权指令&lt;!-- raw HTML omitted -->。后者出于安全考虑不能执行这些特权指令&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>特权指令&lt;/strong>，指不允许用户直接使用的指令&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>非特权指令&lt;/strong>，指允许用户直接使用的指令&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CPU的运行模式分为&lt;!-- raw HTML omitted -->用户态（目态）&lt;!-- raw HTML omitted -->和&lt;!-- raw HTML omitted -->内核态（管态、核心态）&lt;!-- raw HTML omitted -->。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>应用程序运行在用户态，操作系统内核程序运行在内核态&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>内核&lt;/strong>是计算机上配置的底层软件，管理着系统的各种资源。大多数操作系统的内核包括以下4个内容&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>时钟管理&lt;/strong>
+&lt;ol>
+&lt;li>计时&lt;/li>
+&lt;li>通过时钟中断，实现进程的切换&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>中断机制&lt;/strong>
+&lt;ol>
+&lt;li>初衷：提高多道程序运行时的CPU利用率&lt;/li>
+&lt;li>发展：形成多种类型，&lt;!-- raw HTML omitted -->成为操作系统各项操作的基础&lt;!-- raw HTML omitted -->&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>原语&lt;/strong>
+&lt;ol>
+&lt;li>处于操作系统的底层，是&lt;!-- raw HTML omitted -->最接近&lt;!-- raw HTML omitted -->硬件的部分&lt;/li>
+&lt;li>这些程序的运行具有原子性，其操作只能一气呵成&lt;/li>
+&lt;li>这些程序的运行时间都较短，而且调用频繁&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>系统控制的数据结构及处理&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>进程管理&lt;/strong>。进程状态管理、进程调度和分派、创建与撤销进程控制块等&lt;/li>
+&lt;li>&lt;strong>存储器管理&lt;/strong>。存储器的空间分配和回收、内存信息保护程序、代码对换程序等&lt;/li>
+&lt;li>&lt;strong>设备管理&lt;/strong>。缓冲区管理、设备分配和回收等&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="中断和异常的概念">中断和异常的概念
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>中断和异常的定义&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>中断&lt;/strong>也称&lt;!-- raw HTML omitted -->外中断&lt;!-- raw HTML omitted -->，是指来自CPU执行指令外部的事件&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>异常&lt;/strong>也称&lt;!-- raw HTML omitted -->内中断&lt;!-- raw HTML omitted -->，是指来自CPU执行指令内部的事件引起的事件&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>中断和异常的分类&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>外中断&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>可屏蔽中断&lt;/strong>：指通过INTR(Interrupt Request)线发出的中断请求，通过改变屏蔽字可以实现多重中断，从而使得中断处理更加灵活&lt;/li>
+&lt;li>&lt;strong>不可屏蔽中断&lt;/strong>：指通过NMI(Non-Maskable Interrupt)线发出的中断请求&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>异常&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>故障&lt;/strong>(Fault)：由指令引起的异常&lt;/li>
+&lt;li>&lt;strong>自陷&lt;/strong>(Trap)：一种事先安排的“异常”事件&lt;/li>
+&lt;li>&lt;strong>终止&lt;/strong>(Abort)：出现了使得CPU无法继续执行的硬件故障&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>故障异常和自陷异常属于软件中断，终止属于硬件中断&lt;/p>&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="中断和异常的处理过程">中断和异常的处理过程
+&lt;/h3>&lt;ol>
+&lt;li>CPU在执行用户指令的第$i$条指令时检测到一个异常事件，或在执行第$i$条指令后发现一个中断请求信号&lt;/li>
+&lt;li>CPU打断当前用户程序&lt;/li>
+&lt;li>转到相应中断或异常程序去处理
+&lt;ol>
+&lt;li>若能解决，则在处理程序最后CPU返回指令，回到第$i$条指令或第$i+1$条指令继续执行&lt;/li>
+&lt;li>若不能解决，则终止用户程序&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="系统调用">系统调用
+&lt;/h3>&lt;p>系统调用按&lt;strong>功能&lt;/strong>大致可分如下几类：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>设备管理&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>文件管理&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>进程控制&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>进程通信&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>内存管理&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>系统调用的&lt;strong>处理过程&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>第一步&lt;/strong>
+&lt;ol>
+&lt;li>将系统调用号和所需参数压入堆栈&lt;/li>
+&lt;li>调用实际的调用指令&lt;/li>
+&lt;li>执行陷入指令，将CPU从用户态转为内核态&lt;/li>
+&lt;li>硬件和操作系统内核程序保护被中断的现场&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>第二步&lt;/strong>
+&lt;ol>
+&lt;li>分析系统调用类型&lt;/li>
+&lt;li>转入相应系统调用处理子程序&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>第三步&lt;/strong>
+&lt;ol>
+&lt;li>系统调用处理子程序执行结束后&lt;/li>
+&lt;li>恢复被中断的或设置新进程的CPU现场&lt;/li>
+&lt;li>返回被中断进程或新进程&lt;/li>
+&lt;li>继续往下执行&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="操作系统结构">操作系统结构
+&lt;/h2>&lt;h3 id="分层法">分层法
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>将操作系统分为若干层，底层（层0）为硬件，顶层（层N）为用户接口，每层只能调用紧邻它的底层的功能和服务（单向依赖）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>分层法的&lt;strong>优点&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>便于系统的调试和验证，简化了系统的设计和实现&lt;/li>
+&lt;li>易扩充和易维护&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>分层法的&lt;strong>缺点&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>合理定义各层比较困难&lt;/li>
+&lt;li>效率较差&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="模块化">模块化
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>将操作系统按功能划分为若干具有一定独立性的模块。每个模块具有某方面的管理功能，并规定好各模块间的接口，使各模块之间能够通过接口进行通信。这种设计方法被称为&lt;!-- raw HTML omitted -->模块-接口法&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>衡量模块独立性主要有两个标准&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>内聚性&lt;/strong>，模块内部各部分间联系的紧密程度。内聚性越高，模块独立性越好&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>耦合度&lt;/strong>，模块间相互联系和相互影响的程度。耦合度越低，模块独立性越好&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>模块化的&lt;strong>优点&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>提高了操作系统设计的正确性、可理解性和可维护性&lt;/li>
+&lt;li>增强了操作系统的可适应性&lt;/li>
+&lt;li>加速了操作系统的开发过程&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>模块化的&lt;strong>缺点&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>模块间的接口规定很难满足对接口的实际需求&lt;/li>
+&lt;li>无法找到一个可靠的决定顺序&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="宏内核">宏内核
+&lt;/h3>&lt;p>宏内核，也称&lt;!-- raw HTML omitted -->单内核&lt;!-- raw HTML omitted -->或&lt;!-- raw HTML omitted -->大内核&lt;!-- raw HTML omitted -->，是指将系统的主要功能模块都作为一个紧密联系的整体运行在内核态，从而为用户程序提供高性能的系统服务&lt;/p>
+&lt;h3 id="微内核">微内核
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>微内核构架&lt;/strong>，是指将内核中最基本的功能保留在内核，而将那些不需要在内核态执行的功能移到用户态执行，从而降低内核的设计复杂性&lt;/li>
+&lt;li>微内核架构将操作系统分为&lt;!-- raw HTML omitted -->微内核&lt;!-- raw HTML omitted -->和&lt;!-- raw HTML omitted -->多个服务器&lt;!-- raw HTML omitted -->
+&lt;ul>
+&lt;li>&lt;strong>微内核&lt;/strong>
+&lt;ul>
+&lt;li>与硬件紧密相关的部分&lt;/li>
+&lt;li>一些较基本的功能&lt;/li>
+&lt;li>客户和服务器之间的通信&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>服务器&lt;/strong>
+&lt;ul>
+&lt;li>绝大部分功能都存放在服务器&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>微内核的&lt;strong>基本功能&lt;/strong>
+&lt;ul>
+&lt;li>进程(线程)管理&lt;/li>
+&lt;li>低级存储器管理&lt;/li>
+&lt;li>中断和陷入处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>微内核的&lt;strong>特点&lt;/strong>
+&lt;ul>
+&lt;li>扩展性和灵活性&lt;/li>
+&lt;li>可靠性和安全性&lt;/li>
+&lt;li>可移植性&lt;/li>
+&lt;li>分布式计算&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="外核">外核
+&lt;/h3>&lt;ul>
+&lt;li>在内核态中运行。任务是为虚拟机分配资源，并检查这些资源使用的安全性&lt;/li>
+&lt;li>外核机制的&lt;strong>优点&lt;/strong>
+&lt;ul>
+&lt;li>减少了资源的“映射层”&lt;/li>
+&lt;li>将多道程序与用户操作系统代码加以分隔，而且相应的负载并不重&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="操作系统引导">操作系统引导
+&lt;/h2>&lt;ol>
+&lt;li>激活CPU&lt;/li>
+&lt;li>硬件自检&lt;/li>
+&lt;li>加载带有操作系统的硬盘&lt;/li>
+&lt;li>加载主引导记录&lt;/li>
+&lt;li>扫描硬盘分区表&lt;/li>
+&lt;li>加载分区引导记录&lt;/li>
+&lt;li>加载启动管理器&lt;/li>
+&lt;li>加载操作系统&lt;/li>
+&lt;/ol>
+&lt;h2 id="虚拟机">虚拟机
+&lt;/h2>&lt;p>虚拟机是指利用虚拟化技术，将一台物理机器虚拟化为多台虚拟机器，通过隐藏特定计算平台的实际物理特性，为用户提供抽象的、统一的、模拟的计算环境&lt;/p>
+&lt;h3 id="第一类虚拟机管理程序">第一类虚拟机管理程序
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/%e7%ac%ac%e4%b8%80%e7%b1%bb%e8%99%9a%e6%8b%9f%e6%9c%ba.jpg"
+loading="lazy"
+alt="第一类虚拟机"
+>&lt;/p>
+&lt;ul>
+&lt;li>直接运行在硬件之上，能直接控制和分配物理资源&lt;/li>
+&lt;li>运行在最高特权级(Ring 0)，可以执行最高特权的指令&lt;/li>
+&lt;/ul>
+&lt;h3 id="第二类虚拟机管理程序">第二类虚拟机管理程序
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/%e7%ac%ac%e4%ba%8c%e7%b1%bb%e8%99%9a%e6%8b%9f%e6%9c%ba.jpg"
+loading="lazy"
+alt="第二类虚拟机"
+>&lt;/p>
+&lt;ul>
+&lt;li>运行在Host OS之上，依赖于Host OS为其分配物理资源&lt;/li>
+&lt;li>运行在用户态、部分运行在内核态。GuestOS发出的系统调用会被VMM截获，并转化为VMM对HostOS的系统调用&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习基础 on 一只饺子</title><link>https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</link><description>Recent content in 机器学习基础 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><atom:link href="https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml"/><item><title>对于机器学习公式的例子</title><link>https://example.com/p/%E5%AF%B9%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%AC%E5%BC%8F%E7%9A%84%E4%BE%8B%E5%AD%90/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E5%AF%B9%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%AC%E5%BC%8F%E7%9A%84%E4%BE%8B%E5%AD%90/</guid><description>&lt;img src="https://example.com/post/img/3.jpg" alt="Featured image of post 对于机器学习公式的例子" />&lt;h2 id="得到权重的值">得到权重的值
+&lt;/h2>&lt;p>以下是一个 &lt;strong>单层神经网络（感知机）&lt;/strong> 的完整示例，通过 &lt;strong>手动模拟训练过程&lt;/strong>，展示如何从数据中学习权重。我们以 &lt;strong>房价预测&lt;/strong> 为例，假设数据仅包含一个样本，目标是让模型学会调整权重和偏置。&lt;/p>
+&lt;h3 id="问题设定">&lt;strong>问题设定&lt;/strong>
+&lt;/h3>&lt;h4 id="输入特征">&lt;strong>输入特征&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>$ x_1 $（面积）：1（标准化后的值，如100平方米）&lt;/li>
+&lt;li>$ x_2 $（房龄）：1（标准化后的值，如5年）&lt;/li>
+&lt;/ul>
+&lt;h4 id="真实输出">&lt;strong>真实输出&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>$ y_{\text{true}} = 3 $（单位：万元）&lt;/li>
+&lt;/ul>
+&lt;h4 id="模型结构">&lt;strong>模型结构&lt;/strong>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>线性模型&lt;/strong>：$ y_{\text{pred}} = w_1 x_1 + w_2 x_2 + b $&lt;/li>
+&lt;li>&lt;strong>初始参数&lt;/strong>（随机初始化）：
+&lt;ul>
+&lt;li>权重：$ w_1 = 0.5 $, $ w_2 = -0.3 $&lt;/li>
+&lt;li>偏置：$ b = 0.2 $&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="目标">&lt;strong>目标&lt;/strong>
+&lt;/h4>&lt;p>通过梯度下降，调整 $ w_1, w_2, b $，使得 $ y_{\text{pred}} $ 接近真实值 3。&lt;/p>
+&lt;h3 id="训练过程">&lt;strong>训练过程&lt;/strong>
+&lt;/h3>&lt;h4 id="前向传播计算预测值">&lt;strong>前向传播（计算预测值）&lt;/strong>
+&lt;/h4>&lt;p>$$
+y_{\text{pred}} = w_1 x_1 + w_2 x_2 + b = 0.5 \times 1 + (-0.3) \times 1 + 0.2 = 0.5 - 0.3 + 0.2 = 0.4
+$$
+此时预测值为 0.4 万元，与真实值 3 相差较大。&lt;/p>
+&lt;h4 id="计算损失均方误差">&lt;strong>计算损失（均方误差）&lt;/strong>
+&lt;/h4>&lt;p>$$
+\text{Loss} = (y_{\text{true}} - y_{\text{pred}})^2 = (3 - 0.4)^2 = 6.76
+$$&lt;/p>
+&lt;h4 id="反向传播计算梯度">&lt;strong>反向传播（计算梯度）&lt;/strong>
+&lt;/h4>&lt;p>对每个参数求偏导（链式法则）：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>损失对 $ w_1 $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial w_1} = 2(y_{\text{pred}} - y_{\text{true}}) \cdot x_1 = 2(0.4 - 3) \times 1 = -5.2
+$$&lt;/li>
+&lt;li>&lt;strong>损失对 $ w_2 $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial w_2} = 2(y_{\text{pred}} - y_{\text{true}}) \cdot x_2 = 2(0.4 - 3) \times 1 = -5.2
+$$&lt;/li>
+&lt;li>&lt;strong>损失对 $ b $ 的梯度&lt;/strong>：
+$$
+\frac{\partial \text{Loss}}{\partial b} = 2(y_{\text{pred}} - y_{\text{true}}) = 2(0.4 - 3) = -5.2
+$$&lt;/li>
+&lt;/ul>
+&lt;h4 id="更新参数梯度下降">&lt;strong>更新参数（梯度下降）&lt;/strong>
+&lt;/h4>&lt;p>设定学习率 $ \eta = 0.1 $，更新规则：
+$$
+w_{\text{new}} = w_{\text{old}} - \eta \cdot \frac{\partial \text{Loss}}{\partial w}
+$$&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>更新 $ w_1 $&lt;/strong>：
+$$
+w_1 = 0.5 - 0.1 \times (-5.2) = 0.5 + 0.52 = 1.02
+$$&lt;/li>
+&lt;li>&lt;strong>更新 $ w_2 $&lt;/strong>：
+$$
+w_2 = -0.3 - 0.1 \times (-5.2) = -0.3 + 0.52 = 0.22
+$$&lt;/li>
+&lt;li>&lt;strong>更新 $ b $&lt;/strong>：
+$$
+b = 0.2 - 0.1 \times (-5.2) = 0.2 + 0.52 = 0.72
+$$&lt;/li>
+&lt;/ul>
+&lt;h3 id="更新后的预测">&lt;strong>更新后的预测&lt;/strong>
+&lt;/h3>&lt;p>使用新参数重新计算预测值：
+$$
+y_{\text{pred}} = 1.02 \times 1 + 0.22 \times 1 + 0.72 = 1.02 + 0.22 + 0.72 = 1.96
+$$
+损失更新为：
+$$
+\text{Loss} = (3 - 1.96)^2 = 1.08
+$$
+&lt;strong>仅一次迭代，损失从 6.76 下降到 1.08&lt;/strong>，说明权重调整有效。&lt;/p>
+&lt;h3 id="多轮迭代后的结果">&lt;strong>多轮迭代后的结果&lt;/strong>
+&lt;/h3>&lt;p>重复上述过程（假设学习率不变）：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>迭代次数&lt;/th>
+&lt;th>$ w_1 $&lt;/th>
+&lt;th>$ w_2 $&lt;/th>
+&lt;th>$ b $&lt;/th>
+&lt;th>$ y_{\text{pred}} $&lt;/th>
+&lt;th>Loss&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;td>-0.3&lt;/td>
+&lt;td>0.2&lt;/td>
+&lt;td>0.4&lt;/td>
+&lt;td>6.76&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>1.02&lt;/td>
+&lt;td>0.22&lt;/td>
+&lt;td>0.72&lt;/td>
+&lt;td>1.96&lt;/td>
+&lt;td>1.08&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>1.45&lt;/td>
+&lt;td>0.65&lt;/td>
+&lt;td>1.17&lt;/td>
+&lt;td>2.60&lt;/td>
+&lt;td>0.16&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>1.68&lt;/td>
+&lt;td>0.89&lt;/td>
+&lt;td>1.43&lt;/td>
+&lt;td>2.96&lt;/td>
+&lt;td>0.0016&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>经过3次迭代，预测值 $ y_{\text{pred}} = 2.96 $ 接近真实值3，损失降至0.0016。&lt;/p>
+&lt;h3 id="关键结论">&lt;strong>关键结论&lt;/strong>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>权重的本质&lt;/strong>：模型通过梯度下降，沿着损失减小的方向调整权重，逐步逼近真实值。&lt;/li>
+&lt;li>&lt;strong>学习率的作用&lt;/strong>：学习率 $ \eta $ 控制参数更新步幅（过大可能导致震荡，过小收敛慢）。&lt;/li>
+&lt;li>&lt;strong>实际训练&lt;/strong>：真实场景中需使用大量数据分批训练，而非单个样本。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>附：Python代码模拟&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 初始参数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">w1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">w2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mf">0.3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">0.2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">x1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y_true&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">eta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">epoch&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 前向传播&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">y_pred&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">w1&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">w2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x2&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">b&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">y_true&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_pred&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 计算梯度&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_dw1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_dw2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">x2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dL_db&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y_pred&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">y_true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 更新参数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">w1&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_dw1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">w2&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_dw2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">b&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">eta&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">dL_db&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;Epoch &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">epoch&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">: w1=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">w1&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, w2=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">w2&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, b=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, y_pred=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">y_pred&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.2f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, Loss=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">loss&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">.4f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="y--b--sum_i-c_i--textsigmoidb_i--sum_j-w_ij-x_j">$y = b + \sum_i c_i , \text{sigmoid}(b_i + \sum_j w_{ij} x_j)$
+&lt;/h2>&lt;p>假设我们要根据房屋的两个特征预测房价&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>特征1($x_1$)&lt;/strong>：面积（平方米）&lt;/li>
+&lt;li>&lt;strong>特征2($x_2$)&lt;/strong>：房龄（年）&lt;/li>
+&lt;/ul>
+&lt;p>我们设计一个简单的神经网络，结构如下：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>输入层：&lt;/strong> 两个特征（$x_1,x_2$）&lt;/li>
+&lt;li>&lt;strong>隐藏层&lt;/strong>： 2个神经元（$i=1,2$）&lt;/li>
+&lt;li>&lt;strong>输出层&lt;/strong>： 1个输出（房价$y$）&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-1设定参数值">step 1：设定参数值
+&lt;/h3>&lt;p>假设模型已经训练完成，参数如下：&lt;/p>
+&lt;p>&lt;strong>隐藏层参数&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>神经元&lt;/th>
+&lt;th>权重$w_{i1}$（面积权重）&lt;/th>
+&lt;th>权重$w_{i2}$(房龄权重)&lt;/th>
+&lt;th>偏置$b_i$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1$(i=1)$&lt;/td>
+&lt;td>0.8&lt;/td>
+&lt;td>-0.2&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2$(i=2)$&lt;/td>
+&lt;td>0.5&lt;/td>
+&lt;td>-0.6&lt;/td>
+&lt;td>-0.3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>输出层参数&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>权重$c_i$&lt;/th>
+&lt;th>偏置$b$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$c_1=10$&lt;/td>
+&lt;td>$b=5$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$c_2=-8$&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="step-2输出数据">step 2：输出数据
+&lt;/h3>&lt;p>假设有一套房子的特征值为：&lt;/p>
+&lt;ul>
+&lt;li>面积$x_1=100m^2$&lt;/li>
+&lt;li>房龄$x_2=5年$&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-3计算隐藏层输出">step 3：计算隐藏层输出
+&lt;/h3>&lt;p>对每个隐藏层神经元，计算$z_i,=,b_i,+,w_{i1}x_1,+,w_{i2}x_2$，然后通过$sigmoid$激活函数得到$a_i=sigmoid(z_i)$&lt;/p>
+&lt;p>&lt;strong>神经元1($i=1$)的计算&lt;/strong>&lt;/p>
+&lt;p>$$
+\begin{aligned}
+z_1 = b_1 + w_{11}x_1 + w_{12}x_2 = 0.5 + 0.8 \times 100 + (-0.2) \times 5 = 0.5 + 80 - 1 = 79.5\
+a_1 = \text{sigmoid}(79.5) = \frac{1}{1 + e^{-79.5}} \approx 1.0 \quad (\text{几乎完全激活})
+\end{aligned}
+$$&lt;/p>
+&lt;p>&lt;strong>神经元2($i=2$)的计算&lt;/strong>&lt;/p>
+&lt;p>$$
+\begin{aligned}
+z_2 = b_2 + w_{21}x_1 + w_{22}x_2 = -0.3 + 0.5 \times 100 + (-0.6) \times 5 = -0.3 + 50 - 3 = 46.7\
+a_2 = \text{sigmoid}(46.7) = \frac{1}{1 + e^{-46.7}} \approx 1.0 \quad (\text{几乎完全激活})
+\end{aligned}
+$$&lt;/p>
+&lt;h3 id="step-4计算输出层结果">step 4：计算输出层结果
+&lt;/h3>&lt;p>$$
+y = b + c_1 a_1 + c_2 a_2 = 5 + 10 \times 1.0 + (-8) \times 1.0 = 5 + 10 - 8 = 7
+$$&lt;/p>
+&lt;h2 id="lthetaapprox-ltheta-ltheta---thetagfrac12theta-thetaththeta-theta-">$L(\theta)\approx L(\theta ^{&amp;rsquo;})+L(\theta - \theta^{&amp;rsquo;})g+\frac{1}{2}(\theta-\theta^{&amp;rsquo;})^{T}H(\theta-\theta ^{&amp;rsquo;})$
+&lt;/h2>&lt;p>由于&lt;del>线性代数学艺不精&lt;/del>热爱线性代数，重新推导这个公式&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>回忆一维泰勒展开&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>例如，在$x&amp;rsquo;$附件展开$f(x)$
+$$
+f(x)\approx f(x&amp;rsquo;)+f&amp;rsquo;(x&amp;rsquo;)(x-x&amp;rsquo;)+\frac{1}{2}f&amp;quot;(x&amp;rsquo;)(x-x&amp;rsquo;)^2
+$$&lt;/p>
+&lt;p>对于泰勒展开公式：
+$$
+f(x_0,x)=\sum_{i=0}^n \frac{f^{(i)}(x_0)}{i!}(x-x_0)^i
+$$&lt;/p>
+&lt;ol start="2">
+&lt;li>&lt;strong>扩展到多维情况（参数$\theta$是向量）&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>$L(\theta)\approx L(\theta ^{&amp;rsquo;})+L(\theta - \theta^{&amp;rsquo;})g+\frac{1}{2}(\theta-\theta^{&amp;rsquo;})^{T}H(\theta-\theta ^{&amp;rsquo;})$&lt;/p>
+&lt;p>在多维情况下，参数是向量$\theta = [\theta_1,\theta_2,&amp;hellip;\theta_n]^T$，梯度$g$是一阶导数的推广&lt;/p>
+&lt;p>对于&lt;strong>Hessian&lt;/strong>矩阵，是多元函数的二阶偏导数构成的矩阵
+$$
+H = \nabla^2 f = \begin{bmatrix}
+\frac{\partial^2 f}{\partial \theta_1^2} &amp;amp; \frac{\partial^2 f}{\partial \theta_1 \partial \theta_2} &amp;amp; \cdots &amp;amp; \frac{\partial^2 f}{\partial \theta_1 \partial \theta_n} \
+\frac{\partial^2 f}{\partial \theta_2 \partial \theta_1} &amp;amp; \frac{\partial^2 f}{\partial \theta_2^2} &amp;amp; \cdots &amp;amp; \frac{\partial^2 f}{\partial \theta_2 \partial \theta_n} \
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \
+\frac{\partial^2 f}{\partial \theta_n \partial \theta_1} &amp;amp; \frac{\partial^2 f}{\partial \theta_n \partial \theta_2} &amp;amp; \cdots &amp;amp; \frac{\partial^2 f}{\partial \theta_n^2}
+\end{bmatrix}
+$$&lt;/p>
+&lt;p>&lt;strong>为什么需要转置 $(\theta - \theta&amp;rsquo;)^\top$？&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>维度匹配&lt;/strong>：假设 $\theta$ 是 $n \times 1$ 向量，梯度 $g$ 也是 $n \times 1$，Hessian H$ $H$是 $n \times n$。
+&lt;ul>
+&lt;li>一阶项：$(\theta - \theta &amp;lsquo;)^Tg$是$n \times 1$向量，梯度$g$也是$n\times 1$，Hessian $H$是$n \times n$（标量）
+&lt;ul>
+&lt;li>一阶项：$(\theta - \theta &amp;lsquo;)g$是$1\times n*n\times n * n \times 1=1\times 1$（标量）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数学必要性&lt;/strong>：转置确保矩阵乘法维度相容。&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>&lt;strong>一个具体的例子&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;h5 id="1-定义函数">&lt;strong>1. 定义函数&lt;/strong>
+&lt;/h5>&lt;p>设损失函数 $L(\theta) = \theta_1^2 + 2\theta_2^2 + \theta_1\theta_2$，参考点 $\theta&amp;rsquo; = [0, 0]^\top$。&lt;/p>
+&lt;h5 id="2-计算梯度-g">&lt;strong>2. 计算梯度 $g$&lt;/strong>
+&lt;/h5>&lt;p>$$
+g = \nabla L(\theta&amp;rsquo;) = \begin{bmatrix} 2\theta_1 + \theta_2 \ 4\theta_2 + \theta_1 \end{bmatrix} \bigg|_{\theta&amp;rsquo;=[0,0]} = \begin{bmatrix} 0 \ 0 \end{bmatrix}
+$$&lt;/p>
+&lt;h5 id="3-计算-hessian-矩阵-h">&lt;strong>3. 计算 Hessian 矩阵 $H$&lt;/strong>
+&lt;/h5>&lt;p>$$
+H = \nabla^2 L(\theta&amp;rsquo;) = \begin{bmatrix}
+\frac{\partial^2 L}{\partial \theta_1^2} &amp;amp; \frac{\partial^2 L}{\partial \theta_1 \partial \theta_2} \
+\frac{\partial^2 L}{\partial \theta_2 \partial \theta_1} &amp;amp; \frac{\partial^2 L}{\partial \theta_2^2}
+\end{bmatrix} = \begin{bmatrix} 2 &amp;amp; 1 \ 1 &amp;amp; 4 \end{bmatrix}
+$$&lt;/p>
+&lt;h5 id="4-泰勒展开公式">&lt;strong>4. 泰勒展开公式&lt;/strong>
+&lt;/h5>&lt;p>在 $\theta&amp;rsquo; = [0, 0]^\top$ 处展开：
+$$
+L(\theta) \approx \underbrace{0}&lt;em>{L(\theta&amp;rsquo;)} + \underbrace{(\theta - 0)^\top \begin{bmatrix} 0 \ 0 \end{bmatrix}}&lt;/em>{\text{一阶项}} + \frac{1}{2}(\theta - 0)^\top \begin{bmatrix} 2 &amp;amp; 1 \ 1 &amp;amp; 4 \end{bmatrix} (\theta - 0)
+$$&lt;/p>
+&lt;p>化简后：
+$$
+L(\theta) \approx \frac{1}{2}\theta^\top \begin{bmatrix} 2 &amp;amp; 1 \ 1 &amp;amp; 4 \end{bmatrix} \theta = \frac{1}{2}(2\theta_1^2 + 2\theta_1\theta_2 + 4\theta_2^2)
+$$&lt;/p>
+&lt;p>展开后与原函数一致：
+$$
+L(\theta) = \theta_1^2 + 2\theta_2^2 + \theta_1\theta_2
+$$&lt;/p></description></item></channel></rss>
