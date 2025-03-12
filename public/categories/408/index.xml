@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>408 on 一只饺子</title>
+        <link>http://localhost:1313/categories/408/</link>
+        <description>Recent content in 408 on 一只饺子</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>一只饺子</copyright><atom:link href="http://localhost:1313/categories/408/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>操作系统（王道）第一章：计算机系统概述</title>
+        <link>http://localhost:1313/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid>
+        <description>&lt;img src="http://localhost:1313/post/img/11.jpg" alt="Featured image of post 操作系统（王道）第一章：计算机系统概述" /&gt;&lt;h2 id=&#34;操作系统的基本概念&#34;&gt;操作系统的基本概念
+&lt;/h2&gt;&lt;h3 id=&#34;操作系统的基本概念-1&#34;&gt;操作系统的基本概念
+&lt;/h3&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;操作系统&lt;!-- raw HTML omitted --&gt;是指&lt;!-- raw HTML omitted --&gt;控制和管理&lt;!-- raw HTML omitted --&gt;整个计算机系统的&lt;!-- raw HTML omitted --&gt;硬件与软件资源&lt;!-- raw HTML omitted --&gt;，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件&lt;!-- raw HTML omitted --&gt;提供方便接口与环境&lt;!-- raw HTML omitted --&gt;的程序集合。操作系统是计算机系统中最基本的系统软件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;计算机系统的层次结构&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;操作系统的功能和目标&#34;&gt;操作系统的功能和目标
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;操作系统作为计算机系统资源的管理者&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;处理机管理&lt;/li&gt;
+&lt;li&gt;存储器管理&lt;/li&gt;
+&lt;li&gt;文件管理&lt;/li&gt;
+&lt;li&gt;设备管理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;操作系统作为用户与计算机硬件系统之间的接口&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;命令接口&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;联机命令接口&lt;/strong&gt;：也称&lt;strong&gt;交互式命令接口&lt;/strong&gt;，适用于分时或实时系统的接口（说一句话，做一件事）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;脱机命令接口&lt;/strong&gt;：也称&lt;strong&gt;批处理命令接口&lt;/strong&gt;，适用于批处理系统（说一堆话，做一堆事）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;程序接口&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;由一组&lt;strong&gt;系统调用&lt;/strong&gt;（也称&lt;strong&gt;广义指令&lt;/strong&gt;）组成。用户在程序中使用这些系统调用来请求操作系统为其提供服务&lt;/li&gt;
+&lt;li&gt;图形接口不是操作系统的一部分，但图形接口所调用的系统调用命令是操作系统的一部分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;操作系统实现了对计算机资源的扩充&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我们通常将覆盖了软件的机器称为&lt;strong&gt;扩充机器&lt;/strong&gt;或&lt;strong&gt;虚拟机&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;没有任何软件支持的计算机称为裸机&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;操作系统的特征&#34;&gt;操作系统的特征
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;并发&lt;/strong&gt;：两个或多个事件在同一时间间隔内发生。注意区分并发和并行[^1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;共享&lt;/strong&gt;：指系统中的资源可供内存中多个并发执行的进程共同使用
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;互斥共享&lt;/strong&gt;：一段时间内只允许一个进程访问&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;同时访问&lt;/strong&gt;：宏观上“同时”，微观上可能是交替的对该资源进行访问，即“分时共享”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚拟&lt;/strong&gt;：将一个物理上的实体变为若干逻辑上的对应物。实现虚拟的技术称为&lt;!-- raw HTML omitted --&gt;虚拟技术&lt;!-- raw HTML omitted --&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;时分复用技术&lt;/strong&gt;：如虚拟处理器。将物理资源（如CPU）的使用时间划分为多个时间片（Time Slice），供多个用户或进程轮流使用。让每个进程误以为自己独占CPU资源，而实际是分时共享。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空分复用技术&lt;/strong&gt;：如虚拟存储器。将物理资源（如内存或磁盘）划分为独立区域，分配给不同进程使用。为每个进程提供连续且独立的地址空间，隐藏物理内存的碎片化和容量限制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步&lt;/strong&gt;：多道程序环境允许多个程序并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停的，他以不可预知的速度向前推进，这就是进程的异步性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;并发和共享是操作系统两个&lt;!-- raw HTML omitted --&gt;最基本&lt;!-- raw HTML omitted --&gt;的特征，两者之间互为存在的条件&lt;/p&gt;
+&lt;h2 id=&#34;操作系统发展历程&#34;&gt;操作系统发展历程
+&lt;/h2&gt;&lt;h3 id=&#34;手工操作阶段&#34;&gt;手工操作阶段
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;此阶段无操作系统&lt;/li&gt;
+&lt;li&gt;两个突出的缺点：
+&lt;ol&gt;
+&lt;li&gt;用户独占全机，资源利用率低&lt;/li&gt;
+&lt;li&gt;CPU等待手工操作，CPU的利用不充分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;批处理阶段&#34;&gt;批处理阶段
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;操作系统开始出现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;单道批处理系统&#34;&gt;单道批处理系统
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;主要特征&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;自动性&lt;/strong&gt;：在顺利的情况下，磁带上的一批作业能自动的逐个运行，而无须人工干预&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;顺序性&lt;/strong&gt;：磁带上的各道作业顺序地进入内存，先调入内存的先完成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;单道性&lt;/strong&gt;：内存中仅有一道程序运行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;多道批处理系统&#34;&gt;多道批处理系统
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;主要特征&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;多道&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宏观上并行&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微观上串行&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;资源利用率高&lt;/strong&gt;，多道程序共享计算机资源，从而使各种资源得到充分的利用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统吞吐量大&lt;/strong&gt;，CPU和其他资源保持“忙碌”状态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用户时间响应较长&lt;/li&gt;
+&lt;li&gt;不提供人机交互能力&lt;/li&gt;
+&lt;li&gt;用户既不能了解自己的程序的运行情况，又不能控制计算机&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;分时操作系统&#34;&gt;分时操作系统
+&lt;/h3&gt;&lt;p&gt;所谓&lt;!-- raw HTML omitted --&gt;分时技术&lt;!-- raw HTML omitted --&gt;，是指将处理器的运行时间分成很短的时间片，按时间片轮流将处理器分配给各联机作业使用&lt;/p&gt;
+&lt;p&gt;分时系统的主要特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;同时性&lt;/strong&gt;。同时性也称&lt;!-- raw HTML omitted --&gt;多路性&lt;!-- raw HTML omitted --&gt;，指允许多个终端用户同时使用一台计算机&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;交互性&lt;/strong&gt;。用户使用终端采用人机对话的方式直接控制程序运行，与同程序进行交互&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;独立性&lt;/strong&gt;。系统中多个用户独立的进行操作，互不干扰&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;及时性&lt;/strong&gt;。用户请求能在很短时间内获得响应&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;实时操作系统&#34;&gt;实时操作系统
+&lt;/h3&gt;&lt;p&gt;为了能在某个时间限制内完成某些紧急任务而不需要时间片排队，诞生了实时操作系统&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;硬实时系统&lt;/strong&gt;：某个动作必须绝对地在规定的时刻发生&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;软实时系统&lt;/strong&gt;：能够接受偶尔违反时间规定且不会引起任何永久性的损害&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;网络操作系统和分布式计算机系统&#34;&gt;网络操作系统和分布式计算机系统
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;网络操作系统&lt;/strong&gt;把网络中的各台计算机有机地结合起来，实现各台计算机之间的通信和数据传输等功能，实现网络中各种资源的共享&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;分布式计算机系统&lt;/strong&gt;由多台计算机组成，并满足以下条件
+&lt;ul&gt;
+&lt;li&gt;系统中任意两台计算机通过通信方式交换信息&lt;/li&gt;
+&lt;li&gt;每台计算机都具有同等的地位&lt;/li&gt;
+&lt;li&gt;每台计算机上的资源为所有用户共享&lt;/li&gt;
+&lt;li&gt;系统中的任意台计算机都可以构成一个子系统，并且能够重构&lt;/li&gt;
+&lt;li&gt;任何有工作都可以分布在几台计算机上，由它们并行工作、协同完成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：分布性和并行性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;个人计算机操作系统&#34;&gt;个人计算机操作系统
+&lt;/h3&gt;&lt;p&gt;如Windows、Linux和MacOS&lt;/p&gt;
+&lt;h2 id=&#34;操作系统的运行环境&#34;&gt;操作系统的运行环境
+&lt;/h2&gt;&lt;h3 id=&#34;处理器运行模式&#34;&gt;处理器运行模式
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;计算机“指令”和高级语言“代码”是两码事。CPU看不懂高级语言程序的含义，需要将它们“翻译”成CPU能懂的机器语言，即一条条“指令”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;计算机系统中，通常CPU执行两种程序&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;操作系统内核程序&lt;/li&gt;
+&lt;li&gt;用户自编程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;前者是后者的管理者，要执行一些&lt;!-- raw HTML omitted --&gt;特权指令&lt;!-- raw HTML omitted --&gt;。后者出于安全考虑不能执行这些特权指令&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;特权指令&lt;/strong&gt;，指不允许用户直接使用的指令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;非特权指令&lt;/strong&gt;，指允许用户直接使用的指令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU的运行模式分为&lt;!-- raw HTML omitted --&gt;用户态（目态）&lt;!-- raw HTML omitted --&gt;和&lt;!-- raw HTML omitted --&gt;内核态（管态、核心态）&lt;!-- raw HTML omitted --&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;应用程序运行在用户态，操作系统内核程序运行在内核态&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;内核&lt;/strong&gt;是计算机上配置的底层软件，管理着系统的各种资源。大多数操作系统的内核包括以下4个内容&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;时钟管理&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;计时&lt;/li&gt;
+&lt;li&gt;通过时钟中断，实现进程的切换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中断机制&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;初衷：提高多道程序运行时的CPU利用率&lt;/li&gt;
+&lt;li&gt;发展：形成多种类型，&lt;!-- raw HTML omitted --&gt;成为操作系统各项操作的基础&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;原语&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;处于操作系统的底层，是&lt;!-- raw HTML omitted --&gt;最接近&lt;!-- raw HTML omitted --&gt;硬件的部分&lt;/li&gt;
+&lt;li&gt;这些程序的运行具有原子性，其操作只能一气呵成&lt;/li&gt;
+&lt;li&gt;这些程序的运行时间都较短，而且调用频繁&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统控制的数据结构及处理&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;进程管理&lt;/strong&gt;。进程状态管理、进程调度和分派、创建与撤销进程控制块等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;存储器管理&lt;/strong&gt;。存储器的空间分配和回收、内存信息保护程序、代码对换程序等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设备管理&lt;/strong&gt;。缓冲区管理、设备分配和回收等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;中断和异常的概念&#34;&gt;中断和异常的概念
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;中断和异常的定义&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;中断&lt;/strong&gt;也称&lt;!-- raw HTML omitted --&gt;外中断&lt;!-- raw HTML omitted --&gt;，是指来自CPU执行指令外部的事件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;异常&lt;/strong&gt;也称&lt;!-- raw HTML omitted --&gt;内中断&lt;!-- raw HTML omitted --&gt;，是指来自CPU执行指令内部的事件引起的事件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;中断和异常的分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;外中断&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;可屏蔽中断&lt;/strong&gt;：指通过INTR(Interrupt Request)线发出的中断请求，通过改变屏蔽字可以实现多重中断，从而使得中断处理更加灵活&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不可屏蔽中断&lt;/strong&gt;：指通过NMI(Non-Maskable Interrupt)线发出的中断请求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;故障&lt;/strong&gt;(Fault)：由指令引起的异常&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自陷&lt;/strong&gt;(Trap)：一种事先安排的“异常”事件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;终止&lt;/strong&gt;(Abort)：出现了使得CPU无法继续执行的硬件故障&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;故障异常和自陷异常属于软件中断，终止属于硬件中断&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;中断和异常的处理过程&#34;&gt;中断和异常的处理过程
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;CPU在执行用户指令的第$i$条指令时检测到一个异常事件，或在执行第$i$条指令后发现一个中断请求信号&lt;/li&gt;
+&lt;li&gt;CPU打断当前用户程序&lt;/li&gt;
+&lt;li&gt;转到相应中断或异常程序去处理
+&lt;ol&gt;
+&lt;li&gt;若能解决，则在处理程序最后CPU返回指令，回到第$i$条指令或第$i+1$条指令继续执行&lt;/li&gt;
+&lt;li&gt;若不能解决，则终止用户程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;系统调用&#34;&gt;系统调用
+&lt;/h3&gt;&lt;p&gt;系统调用按&lt;strong&gt;功能&lt;/strong&gt;大致可分如下几类：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;设备管理&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件管理&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进程控制&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进程通信&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内存管理&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;系统调用的&lt;strong&gt;处理过程&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;将系统调用号和所需参数压入堆栈&lt;/li&gt;
+&lt;li&gt;调用实际的调用指令&lt;/li&gt;
+&lt;li&gt;执行陷入指令，将CPU从用户态转为内核态&lt;/li&gt;
+&lt;li&gt;硬件和操作系统内核程序保护被中断的现场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第二步&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;分析系统调用类型&lt;/li&gt;
+&lt;li&gt;转入相应系统调用处理子程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第三步&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;系统调用处理子程序执行结束后&lt;/li&gt;
+&lt;li&gt;恢复被中断的或设置新进程的CPU现场&lt;/li&gt;
+&lt;li&gt;返回被中断进程或新进程&lt;/li&gt;
+&lt;li&gt;继续往下执行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;操作系统结构&#34;&gt;操作系统结构
+&lt;/h2&gt;&lt;h3 id=&#34;分层法&#34;&gt;分层法
+&lt;/h3&gt;&lt;p&gt;将操作系统分为若干层，底层（层0）为硬件，顶层（层N）为用户接口，每层只能调用紧邻它的底层的功能和服务（单向依赖）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;便于系统的调试和验证，简化了系统的设计和实现&lt;/li&gt;
+&lt;li&gt;易扩充和易维护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;合理定义各层比较困难&lt;/li&gt;
+&lt;li&gt;效率较差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

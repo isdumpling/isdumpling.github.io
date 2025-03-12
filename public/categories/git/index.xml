@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Git on 一只饺子</title>
+        <link>http://localhost:1313/categories/git/</link>
+        <description>Recent content in Git on 一只饺子</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>一只饺子</copyright>
+        <lastBuildDate>Tue, 11 Mar 2025 15:19:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>git</title>
+        <link>http://localhost:1313/p/git/</link>
+        <pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/git/</guid>
+        <description>&lt;img src="http://localhost:1313/post/img/2.jpg" alt="Featured image of post git" /&gt;&lt;h2 id=&#34;与github仓库建立连接并提交修改&#34;&gt;与GitHub仓库建立连接并提交修改
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;SSH密钥配备完成且有相关权限&lt;/li&gt;
+&lt;li&gt;初始化本地仓库：&lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关联远程仓库：
+&lt;ol&gt;
+&lt;li&gt;HTTPS: &lt;code&gt;git remote add origin https://github.com/username/repositoryname.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;SSH:&lt;code&gt;git remote add origin git@github.com:username/repositoryname.git&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;首次拉取文件：&lt;code&gt;git pull origin main&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;更改文件&lt;/li&gt;
+&lt;li&gt;提交更改到本地：
+&lt;ol&gt;
+&lt;li&gt;添加所有更改：&lt;code&gt;git add .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;添加提交说明：&lt;code&gt;git commit -m &amp;quot;你的提交说明&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;推送到远程仓库：&lt;code&gt;git push -u origin main&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;更改分支&#34;&gt;更改分支
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;查看本地分支（当前分支会用&lt;code&gt;*&lt;/code&gt;标出）：&lt;code&gt;git branch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看所有分支（本地+远程跟踪分支）：&lt;code&gt;git branch -a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;切换现有分支
+&lt;ol&gt;
+&lt;li&gt;直接切换：&lt;code&gt;git checkout 分支名&lt;/code&gt;。如：切换到&lt;code&gt;develop&lt;/code&gt;分支：&lt;code&gt;git checkout develop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;拉取远程分支并切换：&lt;code&gt;git checkout -b 本地分支名 origin/远程分支名&lt;/code&gt;。如：同步远程的&lt;code&gt;feature/login&lt;/code&gt;分支到本地：&lt;code&gt;git checkout -b feature/login origin/feature/login&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;创建并切换到新分支：
+&lt;ol&gt;
+&lt;li&gt;创建新分支并立即切换：&lt;code&gt;git checkout -b 新分支名&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;推送新分支到远程仓库：&lt;code&gt;git push orign 分支名&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

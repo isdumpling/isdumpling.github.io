@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>大数据 on 一只饺子</title>
+        <link>http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
+        <description>Recent content in 大数据 on 一只饺子</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>一只饺子</copyright>
+        <lastBuildDate>Tue, 11 Mar 2025 15:19:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>NoSQL Chapter 1</title>
+        <link>http://localhost:1313/p/nosql-chapter-1/</link>
+        <pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/nosql-chapter-1/</guid>
+        <description>&lt;img src="http://localhost:1313/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" /&gt;&lt;p&gt;The important features of NoSQL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schema Flexibility&lt;/li&gt;
+&lt;li&gt;Horizontal Scalability&lt;/li&gt;
+&lt;li&gt;High Availability&lt;/li&gt;
+&lt;li&gt;Performance&lt;/li&gt;
+&lt;li&gt;Diverse Data Models&lt;/li&gt;
+&lt;li&gt;Cost-Effectiveness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MongoDB features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;data aggregation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ACID transactions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Atomicity&lt;/li&gt;
+&lt;li&gt;Consistency&lt;/li&gt;
+&lt;li&gt;Isolation&lt;/li&gt;
+&lt;li&gt;Durability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;horizontal scaling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Charts&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Relational Database VS NoSQL:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Relational Database&lt;/th&gt;
+          &lt;th&gt;NoSQL&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>MongoDB基本语法</title>
+        <link>http://localhost:1313/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+        <description>&lt;img src="http://localhost:1313/post/img/9.png" alt="Featured image of post MongoDB基本语法" /&gt;&lt;h3 id=&#34;增&#34;&gt;增
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;uesr&amp;#39;).insert({&amp;#34;userId&amp;#34; : &amp;#34;014&amp;#34;,&amp;#34;uclass&amp;#34; : &amp;#34;B&amp;#34;,&amp;#34;name&amp;#34; : &amp;#34;Back&amp;#34;,&amp;#34;age&amp;#34; : 11,&amp;#34;email&amp;#34; : &amp;#34;b14@sina.com&amp;#34;,&amp;#34;birthday&amp;#34; : ISODate(&amp;#34;2018-07-31T03:46:13.885Z&amp;#34;),&amp;#34;dataStatus&amp;#34; : 1})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;删&#34;&gt;删
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).remove({&amp;#34;userId&amp;#34;:&amp;#34;014&amp;#34;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;改&#34;&gt;改
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).update({&amp;#34;userId&amp;#34;:&amp;#34;013&amp;#34;},{$set:{&amp;#34;email&amp;#34;:&amp;#34;b13@sina.com&amp;#34;, &amp;#34;age&amp;#34;:20}})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;在MongoDB中，&lt;code&gt;$set&lt;/code&gt;是一个更新操作符，用于修改文档中某个字段的值，或向文档中添加新的字段，而不会影响其他字段。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;查&#34;&gt;查
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}); // 查询所有
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}); // 查询条件:=
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).fing({&amp;#34;name&amp;#34;:/Ba/}); // 查询条件:like
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).distinct({&amp;#34;name&amp;#34;}); // 查询条件:distinct
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;age&amp;#34;:&amp;#34;{$gt:16}&amp;#34;}) // 查询条件:$gt//greater than
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:{$in:[&amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;]}}); // 查询条件: in
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;B&amp;#34;,&amp;#34;age&amp;#34;:{$gt:16}}) // 查询条件: and
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({$or:[{&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;},{&amp;#34;class&amp;#34;:&amp;#34;B&amp;#34;}]});// 查询条件: or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;birthday&amp;#34;:{$gt: new Date(&amp;#34;2008-08-14T06:24:40.110Z&amp;#34;), $lt: new Date(&amp;#34;2015-08-14T06:14:40.089Z&amp;#34;)}}); // 查询条件: 时间
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({&amp;#34;uclass&amp;#34;:&amp;#34;A&amp;#34;}).count(); // 查询条件: count
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:1}); // 查询条件: sort升序
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}).sort({&amp;#34;age&amp;#34;:-1}); // 查询条件: sort降序
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:&amp;#34;$uclass&amp;#34;,num:{$sum:1}}}]); // 聚合查询: count单列
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).aggregate([{$group:{_id:{uclass:&amp;#34;$uclass&amp;#34;, age:&amp;#34;$age&amp;#34;},num:{$sum:1}}}]); // 聚合查询: count多列
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5); // 分页查询: limit in
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}).limit(5).skip(5); // 分页查询: limit m, n
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}, {userId:1, name:1}); // 查询指定字段
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;db.getCollection(&amp;#39;user&amp;#39;).find({}, {dataStatus:0, _id:0}); // 排查指定字段
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;正则表达式语法：
+&lt;code&gt;/^Ba/&lt;/code&gt;:匹配以&lt;code&gt;Ba&lt;/code&gt;开头的字符串
+&lt;code&gt;/Ba$/&lt;/code&gt;:匹配以&lt;code&gt;Ba&lt;/code&gt;结尾的字符串
+&lt;code&gt;/[Bb]a/&lt;/code&gt;:匹配&lt;code&gt;Ba&lt;/code&gt;或&lt;code&gt;ba&lt;/code&gt;
+&lt;code&gt;/ba/i&lt;/code&gt;:查找&lt;code&gt;name&lt;/code&gt;字段的值包含字符串&lt;code&gt;ba&lt;/code&gt;的文档，不区分大小写&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;distinct的意思是去重&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;$gt&lt;/code&gt;: $&amp;gt;$
+&lt;code&gt;$gte&lt;/code&gt;: $\ge$
+&lt;code&gt;$lt&lt;/code&gt;: $\le$
+&lt;code&gt;$lte&lt;/code&gt;: $\le$
+&lt;code&gt;$ne&lt;/code&gt;: $!=$
+&lt;code&gt;$eq&lt;/code&gt;: $==$&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>大数据开发技术第一章中文版</title>
+        <link>http://localhost:1313/p/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B8%AD%E6%96%87%E7%89%88/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B8%AD%E6%96%87%E7%89%88/</guid>
+        <description>&lt;img src="http://localhost:1313/post/img/19.jpg" alt="Featured image of post 大数据开发技术第一章中文版" /&gt;&lt;blockquote&gt;
+&lt;p&gt;说明：本笔记内容基于NIIT PPT，结合个人理解整理&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;第一章a部分&#34;&gt;第一章A部分
+&lt;/h2&gt;&lt;h3 id=&#34;大数据定义&#34;&gt;大数据定义
+&lt;/h3&gt;&lt;p&gt;大数据是指&lt;strong&gt;体量庞大且随时间呈指数级增长&lt;/strong&gt;的数据集合。&lt;/p&gt;
+&lt;h3 id=&#34;大数据类型&#34;&gt;大数据类型
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;结构化数据&lt;/strong&gt;（Structured）
+示例：关系型数据库中的订单表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;非结构化数据&lt;/strong&gt;（Unstructured）
+示例：社交媒体图片、视频文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;半结构化数据&lt;/strong&gt;（Semi-structured）
+示例：JSON格式的日志文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;大数据核心特征4v模型&#34;&gt;大数据核心特征（4V模型）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;数据体量&lt;/strong&gt;（Volume） - TB/PB级规模&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;处理速度&lt;/strong&gt;（Velocity） - 数据生成与处理的时效性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据多样性&lt;/strong&gt;（Variety） - 多源异构数据格式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据真实性&lt;/strong&gt;（Veracity） - 数据质量与可信度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;大数据处理优势&#34;&gt;大数据处理优势
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;商业洞察&lt;/strong&gt;：通过用户行为分析优化营销策略&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;客户服务提升&lt;/strong&gt;：实时反馈用户需求（如推荐系统）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;风险预警&lt;/strong&gt;：金融领域的欺诈交易识别&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运营效率&lt;/strong&gt;：物流路径优化降低运输成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;核心术语对照表&#34;&gt;核心术语对照表
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;说明：修正部分NIIT翻译以符合技术规范&lt;/p&gt;&lt;/blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;英文术语&lt;/th&gt;
+          &lt;th&gt;NIIT官方翻译&lt;/th&gt;
+          &lt;th&gt;优化翻译&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Exponential&lt;/td&gt;
+          &lt;td&gt;指数型&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;指数级（增长）&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Generates&lt;/td&gt;
+          &lt;td&gt;产生&lt;/td&gt;
+          &lt;td&gt;生成&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Processed&lt;/td&gt;
+          &lt;td&gt;处理&lt;/td&gt;
+          &lt;td&gt;处理&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Structured&lt;/td&gt;
+          &lt;td&gt;结构化的&lt;/td&gt;
+          &lt;td&gt;结构化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Unstructured&lt;/td&gt;
+          &lt;td&gt;处理非结构化&lt;/td&gt;
+          &lt;td&gt;非结构化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Semi-structured&lt;/td&gt;
+          &lt;td&gt;处理半结构化&lt;/td&gt;
+          &lt;td&gt;半结构化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Enormous&lt;/td&gt;
+          &lt;td&gt;巨大的&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;海量的&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Heterogeneous&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;异质&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;异构的&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Analyzing&lt;/td&gt;
+          &lt;td&gt;分析&lt;/td&gt;
+          &lt;td&gt;分析&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Volume&lt;/td&gt;
+          &lt;td&gt;体积&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;数据体量&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Velocity&lt;/td&gt;
+          &lt;td&gt;种类&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;处理速度&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Variety&lt;/td&gt;
+          &lt;td&gt;速度&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;数据多样性&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Veracity&lt;/td&gt;
+          &lt;td&gt;真实性&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;数据真实性&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Intelligence&lt;/td&gt;
+          &lt;td&gt;智力&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;智能&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第一章b部分&#34;&gt;第一章B部分
+&lt;/h2&gt;&lt;h3 id=&#34;hadoop生态系统工具架构&#34;&gt;Hadoop生态系统工具架构
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;数据存储层&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;HDFS（分布式文件系统）&lt;/li&gt;
+&lt;li&gt;HBase（分布式NoSQL数据库）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据处理层&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;MapReduce（批处理框架）&lt;/li&gt;
+&lt;li&gt;YARN（集群资源管理器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据访问层&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Hive（SQL化查询引擎）&lt;/li&gt;
+&lt;li&gt;Pig（数据流脚本工具）&lt;/li&gt;
+&lt;li&gt;Mahout（机器学习库）&lt;/li&gt;
+&lt;li&gt;Avro（序列化/RPC框架）&lt;/li&gt;
+&lt;li&gt;Sqoop（关系型数据库连接器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据管理层&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Oozie（工作流调度）&lt;/li&gt;
+&lt;li&gt;Chukwa/Flume（日志采集）&lt;/li&gt;
+&lt;li&gt;ZooKeeper（分布式协调服务）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hadoop生态协作流程&#34;&gt;Hadoop生态协作流程
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;存储&lt;/strong&gt;：用HDFS存原始数据，HBase存需快速访问的数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;处理&lt;/strong&gt;：YARN调度资源，MapReduce做离线计算&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;访问&lt;/strong&gt;：Hive执行SQL查询，Sqoop导出结果到MySQL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;管理&lt;/strong&gt;：Oozie调度任务链，ZooKeeper确保服务高可用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;hbase详解&#34;&gt;HBase详解
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;技术特性&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;开源非关系型分布式数据库，基于Google BigTable设计&lt;/li&gt;
+&lt;li&gt;构建于HDFS之上，提供类BigTable的低延迟读写能力&lt;/li&gt;
+&lt;li&gt;Java语言开发，支持海量数据随机访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用场景&lt;/strong&gt;
+实时用户画像更新、物联网设备状态监控&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hive详解&#34;&gt;Hive详解
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;技术特性&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Hadoop生态的数据仓库工具，支持类SQL语法（HQL）&lt;/li&gt;
+&lt;li&gt;将查询转换为MapReduce/Tez/Spark任务执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用场景&lt;/strong&gt;
+跨PB级数据集的交互式分析，如电商月度销售统计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hdfs核心设计&#34;&gt;HDFS核心设计
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构特点&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;专为商用硬件设计的分布式文件系统&lt;/li&gt;
+&lt;li&gt;数据分块存储（默认128MB/块），跨节点冗余备份&lt;/li&gt;
+&lt;li&gt;包含NameNode（元数据管理）与DataNode（数据存储）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;apache-storm特性&#34;&gt;Apache Storm特性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;实时处理能力&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;毫秒级延迟的流数据处理框架&lt;/li&gt;
+&lt;li&gt;支持水平扩展与自动容错&lt;/li&gt;
+&lt;li&gt;典型应用：金融实时风控、舆情监控&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zookeeper核心功能&#34;&gt;ZooKeeper核心功能
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分布式协调服务&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;维护集群配置信息（如HBase RegionServer状态）&lt;/li&gt;
+&lt;li&gt;实现分布式锁与领导者选举（如Kafka Broker选举）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sqoop工作机制&#34;&gt;Sqoop工作机制
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;数据迁移流程&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;通过JDBC连接关系型数据库&lt;/li&gt;
+&lt;li&gt;生成MapReduce任务并行导入数据到HDFS&lt;/li&gt;
+&lt;li&gt;支持增量数据同步与多种数据格式转换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;分布式系统评估指标&#34;&gt;分布式系统评估指标
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;评估维度&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;性能表现&lt;/td&gt;
+          &lt;td&gt;处理吞吐量与资源利用率&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;可扩展性&lt;/td&gt;
+          &lt;td&gt;支持节点横向扩容的能力&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;系统可靠性&lt;/td&gt;
+          &lt;td&gt;故障自动恢复与数据完整性保障&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;核心术语对照表-1&#34;&gt;核心术语对照表
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;英文术语&lt;/th&gt;
+          &lt;th&gt;NIIT官方翻译&lt;/th&gt;
+          &lt;th&gt;优化翻译&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Ecosystem&lt;/td&gt;
+          &lt;td&gt;生态系统&lt;/td&gt;
+          &lt;td&gt;生态系统&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fault-tolerant&lt;/td&gt;
+          &lt;td&gt;容错&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;容错性&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Latency&lt;/td&gt;
+          &lt;td&gt;潜伏&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;延迟&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Configuration&lt;/td&gt;
+          &lt;td&gt;配置&lt;/td&gt;
+          &lt;td&gt;配置&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Synchronization&lt;/td&gt;
+          &lt;td&gt;同步化&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;同步&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Scalability&lt;/td&gt;
+          &lt;td&gt;可拓展性&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;可扩展性&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bottlenecks&lt;/td&gt;
+          &lt;td&gt;瓶颈&lt;/td&gt;
+          &lt;td&gt;瓶颈&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Clustered&lt;/td&gt;
+          &lt;td&gt;成簇的&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;集群化&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Replication&lt;/td&gt;
+          &lt;td&gt;复制&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;数据复制&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Analytics&lt;/td&gt;
+          &lt;td&gt;分析&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;数据分析&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;本翻译重点优化：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;专业术语标准化（如将&amp;quot;可拓展性&amp;quot;修正为&amp;quot;可扩展性&amp;quot;）&lt;/li&gt;
+&lt;li&gt;补充技术细节说明（如HBase应用场景）&lt;/li&gt;
+&lt;li&gt;通过Mermaid图表增强流程可视化&lt;/li&gt;
+&lt;li&gt;修正原PPT中术语混淆问题（如Velocity/Variety的对应关系）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;指系统中存在多种不同形式的组成部分（如CPU/GPU混合计算集群）&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
