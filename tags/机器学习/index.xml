@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习 on 一只饺子</title><link>https://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 机器学习 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 15 Mar 2025 00:08:17 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习 on 一只饺子</title><link>https://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 机器学习 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 18 Mar 2025 20:18:30 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
 &lt;li>
 &lt;p>机器学习约等于寻找一个函数。比如：&lt;/p>
 &lt;ul>
@@ -1747,6 +1747,204 @@ $$&lt;/p>
 &lt;/li>
 &lt;li id="fn:3">
 &lt;p>ReLU函数：$f(x)=max(0, x)$&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Pytorch实践（刘二大人）9：卷积神经网络</title><link>https://example.com/p/pytorch%E5%AE%9E%E8%B7%B5%E5%88%98%E4%BA%8C%E5%A4%A7%E4%BA%BA9%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/pytorch%E5%AE%9E%E8%B7%B5%E5%88%98%E4%BA%8C%E5%A4%A7%E4%BA%BA9%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</guid><description>&lt;img src="https://example.com/post/img/23.jpg" alt="Featured image of post Pytorch实践（刘二大人）9：卷积神经网络" />&lt;h2 id="思路">思路
+&lt;/h2>&lt;h3 id="导入库">导入库
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">transforms&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">datasets&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torch.utils.data&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">DataLoader&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.nn.functional&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">F&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.optim&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">optim&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>import torch&lt;/code>：PyTorch的核心库，提供张量(Tensor)操作、自动微分、GPU加速等功能&lt;/li>
+&lt;li>&lt;code>from torchvision import transforms&lt;/code>：提供图像预处理工具，如尺寸调整、归一化、数据增强、&lt;/li>
+&lt;li>&lt;code>from torchvision import datasets&lt;/code>：提供预置数据集（如MNIST、CIFAR）的快速下载和加载接口&lt;/li>
+&lt;li>&lt;code>from torch.utils.data import DataLoader&lt;/code>：数据加载器，将数据集分批次(batch)加载，支持多线程加速和数据打乱&lt;/li>
+&lt;li>&lt;code>import torch.nn.functional as F&lt;/code>：包含无需学习参数的神经网络函数（如激活函数、损失函数）&lt;/li>
+&lt;li>&lt;code>import torch.optim as optim&lt;/code>：提供优化算法，如SGD等&lt;/li>
+&lt;/ul>
+&lt;h3 id="准备数据集">准备数据集
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">64&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">transform&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Compose&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ToTensor&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Normalize&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1307&lt;/span>&lt;span class="p">,),&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mf">0.3801&lt;/span>&lt;span class="p">,))])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MINST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MNIST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">test_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>0.1307&lt;/code>是总像素的均值&lt;/li>
+&lt;li>&lt;code>0.3081&lt;/code>是总像素的标准差&lt;/li>
+&lt;/ul>
+&lt;h3 id="模型定义">模型定义
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Net&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Module&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">super&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Net&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="fm">__init__&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MaxPool2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Linear&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">320&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">forward&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">view&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">x&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>__init__(self)&lt;/code>
+&lt;ul>
+&lt;li>&lt;strong>浅层&lt;/strong>(&lt;code>conv1&lt;/code>)：提取基础特征（如边缘）&lt;/li>
+&lt;li>&lt;strong>深层&lt;/strong>(&lt;code>conv2&lt;/code>)：组合基础特征为高级特征&lt;/li>
+&lt;li>&lt;strong>池化&lt;/strong>：逐步压缩空间信息，保留重要特征&lt;/li>
+&lt;li>&lt;strong>全连接&lt;/strong>：将空间特征转换为分类结果&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>forward(self, x)&lt;/code>
+&lt;ul>
+&lt;li>&lt;strong>特征提取&lt;/strong>：通过两次$卷积\Rightarrow池化\Rightarrow ReLU$组合，逐步提取从简单到复杂的特征&lt;/li>
+&lt;li>&lt;strong>非线性激活&lt;/strong>：每次卷积后使用&lt;code>ReLU&lt;/code>激活函数，增强模型非线性表达能力&lt;/li>
+&lt;li>&lt;strong>维度压缩&lt;/strong>：池化层减少计算量并增强平移不变性&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>&lt;strong>分类输出&lt;/strong>：全连接层直接输出分类结果&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="损失函数和优化器">损失函数和优化器
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">criterion&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">CrossEntropyLoss&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">optimizer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">optim&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">SGD&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">parameters&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">lr&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.01&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">momentum&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>model.parameters()&lt;/code>返回模型中所有需要被优化（训练）的参数
+&lt;ul>
+&lt;li>&lt;code>conv&lt;/code>层的权重&lt;code>weight&lt;/code>和偏置&lt;code>bias&lt;/code>&lt;/li>
+&lt;li>&lt;code>fc&lt;/code>层的权重和偏置&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>momentum=0.5&lt;/code>：SGD优化器的动量参数&lt;/li>
+&lt;/ul>
+&lt;p>$$
+\begin{aligned}
+v_{W_i} &amp;amp;:= \gamma v_{W_i} + \eta \frac{\partial L}{\partial W_i} \
+W_i &amp;amp;:= W_i - v_{W_i}
+\end{aligned}
+$$&lt;/p>
+&lt;h3 id="训练函数">训练函数
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">train&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">batch_idx&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_loader&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">zero_grad&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">outputs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">model&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">inputs&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">criterion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">outputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">backward&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">step&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">300&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">299&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;[&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s1">, &lt;/span>&lt;span class="si">%5d&lt;/span>&lt;span class="s1">] loss: &lt;/span>&lt;span class="si">%.3f&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">300&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>for batch_idx, data in enumerate(train_loader, 0)&lt;/code>
+&lt;ul>
+&lt;li>&lt;code>train_loader&lt;/code>：PyTorch的&lt;code>DataLoader&lt;/code>，按批次加载训练数据&lt;/li>
+&lt;li>&lt;code>enumerate(train_loader, 0)&lt;/code>
+&lt;ul>
+&lt;li>返回批次索引&lt;code>batch_idx&lt;/code>（从0开始）和对应批次数据&lt;code>data&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>inputs, target = data&lt;/code>
+&lt;ul>
+&lt;li>&lt;code>inputs&lt;/code>是模型输入&lt;/li>
+&lt;li>&lt;code>target&lt;/code>是真实标签&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>池化层通过保留局部区域最大值并降低空间分辨率，使得模型更关注“是否存在特征”而非“特征的具体位置”&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>PyTorch语法</title><link>https://example.com/p/pytorch%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/pytorch%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://example.com/post/img/12.jpg" alt="Featured image of post PyTorch语法" />&lt;h2 id="在anaconda中使用pytorch">在Anaconda中使用PyTorch
