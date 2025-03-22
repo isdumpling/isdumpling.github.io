@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习 on 一只饺子</title><link>https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 机器学习 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 18 Mar 2025 20:18:30 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习 on 一只饺子</title><link>https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 机器学习 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 22 Mar 2025 14:18:54 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
 &lt;li>
 &lt;p>机器学习约等于寻找一个函数。比如：&lt;/p>
 &lt;ul>
@@ -1940,7 +1940,124 @@ $$&lt;/p>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;div class="footnotes" role="doc-endnotes">
+&lt;h2 id="代码">代码
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">transforms&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">datasets&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torch.utils.data&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">DataLoader&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.nn.functional&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">F&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.optim&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">optim&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">64&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">transform&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Compose&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ToTensor&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Normalize&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mf">0.1307&lt;/span>&lt;span class="p">,),&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mf">0.3081&lt;/span>&lt;span class="p">,))])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MNIST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MNIST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">test_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Net&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Module&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">super&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Net&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="fm">__init__&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MaxPool2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Linear&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">320&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">forward&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">view&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">x&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Net&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">device&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;cuda&amp;#34;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cuda&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_available&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="s2">&amp;#34;cpu&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">criterion&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">CrossEntropyLoss&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">optimizer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">optim&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">SGD&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">parameters&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">lr&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.01&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">momentum&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">train&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">batch_idx&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_loader&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">inputs&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">zero_grad&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">outputs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">model&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">inputs&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">criterion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">outputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">backward&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">step&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">300&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">299&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;[&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s1">, &lt;/span>&lt;span class="si">%5d&lt;/span>&lt;span class="s1">] loss: &lt;/span>&lt;span class="si">%.3f&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">300&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
@@ -2726,4 +2843,171 @@ loading="lazy"
 &lt;ul>
 &lt;li>如果在某一个方向上，gradient值很小（比较平稳），那么应该把学习效率调高；&lt;/li>
 &lt;li>如果在某一个方向上，gradient值很大（比较陡峭），那么应该把学习效率调低。&lt;/li>
+&lt;/ul></description></item><item><title>论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</title><link>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</guid><description>&lt;img src="https://example.com/post/img/26.jpg" alt="Featured image of post 论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning" />&lt;h2 id="知识笔记">知识笔记
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>多阶段训练(multi-stage training)&lt;/strong>：指模型训练过程中分为多个阶段（阶段间目标或数据不同），每个阶段针对性地优化模型的不同能力，最终提升整体性能。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>冷启动数据(cold start data)&lt;/strong>：指在模型训练初期（或新任务启动时）使用的特定引导数据，用于解决模型初期因缺乏足够信息导致的性能低下或不稳定问题。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>训练后阶段&lt;/strong>：指在机器学习模型完成训练后的一系列操作，包括模型评估、优化、部署、监控等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>预训练与训练的差别&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>预训练&lt;/strong>：在大规模通用数据集上进行&lt;/li>
+&lt;li>&lt;strong>训练&lt;/strong>：在特定任务上调整模型参数的过程&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>推理导向的强化学习(Reasoning-Oriented RL)&lt;/strong>：动态奖励机制和结构化探索策略&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://arxiv.org/pdf/2501.12948" target="_blank" rel="noopener"
+>原文传送门&lt;/a>&lt;/p>
+&lt;p>膜拜大佬&lt;/p>
+&lt;h2 id="读书笔记">读书笔记
+&lt;/h2>&lt;h3 id="abstract">Abstract
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>DeepSeek-R1-Zero&lt;/strong>
+&lt;ul>
+&lt;li>通过强化学习训练，且没监督微调&lt;/li>
+&lt;li>推理能力优秀&lt;/li>
+&lt;li>可读性差，语言混合&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>DeepSeek-R1&lt;/strong>
+&lt;ul>
+&lt;li>在强化学习之前结合多阶段训练和冷启动数据&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;ul>
+&lt;li>训练后阶段可提高推理任务的准确性
+&lt;ul>
+&lt;li>所需计算资源比预训练少&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OpenAI o1引入了思考时间
+&lt;ul>
+&lt;li>有效的测试时间缩放的挑战依旧是一个问题&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使用纯强化学习过程的自我进化，使得DeepSeek-R1-Zero在推理基准测试上与OpenAI-01相当
+&lt;ul>
+&lt;li>使用DeepSeek-v3-Base作为基础模型&lt;/li>
+&lt;li>采用PRPO作为强化学习框架&lt;/li>
+&lt;li>可读性差，语言混乱&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>引入DeepSeek-R1。结合少量冷启动数据和多级训练流水线
+&lt;ul>
+&lt;li>&lt;strong>冷启动数据微调&lt;/strong>：修复基础语言能力
+&lt;ul>
+&lt;li>收集数千条高质量冷启动数据（例如：人工标注的数学解题步骤、语法规范的写作范文）&lt;/li>
+&lt;li>用这些数据对基础模型 &lt;code>DeepSeek-V3-Base&lt;/code> 进行监督微调（SFT）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>推理导向的RL训练&lt;/strong>：提升特定任务的推理能力
+&lt;ul>
+&lt;li>使用强化学习（如PPO算法）训练模型，奖励函数侧重推理正确性（如解题步骤分、最终答案分）。&lt;/li>
+&lt;li>训练接近收敛时，模型能稳定生成正确但可能可读性较差的答案&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>拒绝采样生成新SFT数据&lt;/strong>：从RL模型的结果中提取高质量数据，重新注入监督训练
+&lt;ul>
+&lt;li>让RL模型的结果中提取高质量数据，重新注入监督训练&lt;/li>
+&lt;li>通过规则或奖励模型筛选出推理正确且可读性高的结果（例如保留前10%的优质答案）&lt;/li>
+&lt;li>混入新RL数据和原有监督数据&lt;/li>
+&lt;li>用混合数据重新微调DeepSeek-V3-Base&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>全场景二次RL训练&lt;/strong>：在多任务竞争中进一步平衡性能
+&lt;ul>
+&lt;li>输入涵盖所有任务的提示（如同时包含数学题、写作要求、事实问答）&lt;/li>
+&lt;li>设计多维度奖励函数，如数学任务：步骤正确性+答案准确性；写作任务：流畅性+语法正确性&lt;/li>
+&lt;li>基于混合奖励进行RL训练，迫使模型兼顾多领域性能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="核心贡献">核心贡献
+&lt;/h4>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>后训练(Post-Training)&lt;/strong>：直接对基础模型进行大规模强化学习（RL）&lt;/p>
+&lt;ol>
+&lt;li>创新点
+&lt;ol>
+&lt;li>跳过监督微调(SFT)&lt;/li>
+&lt;li>激励模型自主探索思维链(CoT)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>意义：证明纯RL训练可激发LLM推理能力（无需SFT提供参考答案）&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-TEXT" data-lang="TEXT">&lt;span class="line">&lt;span class="cl">步骤1：将方程改写为 3x² - 2x - 8 = 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤2：尝试因式分解 → 失败 → 反思：“可能需要使用求根公式。”
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤3：应用求根公式 x = [2 ± √(4 + 96)] / 6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤4：计算判别式 √100 = 10 → x = (2 ± 10)/6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤5：验证解是否满足原方程 → 确认 x=2 和 x=-4/3 均为解
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>开发流程
+&lt;ol>
+&lt;li>&lt;strong>第一阶段RL&lt;/strong>：基于基础模型进行RL训练，奖励函数侧重推理正确性。探索更优推理模式（如数学解题策略、代码调试逻辑）&lt;/li>
+&lt;li>&lt;strong>第一阶段SFT&lt;/strong>：混合RL生成的优质推理数据与通用领域SFT数据。固化RL探索到的优质推理模式，并补充非推理能力（如写作、对话）。&lt;/li>
+&lt;li>&lt;strong>第二阶段RL&lt;/strong>：引入人类反馈（如人工标注偏好排序）优化奖励模型。对齐人类偏好（如可读性、安全性）&lt;/li>
+&lt;li>&lt;strong>第二阶段SFT&lt;/strong>：平衡多任务性能，防止RL过度优化单一领域&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>蒸馏(Distillation)&lt;/strong>：让小模型继承大模型推理能力&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>核心思想&lt;/strong>：用大模型生成的推理数据训练小模型，使其超越RL训练的小模型&lt;/li>
+&lt;li>降低推理成本，促进小模型实际应用&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="discussion">Discussion
+&lt;/h3>&lt;h4 id="蒸馏和强化学习的比较">蒸馏和强化学习的比较
+&lt;/h4>&lt;ul>
+&lt;li>将更强大的模型提炼成更小的模型可以得到很好的结果，而依赖于大规模RL的模型需要巨大的计算能力，甚至可能达不到提炼的性能&lt;/li>
+&lt;li>尽管提炼策略既经济又有效，但要超越智能的界限，可能仍然需要更强大的基础模型和更大规模的强化学习&lt;/li>
+&lt;/ul>
+&lt;h4 id="未成功的尝试">未成功的尝试
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>过程奖励模型(Process Reward Model, PRM)&lt;/strong>
+&lt;ul>
+&lt;li>在一般推理中明确定义一个细粒度的步骤是一个挑战&lt;/li>
+&lt;li>确定当前中间步骤是否正确是一项具有挑战性的任务&lt;/li>
+&lt;li>一旦引入了基于模型的PRM，就不可避免地会导致奖励黑客行为。而重新培训奖励模型需要额外的培训资源，这使整个培训流程变得复杂&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>蒙特卡洛树搜索(Monte Carlo Tree Search, MCTS)&lt;/strong>
+&lt;ul>
+&lt;li>将答案分解为更小的部分，以允许模型系统地探索解决方案空间&lt;/li>
+&lt;li>为了方便这一点，提示模型生成多个标签，这些标签对应于搜索所需的特定推理步骤&lt;/li>
+&lt;li>难点：
+&lt;ul>
+&lt;li>token的生成有很多空间。解决方案：为每个节点设置最大扩展限制，但可能会陷入局部最优&lt;/li>
+&lt;li>价值模型直接影响生成的质量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一只饺子</title><link>https://example.com/post/</link><description>Recent content in Posts on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 18 Mar 2025 20:18:30 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一只饺子</title><link>https://example.com/post/</link><description>Recent content in Posts on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 22 Mar 2025 14:18:54 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
 &lt;li>
 &lt;p>机器学习约等于寻找一个函数。比如：&lt;/p>
 &lt;ul>
@@ -43,22 +43,30 @@
 &lt;p>$e=(y-\widehat y)^2$，$L$是&lt;!-- raw HTML omitted -->均方误差&lt;!-- raw HTML omitted -->(mean square error, MSE)，且有$MSE=\frac{1}{N}\sum_{i=1}^N(y_{pred}^{(i)}-y_{true}^{(i)})^2$&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>$y=b+\sum_i c_isigmoid(b_i+\sum_j w_{ij}x_j)$&lt;/p></description></item><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;p>The important features of NoSQL:&lt;/p>
+&lt;p>$y=b+\sum_i c_isigmoid(b_i+\sum_j w_{ij}x_j)$&lt;/p></description></item><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;h2 id="get-familiar-with-nosql-database">Get familiar with NoSQL Database
+&lt;/h2>&lt;h3 id="understanding-nosql-database">Understanding NoSQL Database
+&lt;/h3>&lt;p>&lt;strong>the important features of NoSQL&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Schema Flexibility&lt;/li>
-&lt;li>Horizontal Scalability&lt;/li>
-&lt;li>High Availability&lt;/li>
-&lt;li>Performance&lt;/li>
-&lt;li>Diverse Data Models&lt;/li>
-&lt;li>Cost-Effectiveness&lt;/li>
+&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: allows for the storage of various data types&lt;/li>
+&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scaled out by distributing data across multiple servers&lt;/li>
+&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: Build-in replication and sharding features&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: Optimized for specific use cases&lt;/li>
+&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: Support various data models&lt;/li>
+&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: The ability to scale out using commodity hardware and no need to invest the expensive, high-end servers&lt;/li>
 &lt;/ul>
-&lt;p>MongoDB features:&lt;/p>
+&lt;h3 id="introduction-to-nosql">Introduction to NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Two types of databases&lt;/strong>
 &lt;ul>
-&lt;li>
-&lt;p>data aggregation&lt;/p>
+&lt;li>&lt;strong>relational databases&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>non-relational databases&lt;/strong>, often called NoSQL databases&lt;/li>
+&lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>ACID transactions&lt;/p>
+&lt;li>&lt;strong>A NoSQL database&lt;/strong> is used to store large quantities of complex and diverse data&lt;/li>
+&lt;li>&lt;strong>MongoDB&lt;/strong> is one of the most established NoSQL databases
+&lt;ul>
+&lt;li>&lt;strong>data aggregation&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>ACID&lt;/strong>
 &lt;ul>
 &lt;li>Atomicity&lt;/li>
 &lt;li>Consistency&lt;/li>
@@ -66,28 +74,94 @@
 &lt;li>Durability&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>horizontal scaling&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Charts&lt;/p>
+&lt;li>&lt;strong>horizontal scaling&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>charts&lt;/strong>&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>Relational Database VS NoSQL:&lt;/p>
+&lt;h3 id="relational-database-vs-nosql">Relational Database VS NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Relational Database Management Systems&lt;/strong>
+&lt;ul>
+&lt;li>store &lt;strong>structured data&lt;/strong>&lt;/li>
+&lt;li>in the form of &lt;strong>tables&lt;/strong> that consist of rows and columns&lt;/li>
+&lt;li>have relationships with other tables&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>NoSQL Database Management Systems&lt;/strong>
+&lt;ul>
+&lt;li>store &lt;strong>unstructured and semi-structured data&lt;/strong>&lt;/li>
+&lt;li>store the data &lt;strong>without a schema&lt;/strong> and support &lt;strong>dynamic schema&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;table>
 &lt;thead>
 &lt;tr>
+&lt;th>Feature&lt;/th>
 &lt;th>Relational Database&lt;/th>
-&lt;th>NoSQL&lt;/th>
+&lt;th>NoSQL Database&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>Schema&lt;/td>
+&lt;td>1. follows a rigid schema 2. have a definition of all the desired columns and their types&lt;/td>
+&lt;td>1. does not impose a rigid schema 2. store the unstructured data with dynamic structures&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Data model/Storage Structure&lt;/td>
+&lt;td>1. data is stored in tables 2. each record is stored as a row&lt;/td>
+&lt;td>1. data is stored in different formats 2. storage structure are documents, graphs, key-values and wide columns&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Normalization&lt;/td>
+&lt;td>used to remove duplicate data and avoid data anomalies&lt;/td>
+&lt;td>focus more on fast data retrieval and the data can be normalized&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Scaling&lt;/td>
+&lt;td>hard to scale and generally scaled vertically&lt;/td>
+&lt;td>both vertical and horizontal scaling&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>git</title><link>https://example.com/p/git/</link><pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate><guid>https://example.com/p/git/</guid><description>&lt;img src="https://example.com/post/img/2.jpg" alt="Featured image of post git" />&lt;h2 id="与github仓库建立连接并提交修改">与GitHub仓库建立连接并提交修改
+&lt;/table>
+&lt;h3 id="types-of-nosql">Types of NoSQL
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Type&lt;/th>
+&lt;th>Typical Usage&lt;/th>
+&lt;th>Example&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Key-value&lt;/td>
+&lt;td>Image stores, Key-based filesystems, Object cache, Systems designed to scale&lt;/td>
+&lt;td>Berkeley DB, Memcache, Redis, Riak, DynamoDB&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Column family&lt;/td>
+&lt;td>Web crawler results, Big data problems that can relax consistency rules&lt;/td>
+&lt;td>Apache HBase&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Graph&lt;/td>
+&lt;td>Social networks, Fraud detection, Relationship-heavy data&lt;/td>
+&lt;td>Neo4j, AllergroGraph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Document&lt;/td>
+&lt;td>High-variability data, Document search&lt;/td>
+&lt;td>MongoDB, CouchDB&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="understanding-the-mongodb">Understanding the MongoDB
+&lt;/h2>&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
+&lt;/h2>&lt;h2 id="understand-the-similarities-and-difference-with-other-softwares">Understand the similarities and difference with Other Software&amp;rsquo;s
+&lt;/h2></description></item><item><title>git</title><link>https://example.com/p/git/</link><pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate><guid>https://example.com/p/git/</guid><description>&lt;img src="https://example.com/post/img/2.jpg" alt="Featured image of post git" />&lt;h2 id="与github仓库建立连接并提交修改">与GitHub仓库建立连接并提交修改
 &lt;/h2>&lt;ol>
 &lt;li>SSH密钥配备完成且有相关权限&lt;/li>
 &lt;li>初始化本地仓库：&lt;code>git init&lt;/code>&lt;/li>
@@ -123,7 +197,692 @@
 &lt;/ol>
 &lt;/li>
 &lt;li>推送新分支到远程仓库：&lt;code>git push orign 分支名&lt;/code>&lt;/li>
-&lt;/ol></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://example.com/post/img/9.png" alt="Featured image of post MongoDB基本语法" />&lt;h3 id="增">增
+&lt;/ol></description></item><item><title>Hadoop Chapter 1: Big Data Concept(CN)</title><link>https://example.com/p/hadoop-chapter-1-big-data-conceptcn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-1-big-data-conceptcn/</guid><description>&lt;img src="https://example.com/post/img/24.jpg" alt="Featured image of post Hadoop Chapter 1: Big Data Concept(CN)" />&lt;p>&lt;a class="link" href="https://xn--8mr985eba830aiye.vip/p/hadoop-chapter-1-big-data-concepten/" target="_blank" rel="noopener"
+>English Version Portal&lt;/a>&lt;/p>
+&lt;h2 id="什么是大数据">什么是大数据
+&lt;/h2>&lt;ul>
+&lt;li>指体积庞大的数据集合&lt;/li>
+&lt;li>随时间呈指数级增长&lt;/li>
+&lt;li>传统数据管理工具无法有效存储或处理&lt;/li>
+&lt;li>具有海量规模的数据&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据类型">大数据类型
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>结构化数据&lt;/strong>：能够以固定格式存储、访问和处理的数据&lt;/li>
+&lt;li>&lt;strong>非结构化数据&lt;/strong>：形式或结构未知的数据&lt;/li>
+&lt;li>&lt;strong>半结构化数据&lt;/strong>：同时包含两种形式的数据&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据特征">大数据特征
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>体量（Volume）&lt;/strong>：数据规模庞大&lt;/li>
+&lt;li>&lt;strong>多样性（Variety）&lt;/strong>：数据来源和性质的异构性&lt;/li>
+&lt;li>&lt;strong>速度（Velocity）&lt;/strong>：数据生成速率&lt;/li>
+&lt;li>&lt;strong>真实性（Veracity）&lt;/strong>：待分析的内容质量&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据处理优势">大数据处理优势
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>商业决策&lt;/strong>：可利用外部智能辅助决策&lt;/li>
+&lt;li>&lt;strong>客户服务提升&lt;/strong>：改善服务质量&lt;/li>
+&lt;li>&lt;strong>风险预警&lt;/strong>：早期识别产品/服务风险&lt;/li>
+&lt;li>&lt;strong>运营效率&lt;/strong>：提高运营效能&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop生态系统">Hadoop生态系统
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>数据存储&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>HDFS&lt;/strong>：分布式文件系统&lt;/li>
+&lt;li>&lt;strong>HBase&lt;/strong>：列式数据库存储&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据处理&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>MapReduce&lt;/strong>：集群计算框架&lt;/li>
+&lt;li>&lt;strong>YARN&lt;/strong>：集群资源管理系统&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据访问&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Hive&lt;/strong>：SQL查询引擎&lt;/li>
+&lt;li>&lt;strong>Pig&lt;/strong>：数据流处理&lt;/li>
+&lt;li>&lt;strong>Mahout&lt;/strong>：机器学习库&lt;/li>
+&lt;li>&lt;strong>Avro&lt;/strong>：远程过程调用&lt;/li>
+&lt;li>&lt;strong>Sqoop&lt;/strong>：数据迁移工具&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据管理&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Oozie&lt;/strong>：工作流调度&lt;/li>
+&lt;li>&lt;strong>Chukwa&lt;/strong>：系统监控&lt;/li>
+&lt;li>&lt;strong>ZooKeeper&lt;/strong>：协调服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hbase">HBase
+&lt;/h3>&lt;ul>
+&lt;li>开源非关系型分布式数据库&lt;/li>
+&lt;li>NoSQL数据库类型&lt;/li>
+&lt;li>支持所有数据类型&lt;/li>
+&lt;li>可处理Hadoop生态系统内的任何数据&lt;/li>
+&lt;li>运行于HDFS之上，提供类BigTable功能&lt;/li>
+&lt;li>使用Java编写，支持REST/Avro/Thrift API&lt;/li>
+&lt;/ul>
+&lt;h3 id="hive">Hive
+&lt;/h3>&lt;ul>
+&lt;li>构建于Hadoop之上&lt;/li>
+&lt;li>管理大规模分布式数据集&lt;/li>
+&lt;li>核心功能：
+&lt;ul>
+&lt;li>提供ETL（抽取/转换/加载）工具&lt;/li>
+&lt;li>存储、查询和分析HDFS/HBase数据&lt;/li>
+&lt;li>将SQL转换为MapReduce任务进行海量数据分析&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>特有查询语言HQL（类SQL语法）&lt;/li>
+&lt;li>支持SQL用户直接查询&lt;/li>
+&lt;li>允许开发者自定义MapReduce处理复杂分析&lt;/li>
+&lt;li>局限性：
+&lt;ul>
+&lt;li>不完全支持事务&lt;/li>
+&lt;li>无法修改表数据（更新/删除/插入）&lt;/li>
+&lt;li>查询延迟较高&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop">Hadoop
+&lt;/h3>&lt;ul>
+&lt;li>采用分布式存储处理海量信息&lt;/li>
+&lt;li>数据分片存储于多个独立节点&lt;/li>
+&lt;li>HDFS专为大规模数据集设计的文件系统&lt;/li>
+&lt;li>核心特性：
+&lt;ul>
+&lt;li>低成本&lt;/li>
+&lt;li>高扩展性&lt;/li>
+&lt;li>灵活性&lt;/li>
+&lt;li>高速处理&lt;/li>
+&lt;li>容错机制&lt;/li>
+&lt;li>高吞吐量&lt;/li>
+&lt;li>最小化网络流量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="storm">Storm
+&lt;/h3>&lt;ul>
+&lt;li>开源分布式实时计算系统&lt;/li>
+&lt;li>简化流式数据的可靠处理&lt;/li>
+&lt;li>高性能（单节点每秒百万级处理）&lt;/li>
+&lt;li>主要特点：
+&lt;ul>
+&lt;li>易扩展性&lt;/li>
+&lt;li>容错机制&lt;/li>
+&lt;li>低延迟处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="zookeeper">ZooKeeper
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop生态系统的协调者&lt;/li>
+&lt;li>分布式环境中的服务协调中枢&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop发展历程与版本">Hadoop发展历程与版本
+&lt;/h2>&lt;ul>
+&lt;li>大数据两大核心问题：
+&lt;ul>
+&lt;li>海量数据存储&lt;/li>
+&lt;li>存储数据处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Hadoop作为解决方案包含：
+&lt;ul>
+&lt;li>HDFS分布式文件系统&lt;/li>
+&lt;li>YARN资源管理器&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="发展大事记">发展大事记
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>2002&lt;/strong>：Apache Nutch项目启动&lt;/li>
+&lt;li>&lt;strong>2003&lt;/strong>：Google发布GFS论文&lt;/li>
+&lt;li>&lt;strong>2004&lt;/strong>：Google发布MapReduce论文&lt;/li>
+&lt;li>&lt;strong>2005&lt;/strong>：Nutch分布式文件系统诞生&lt;/li>
+&lt;li>&lt;strong>2006&lt;/strong>：Hadoop与HDFS正式发布&lt;/li>
+&lt;li>&lt;strong>2007&lt;/strong>：Yahoo部署千节点集群&lt;/li>
+&lt;li>&lt;strong>2013&lt;/strong>：Hadoop 2.0发布&lt;/li>
+&lt;li>&lt;strong>2017&lt;/strong>：Hadoop 3.0发布&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop发行版评估标准">Hadoop发行版评估标准
+&lt;/h2>&lt;h3 id="性能表现">性能表现
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>早期重点&lt;/strong>：高吞吐量&lt;/li>
+&lt;li>&lt;strong>当前趋势&lt;/strong>：兼顾低延迟&lt;/li>
+&lt;li>低延迟两大关键指标：
+&lt;ul>
+&lt;li>原生性能&lt;/li>
+&lt;li>扩展能力&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="扩展能力">扩展能力
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>文件系统&lt;/strong>：突破单NameNode架构瓶颈，实现分布式元数据管理&lt;/li>
+&lt;li>&lt;strong>节点规模&lt;/strong>：支持千节点级扩展&lt;/li>
+&lt;li>&lt;strong>存储密度&lt;/strong>：支持高密度磁盘节点扩展&lt;/li>
+&lt;/ul>
+&lt;h3 id="可靠性">可靠性
+&lt;/h3>&lt;p>Apache Hadoop设计具备从单服务器到数千节点的线性扩展能力，并具有高度容错特性。&lt;/p></description></item><item><title>Hadoop Chapter 1: Big Data Concept(EN)</title><link>https://example.com/p/hadoop-chapter-1-big-data-concepten/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-1-big-data-concepten/</guid><description>&lt;img src="https://example.com/post/img/" alt="Featured image of post Hadoop Chapter 1: Big Data Concept(EN)" />&lt;p>&lt;a class="link" href="https://xn--8mr985eba830aiye.vip/p/hadoop-chapter-1-big-data-conceptcn/" target="_blank" rel="noopener"
+>中文版传送门&lt;/a>&lt;/p>
+&lt;h2 id="what-is-big-data">What is Big Data
+&lt;/h2>&lt;ul>
+&lt;li>A collection of data that is huge in volume&lt;/li>
+&lt;li>growing exponentially with time&lt;/li>
+&lt;li>none of traditional data management tools can store it or process it efficiently&lt;/li>
+&lt;li>a data but with huge size&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-big-data">Types of Big Data
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Structured&lt;/strong>: Any data that can be stored, accessed and processed in the form of fixed format is termed as a &amp;lsquo;structured&amp;rsquo; data&lt;/li>
+&lt;li>&lt;strong>Unstructured&lt;/strong>: Any data with unknown form or the structure is classified as unstructured data.&lt;/li>
+&lt;li>&lt;strong>Semi-structured&lt;/strong>: Semi-structured data can contain both the forms of data.&lt;/li>
+&lt;/ul>
+&lt;h3 id="characteristics-of-big-data">Characteristics of Big Data
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Volume&lt;/strong>: enormous size&lt;/li>
+&lt;li>&lt;strong>Variety&lt;/strong>: heterogeneous sources and the nature of data&lt;/li>
+&lt;li>&lt;strong>Velocity&lt;/strong>: the speed of generation of data&lt;/li>
+&lt;li>&lt;strong>Veracity&lt;/strong>: the content quality that should be analyzed&lt;/li>
+&lt;/ul>
+&lt;h3 id="advantages-of-big-data-processing">Advantages Of Big Data Processing
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Businesses&lt;/strong> can utilize outside intelligence while taking decisions.&lt;/li>
+&lt;li>Improved &lt;strong>customer service&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Early identification&lt;/strong> of risk to the product/services, if any.&lt;/li>
+&lt;li>Better &lt;strong>operational efficiency&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-ecosystem">Hadoop Ecosystem
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Data Storage&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>HDFS&lt;/strong>: File System&lt;/li>
+&lt;li>&lt;strong>HBase&lt;/strong>: Column DB Storage&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Processing&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Map Reduce&lt;/strong>: Cluster Management&lt;/li>
+&lt;li>&lt;strong>YARN&lt;/strong>: Cluster &amp;amp; Resource Management&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Access&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Hive&lt;/strong>: SQL&lt;/li>
+&lt;li>&lt;strong>Pig&lt;/strong>: Dataflow&lt;/li>
+&lt;li>&lt;strong>Mahout&lt;/strong>: Machine Learning&lt;/li>
+&lt;li>&lt;strong>Avro&lt;/strong>: RPC&lt;/li>
+&lt;li>&lt;strong>Sqoop&lt;/strong>: Data Access&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Management&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Oozie&lt;/strong>: Workflow Monitoring&lt;/li>
+&lt;li>&lt;strong>Chukwa&lt;/strong>: Monitoring&lt;/li>
+&lt;li>&lt;strong>ZooKeeper&lt;/strong>: Management&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hbase">HBase
+&lt;/h3>&lt;ul>
+&lt;li>an open-source, non-relational distributed database&lt;/li>
+&lt;li>it is a NoSQL database&lt;/li>
+&lt;li>support all types of data&lt;/li>
+&lt;li>can handle anything and everything inside Hadoop ecosystem&lt;/li>
+&lt;li>run on top of HDFS and provides BigTable-like capabilities&lt;/li>
+&lt;li>written in Java, and HBase applications can be written in REST, Avro, and Thrift APIs&lt;/li>
+&lt;/ul>
+&lt;h3 id="hive">HIVE
+&lt;/h3>&lt;ul>
+&lt;li>built on Apache Hadoop&lt;/li>
+&lt;li>manage large distributed data sets&lt;/li>
+&lt;li>provides following features:
+&lt;ul>
+&lt;li>provides tools to extract/transform/load data(ETL)&lt;/li>
+&lt;li>store, query, and analyze large-scale data stored in HDFS(or HBase)&lt;/li>
+&lt;li>SQL is converted into MapReduce jobs and run on Hadoop to perform statistical analysis and processing of massive data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>defines a query language HQL(similar to SQL)&lt;/li>
+&lt;li>users familiar with SQL can query data directly
+using Hive&lt;/li>
+&lt;li>allows mapReducer-savvy developers to develop custom mappers and reducers to handle the complex analysis work&lt;/li>
+&lt;li>disadvantages
+&lt;ul>
+&lt;li>does not correctly support transactions&lt;/li>
+&lt;li>cannot modify table data(cannot update, delete, insert)&lt;/li>
+&lt;li>slow query speed&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop">Hadoop
+&lt;/h3>&lt;ul>
+&lt;li>use a distributed approach to store the massive volume of information&lt;/li>
+&lt;li>data was divided up and allocated to many individual databases&lt;/li>
+&lt;li>HDFS is a specially design file system for storing huge datasets&lt;/li>
+&lt;li>main features
+&lt;ul>
+&lt;li>cost&lt;/li>
+&lt;li>scalability&lt;/li>
+&lt;li>flexibility&lt;/li>
+&lt;li>speed&lt;/li>
+&lt;li>fault tolerance&lt;/li>
+&lt;li>high throughput&lt;/li>
+&lt;li>minimum network traffic&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="storm">STORM
+&lt;/h3>&lt;ul>
+&lt;li>a free, open source distributed real-time computing system&lt;/li>
+&lt;li>simplifies the reliable processing of streaming data&lt;/li>
+&lt;li>very fast, one test achieved one million group processing per second on a single node&lt;/li>
+&lt;li>storm features:
+&lt;ul>
+&lt;li>easy to expand&lt;/li>
+&lt;li>storm fault tolerance&lt;/li>
+&lt;li>low latency&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="zookeeper">Zookeeper
+&lt;/h3>&lt;ul>
+&lt;li>is the coordinator of any Hadoop job which includes a combination of services in a Hadoop Ecosystem&lt;/li>
+&lt;li>coordinates with various services in a distributed environment&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-history--versions">Hadoop History &amp;amp; Versions
+&lt;/h2>&lt;ul>
+&lt;li>Two main problems with big data
+&lt;ul>
+&lt;li>store such large amounts of data&lt;/li>
+&lt;li>process the stored data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Hadoop is the solution to the big data problem&lt;/li>
+&lt;li>consists two components
+&lt;ul>
+&lt;li>Hadoop Distributed File System(HDFS)&lt;/li>
+&lt;li>YARN&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-history">Hadoop History
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>2002&lt;/strong>: Apache Nutch was wtarted&lt;/li>
+&lt;li>&lt;strong>2003&lt;/strong>: Google publish Google File System paper&lt;/li>
+&lt;li>&lt;strong>2004&lt;/strong>: Google released paper on MapReduce&lt;/li>
+&lt;li>&lt;strong>2005&lt;/strong>: Nutch Distributed File System was introduced&lt;/li>
+&lt;li>&lt;strong>2006&lt;/strong>: Hadoop was introduced along HDFS&lt;/li>
+&lt;li>&lt;strong>2007&lt;/strong>: Yahoo runs two cluster of 1000 machines&lt;/li>
+&lt;li>&lt;strong>2013&lt;/strong>: Hadoop 2 was released&lt;/li>
+&lt;li>&lt;strong>2017&lt;/strong>: Hadoop 3 was released&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-distribution-evaluation-criteria">Hadoop Distribution evaluation criteria
+&lt;/h2>&lt;h3 id="performance">Performance
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>in the early days&lt;/strong>: fast throughput&lt;/li>
+&lt;li>&lt;strong>now&lt;/strong>: includes low latency&lt;/li>
+&lt;li>recent emphasis on low latency focuses on two key attributes
+&lt;ul>
+&lt;li>&lt;strong>raw performance&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>scalability&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="scalability">Scalability
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>File&lt;/strong> Hadoop&amp;rsquo;s default architecture consists of a single NameNode. Hadoop platform avoids single NameNode bottlenecks and has a distributed metadata architecture&lt;/li>
+&lt;li>&lt;strong>Node number&lt;/strong> your chosen Hadoop implementation may need to scale to 1,000 nodes or more&lt;/li>
+&lt;li>&lt;strong>Node capacity/density&lt;/strong> you need to scale nodes with higher disk density&lt;/li>
+&lt;/ul>
+&lt;h3 id="reliability">Reliability
+&lt;/h3>&lt;p>Apache Hadoop is designed to scale from a single server to thousands of computers and is highly fault-tolerant&lt;/p></description></item><item><title>Hadoop Chapter 2: Hadoop and Big Data Architecture(CN)</title><link>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architecturecn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architecturecn/</guid><description>&lt;img src="https://example.com/post/img/25.jpg" alt="Featured image of post Hadoop Chapter 2: Hadoop and Big Data Architecture(CN)" />&lt;h2 id="hadoop-操作系统模式">Hadoop 操作系统模式
+&lt;/h2>&lt;p>&lt;strong>Hadoop 四大核心运行模式&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>本地运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>伪分布式运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>完全分布式运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>高可用性(HA)运行模式&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-本地运行模式">Hadoop 本地运行模式
+&lt;/h3>&lt;ul>
+&lt;li>默认运行模式&lt;/li>
+&lt;li>以单个 Java 进程运行&lt;/li>
+&lt;li>又称作本地（独立）模式&lt;/li>
+&lt;/ul>
+&lt;h4 id="模式配置要求">模式配置要求
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>操作系统&lt;/strong>: Windows 或 Linux x64&lt;/li>
+&lt;li>&lt;strong>JDK 版本&lt;/strong>: JDK jdk1.8.0_241&lt;/li>
+&lt;li>&lt;strong>Hadoop 版本&lt;/strong>: 3.x&lt;/li>
+&lt;/ul>
+&lt;p>核心配置文件: hadoop-env.sh&lt;/p>
+&lt;h3 id="hadoop-伪分布式模式">Hadoop 伪分布式模式
+&lt;/h3>&lt;h4 id="模式概述">模式概述
+&lt;/h4>&lt;ul>
+&lt;li>模拟完全分布式环境
+&lt;ul>
+&lt;li>单节点运行 Hadoop&lt;/li>
+&lt;li>所有 Hadoop 守护进程运行于同一服务器节点&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>包含五大核心进程
+&lt;ul>
+&lt;li>名称节点（NameNode）&lt;/li>
+&lt;li>数据节点（DataNode）&lt;/li>
+&lt;li>第二名称节点（SecondaryNameNode）&lt;/li>
+&lt;li>资源管理器（ResourceManager）&lt;/li>
+&lt;li>节点管理器（NodeManager）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="hdfs-守护进程">HDFS 守护进程
+&lt;/h4>&lt;ul>
+&lt;li>HDFS 用于存储海量数据&lt;/li>
+&lt;li>正常运行所需进程
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>执行 &lt;code>start-dfs.sh&lt;/code> 命令启动 HDFS 守护进程对外提供服务&lt;/li>
+&lt;/ul>
+&lt;h4 id="yarn-守护进程">Yarn 守护进程
+&lt;/h4>&lt;ul>
+&lt;li>Hadoop 3.x 资源管理系统&lt;/li>
+&lt;li>核心进程
+&lt;ul>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>执行 &lt;code>start-yarn.sh&lt;/code> 启动服务&lt;/li>
+&lt;/ul>
+&lt;h4 id="伪分布式模式配置">伪分布式模式配置
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>HDFS 配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>core-site.xml&lt;/code>: 配置 NameNode RPC 远程通信地址，默认端口号 &lt;code>8020&lt;/code>&lt;/li>
+&lt;li>&lt;code>hdfs-site.xml&lt;/code>: 设置数据块副本数为 1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>YARN 配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>mapred-site.xml&lt;/code>: 指定 MapReduce 运行框架为 YARN&lt;/li>
+&lt;li>&lt;code>yarn-site.xml&lt;/code>: 配置 ResourceManager 通信地址及 NodeManager 辅助服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>其他配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>hadoop-env.sh&lt;/code>: 设置 hadoop.sh 中的 Java 环境变量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-高可用性运行模式">Hadoop 高可用性运行模式
+&lt;/h3>&lt;h4 id="hdfs-高可用架构">HDFS 高可用架构
+&lt;/h4>&lt;ul>
+&lt;li>通过主备双 NameNode 机制提升可用性
+&lt;ul>
+&lt;li>活跃 NameNode（Active）&lt;/li>
+&lt;li>备用 NameNode（Standby/Passive）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>需解决两大核心问题
+&lt;ul>
+&lt;li>主备 NameNode 状态实时同步&lt;/li>
+&lt;li>同一时刻仅允许一个活跃节点&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="ha-架构实现方案">HA 架构实现方案
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>仲裁日志节点方案&lt;/strong>
+&lt;ul>
+&lt;li>通过 JournalNodes 集群保持主备同步&lt;/li>
+&lt;li>活跃 NameNode 将 EditLog 更新至 JournalNodes&lt;/li>
+&lt;li>备用节点持续读取 JournalNodes 的 EditLog 变更并应用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>共享存储方案&lt;/strong>
+&lt;ul>
+&lt;li>通过共享存储设备保持主备同步&lt;/li>
+&lt;li>活跃 NameNode 将命名空间修改记录至共享存储的 EditLog&lt;/li>
+&lt;li>备用节点读取共享存储的 EditLog 变更并应用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>管理员必须配置至少一种隔离机制（fencing）&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-权限管理">Hadoop 权限管理
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>两级访问控制体系&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>系统级&lt;/strong>: 服务级别授权（ServiceLevel Authorization），控制指定服务是否可访问&lt;/li>
+&lt;li>&lt;strong>调度器级&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="动态扩容-datanode">动态扩容 DataNode
+&lt;/h3>&lt;ul>
+&lt;li>在主节点增加主机名配置，并同步至所有 DataNode 节点&lt;/li>
+&lt;li>Hadoop 已预制新 DataNode 配置参数，扩容步骤如下:
+&lt;ul>
+&lt;li>新增主机名至 hosts 文件&lt;/li>
+&lt;li>分发 hadoop 安装文件至新节点&lt;/li>
+&lt;li>启动新节点服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="动态缩容-datanode">动态缩容 DataNode
+&lt;/h3>&lt;ul>
+&lt;li>创建 exclude 排除文件&lt;/li>
+&lt;li>将待下线节点主机名加入排除文件&lt;/li>
+&lt;/ul>
+&lt;h3 id="负载均衡">负载均衡
+&lt;/h3>&lt;p>节点扩容后如需实现负载均衡，需执行平衡命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">bin/start-balancer.sh -threshold &lt;span class="m">10&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="hadoop-与大数据计算架构">Hadoop 与大数据计算架构
+&lt;/h2>&lt;h3 id="hadoop-大数据生态定位">Hadoop 大数据生态定位
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop 生态既非编程语言亦非服务&lt;/li>
+&lt;li>是解决大数据问题的平台框架&lt;/li>
+&lt;li>生态中多数服务围绕四大核心组件扩展
+&lt;ul>
+&lt;li>分布式存储 HDFS&lt;/li>
+&lt;li>资源调度 YARN&lt;/li>
+&lt;li>计算框架 MapReduce&lt;/li>
+&lt;li>公共组件库 Common&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-实时计算架构">Hadoop 实时计算架构
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/Big_Data_Technology_Ecosystem.jpg"
+loading="lazy"
+alt="Big Data Technology Ecosystem"
+>&lt;/p></description></item><item><title>Hadoop Chapter 2: Hadoop and Big Data Architecture(EN)</title><link>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architectureen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architectureen/</guid><description>&lt;img src="https://example.com/post/img/25.jpg" alt="Featured image of post Hadoop Chapter 2: Hadoop and Big Data Architecture(EN)" />&lt;h2 id="hadoop-operating-modes">Hadoop Operating modes
+&lt;/h2>&lt;p>&lt;strong>four main modes of Hadoop operation&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Local runtime mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Pseudo-distributed operation mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Fully distributed operation mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>High availability(HA) operating mode&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-local-operation-mode">Hadoop Local operation mode
+&lt;/h3>&lt;ul>
+&lt;li>default mode&lt;/li>
+&lt;li>run as a single Java process&lt;/li>
+&lt;li>called Local(Standalone) mode&lt;/li>
+&lt;/ul>
+&lt;h4 id="mode-configuration">Mode Configuration
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>OS&lt;/strong>: Windows or Linux x64&lt;/li>
+&lt;li>&lt;strong>The JDK&lt;/strong>: JDK jdk1.8.0_241&lt;/li>
+&lt;li>&lt;strong>Hadoop&lt;/strong>: 3.x&lt;/li>
+&lt;/ul>
+&lt;p>configuration file: hadoop-env.sh&lt;/p>
+&lt;h3 id="hadoop-pseudo-distributed-mode">Hadoop pseudo-distributed mode
+&lt;/h3>&lt;h4 id="overview">Overview
+&lt;/h4>&lt;ul>
+&lt;li>simulate a fully distributed environment
+&lt;ul>
+&lt;li>Hadoop run on a single node&lt;/li>
+&lt;li>each Hadoop daemon running on a single server node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>five process
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="hdfs-daemon-process">HDFS Daemon Process
+&lt;/h4>&lt;ul>
+&lt;li>HDFS is used to store large amounts of data&lt;/li>
+&lt;li>required for the normal operation of the HDFS
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>run the &lt;code>start-dfs.sh&lt;/code> command to start the HDFS daemon process to provide external services&lt;/li>
+&lt;/ul>
+&lt;h4 id="yarn-daemon-process">Yarn Daemon Process
+&lt;/h4>&lt;ul>
+&lt;li>the resource management system in Hadoop 3.x&lt;/li>
+&lt;li>required
+&lt;ul>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>run &lt;code>start-yarn.sh&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h4 id="pattern-configurationpseudo-distributed-mode">Pattern Configuration(pseudo-distributed mode)
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>HDFS Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>core-site.xml&lt;/code>: NameNode RPC remote communication address. The default port number is &lt;code>8020&lt;/code>&lt;/li>
+&lt;li>&lt;code>HDFS-site.xml&lt;/code>: set the number of data block copies to 1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>YARN Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>mapred-site.xml&lt;/code>: set the MapReduce operating framework to YARN&lt;/li>
+&lt;li>&lt;code>yarn-site,xml&lt;/code>: set the ResourceManager communication address and aux-services of the NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Other Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>hadoop-env.sh&lt;/code>: set the java environment variables in &lt;code>hadoop.sh&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-ha-running-mode">Hadoop HA Running Mode
+&lt;/h3>&lt;h4 id="hdfs-ha-architecture">HDFS HA Architecture
+&lt;/h4>&lt;ul>
+&lt;li>
+&lt;p>HA architecture solve the problem of NameNode availability by allowing us to have two NameNodes in an active/passive configuration.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Active NameNode&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Standby/Passive NameNode&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Two main issues in maintaining consistency&lt;/p>
+&lt;ul>
+&lt;li>Active and Standby NameNode should always be in sync with each other&lt;/li>
+&lt;li>There should be only one active NameNode at a time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="implementation-of-ha-architecture">Implementation of HA Architecture
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>Using Quorum Journal Nodes&lt;/strong>
+&lt;ul>
+&lt;li>JournalNodes helps the standby and active NameNode keep in sync&lt;/li>
+&lt;li>The active NameNode is responsible for updating the EditLogs present in the JournalNodes.&lt;/li>
+&lt;li>The StandbyNode reads the changes made to the EditLogs in the JournalNode and applies it to its own
+namespace in a constant manner.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Using Shared Storage&lt;/strong>
+&lt;ul>
+&lt;li>A shared storage device helps standby and active NameNode keep in sync&lt;/li>
+&lt;li>The active NameNode logs the record of any modification done in its namespace to an EditLog
+present in this shared storage.&lt;/li>
+&lt;li>The StandbyNode reads the changes made to the EditLogs in this shared
+storage and applies it to its own namespace.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The administrator must configure at least one fencing&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-authority-management">Hadoop Authority Management
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Hadoop access control is divided into two levels&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>system level&lt;/strong>: ServiceLevel Authorization. It is used to control whether specified services can be accessed.&lt;/li>
+&lt;li>&lt;strong>scheduler level&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-datanode">Add DataNode
+&lt;/h3>&lt;ul>
+&lt;li>Add a host name on the master node and copy it on any DataNode node.&lt;/li>
+&lt;li>Hadoop has configured the relevant parameters to the newly added DataNode and started it on the new node. Specific steps are as follows:
+&lt;ul>
+&lt;li>Increase hostname&lt;/li>
+&lt;li>Copy the hadoop installation file&lt;/li>
+&lt;li>Start new node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="reduce-datanode">Reduce DataNode
+&lt;/h3>&lt;ul>
+&lt;li>Create an exclude file&lt;/li>
+&lt;li>Add the node host name to be deleted in the exclude file&lt;/li>
+&lt;/ul>
+&lt;h3 id="load-balancing">Load Balancing
+&lt;/h3>&lt;p>After adding new nodes, if you want to achieve load balancing, you need to use the balance command: &lt;code>bin/start-balancer.sh -threshold 10&lt;/code>&lt;/p>
+&lt;h2 id="hadoop-and-big-data-computing-architecture">Hadoop and Big data Computing Architecture
+&lt;/h2>&lt;h3 id="hadoop-and-big-data-architecture">Hadoop and Big Data Architecture
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop Ecosystem is neither a programming language nor a service&lt;/li>
+&lt;li>It is a platform or framework which solves big data problems&lt;/li>
+&lt;li>Most of the services available in the Hadoop ecosystem are to supplement the main four core components
+&lt;ul>
+&lt;li>HDFS&lt;/li>
+&lt;li>YARN&lt;/li>
+&lt;li>MapReduce&lt;/li>
+&lt;li>Common&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-real-time-computing-architecture">Hadoop Real-time Computing Architecture
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/Big_Data_Technology_Ecosystem.jpg"
+loading="lazy"
+alt="Big Data Technology Ecosystem"
+>&lt;/p></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://example.com/post/img/9.png" alt="Featured image of post MongoDB基本语法" />&lt;h3 id="增">增
 &lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2140,7 +2899,124 @@ $$&lt;/p>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;div class="footnotes" role="doc-endnotes">
+&lt;h2 id="代码">代码
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">transforms&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torchvision&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">datasets&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">torch.utils.data&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">DataLoader&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.nn.functional&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">F&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">torch.optim&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">optim&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">64&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">transform&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Compose&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ToTensor&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">transforms&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Normalize&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mf">0.1307&lt;/span>&lt;span class="p">,),&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mf">0.3081&lt;/span>&lt;span class="p">,))])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MNIST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">train_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_dataset&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datasets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MNIST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;../dataset/mnist/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">train&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">download&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">transform&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">test_loader&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataLoader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">test_dataset&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">shuffle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Net&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Module&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">super&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Net&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="fm">__init__&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Conv2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">kernel_size&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">MaxPool2d&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Linear&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">320&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">forward&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">batch_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">F&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">relu&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pooling&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conv2&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">view&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">batch_size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">x&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Net&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">device&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;cuda&amp;#34;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cuda&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_available&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="s2">&amp;#34;cpu&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">criterion&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">torch&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">CrossEntropyLoss&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">optimizer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">optim&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">SGD&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">parameters&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">lr&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.01&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">momentum&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">train&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">batch_idx&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">train_loader&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">inputs&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">device&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">zero_grad&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">outputs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">model&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">inputs&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">criterion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">outputs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">backward&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">optimizer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">step&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">loss&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">300&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">299&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;[&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s1">, &lt;/span>&lt;span class="si">%5d&lt;/span>&lt;span class="s1">] loss: &lt;/span>&lt;span class="si">%.3f&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">epoch&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">batch_idx&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">300&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">running_loss&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
@@ -2413,13 +3289,7 @@ alt="输出结果"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>操作系统（王道）第二章：进程与线程</title><link>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%BA%8C%E7%AB%A0%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%BA%8C%E7%AB%A0%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/</guid><description>&lt;h2 id="进程与线程">进程与线程
-&lt;/h2>&lt;h3 id="进程的概念和特征">进程的概念和特征
-&lt;/h3>&lt;h4 id="进程的概念">进程的概念
-&lt;/h4>&lt;ul>
-&lt;li>引入进程，实现操作系统的&lt;strong>并发性&lt;/strong>和&lt;strong>共享性&lt;/strong>（&lt;!-- raw HTML omitted -->最基本的两个特性&lt;!-- raw HTML omitted -->）&lt;/li>
-&lt;li>&lt;strong>进程控制块&lt;/strong>(PCB)是一个专门的数据结构，使参与并发执行的每个程序都能独立地运行&lt;/li>
-&lt;/ul></description></item><item><title>操作系统（王道）第一章：计算机系统概述</title><link>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid><description>&lt;img src="https://example.com/post/img/11.jpg" alt="Featured image of post 操作系统（王道）第一章：计算机系统概述" />&lt;h2 id="操作系统的基本概念">操作系统的基本概念
+&lt;/div></description></item><item><title>操作系统（王道）第一章：计算机系统概述</title><link>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%8B%E9%81%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid><description>&lt;img src="https://example.com/post/img/11.jpg" alt="Featured image of post 操作系统（王道）第一章：计算机系统概述" />&lt;h2 id="操作系统的基本概念">操作系统的基本概念
 &lt;/h2>&lt;h3 id="操作系统的基本概念-1">操作系统的基本概念
 &lt;/h3>&lt;p>&lt;!-- raw HTML omitted -->操作系统&lt;!-- raw HTML omitted -->是指&lt;!-- raw HTML omitted -->控制和管理&lt;!-- raw HTML omitted -->整个计算机系统的&lt;!-- raw HTML omitted -->硬件与软件资源&lt;!-- raw HTML omitted -->，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件&lt;!-- raw HTML omitted -->提供方便接口与环境&lt;!-- raw HTML omitted -->的程序集合。操作系统是计算机系统中最基本的系统软件&lt;/p>
 &lt;p>&lt;img src="https://example.com/img/%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84.png"
@@ -4016,4 +4886,171 @@ loading="lazy"
 &lt;ul>
 &lt;li>如果在某一个方向上，gradient值很小（比较平稳），那么应该把学习效率调高；&lt;/li>
 &lt;li>如果在某一个方向上，gradient值很大（比较陡峭），那么应该把学习效率调低。&lt;/li>
+&lt;/ul></description></item><item><title>论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</title><link>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</guid><description>&lt;img src="https://example.com/post/img/26.jpg" alt="Featured image of post 论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning" />&lt;h2 id="知识笔记">知识笔记
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>多阶段训练(multi-stage training)&lt;/strong>：指模型训练过程中分为多个阶段（阶段间目标或数据不同），每个阶段针对性地优化模型的不同能力，最终提升整体性能。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>冷启动数据(cold start data)&lt;/strong>：指在模型训练初期（或新任务启动时）使用的特定引导数据，用于解决模型初期因缺乏足够信息导致的性能低下或不稳定问题。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>训练后阶段&lt;/strong>：指在机器学习模型完成训练后的一系列操作，包括模型评估、优化、部署、监控等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>预训练与训练的差别&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>预训练&lt;/strong>：在大规模通用数据集上进行&lt;/li>
+&lt;li>&lt;strong>训练&lt;/strong>：在特定任务上调整模型参数的过程&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>推理导向的强化学习(Reasoning-Oriented RL)&lt;/strong>：动态奖励机制和结构化探索策略&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://arxiv.org/pdf/2501.12948" target="_blank" rel="noopener"
+>原文传送门&lt;/a>&lt;/p>
+&lt;p>膜拜大佬&lt;/p>
+&lt;h2 id="读书笔记">读书笔记
+&lt;/h2>&lt;h3 id="abstract">Abstract
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>DeepSeek-R1-Zero&lt;/strong>
+&lt;ul>
+&lt;li>通过强化学习训练，且没监督微调&lt;/li>
+&lt;li>推理能力优秀&lt;/li>
+&lt;li>可读性差，语言混合&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>DeepSeek-R1&lt;/strong>
+&lt;ul>
+&lt;li>在强化学习之前结合多阶段训练和冷启动数据&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;ul>
+&lt;li>训练后阶段可提高推理任务的准确性
+&lt;ul>
+&lt;li>所需计算资源比预训练少&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OpenAI o1引入了思考时间
+&lt;ul>
+&lt;li>有效的测试时间缩放的挑战依旧是一个问题&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使用纯强化学习过程的自我进化，使得DeepSeek-R1-Zero在推理基准测试上与OpenAI-01相当
+&lt;ul>
+&lt;li>使用DeepSeek-v3-Base作为基础模型&lt;/li>
+&lt;li>采用PRPO作为强化学习框架&lt;/li>
+&lt;li>可读性差，语言混乱&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>引入DeepSeek-R1。结合少量冷启动数据和多级训练流水线
+&lt;ul>
+&lt;li>&lt;strong>冷启动数据微调&lt;/strong>：修复基础语言能力
+&lt;ul>
+&lt;li>收集数千条高质量冷启动数据（例如：人工标注的数学解题步骤、语法规范的写作范文）&lt;/li>
+&lt;li>用这些数据对基础模型 &lt;code>DeepSeek-V3-Base&lt;/code> 进行监督微调（SFT）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>推理导向的RL训练&lt;/strong>：提升特定任务的推理能力
+&lt;ul>
+&lt;li>使用强化学习（如PPO算法）训练模型，奖励函数侧重推理正确性（如解题步骤分、最终答案分）。&lt;/li>
+&lt;li>训练接近收敛时，模型能稳定生成正确但可能可读性较差的答案&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>拒绝采样生成新SFT数据&lt;/strong>：从RL模型的结果中提取高质量数据，重新注入监督训练
+&lt;ul>
+&lt;li>让RL模型的结果中提取高质量数据，重新注入监督训练&lt;/li>
+&lt;li>通过规则或奖励模型筛选出推理正确且可读性高的结果（例如保留前10%的优质答案）&lt;/li>
+&lt;li>混入新RL数据和原有监督数据&lt;/li>
+&lt;li>用混合数据重新微调DeepSeek-V3-Base&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>全场景二次RL训练&lt;/strong>：在多任务竞争中进一步平衡性能
+&lt;ul>
+&lt;li>输入涵盖所有任务的提示（如同时包含数学题、写作要求、事实问答）&lt;/li>
+&lt;li>设计多维度奖励函数，如数学任务：步骤正确性+答案准确性；写作任务：流畅性+语法正确性&lt;/li>
+&lt;li>基于混合奖励进行RL训练，迫使模型兼顾多领域性能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="核心贡献">核心贡献
+&lt;/h4>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>后训练(Post-Training)&lt;/strong>：直接对基础模型进行大规模强化学习（RL）&lt;/p>
+&lt;ol>
+&lt;li>创新点
+&lt;ol>
+&lt;li>跳过监督微调(SFT)&lt;/li>
+&lt;li>激励模型自主探索思维链(CoT)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>意义：证明纯RL训练可激发LLM推理能力（无需SFT提供参考答案）&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-TEXT" data-lang="TEXT">&lt;span class="line">&lt;span class="cl">步骤1：将方程改写为 3x² - 2x - 8 = 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤2：尝试因式分解 → 失败 → 反思：“可能需要使用求根公式。”
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤3：应用求根公式 x = [2 ± √(4 + 96)] / 6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤4：计算判别式 √100 = 10 → x = (2 ± 10)/6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤5：验证解是否满足原方程 → 确认 x=2 和 x=-4/3 均为解
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>开发流程
+&lt;ol>
+&lt;li>&lt;strong>第一阶段RL&lt;/strong>：基于基础模型进行RL训练，奖励函数侧重推理正确性。探索更优推理模式（如数学解题策略、代码调试逻辑）&lt;/li>
+&lt;li>&lt;strong>第一阶段SFT&lt;/strong>：混合RL生成的优质推理数据与通用领域SFT数据。固化RL探索到的优质推理模式，并补充非推理能力（如写作、对话）。&lt;/li>
+&lt;li>&lt;strong>第二阶段RL&lt;/strong>：引入人类反馈（如人工标注偏好排序）优化奖励模型。对齐人类偏好（如可读性、安全性）&lt;/li>
+&lt;li>&lt;strong>第二阶段SFT&lt;/strong>：平衡多任务性能，防止RL过度优化单一领域&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>蒸馏(Distillation)&lt;/strong>：让小模型继承大模型推理能力&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>核心思想&lt;/strong>：用大模型生成的推理数据训练小模型，使其超越RL训练的小模型&lt;/li>
+&lt;li>降低推理成本，促进小模型实际应用&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="discussion">Discussion
+&lt;/h3>&lt;h4 id="蒸馏和强化学习的比较">蒸馏和强化学习的比较
+&lt;/h4>&lt;ul>
+&lt;li>将更强大的模型提炼成更小的模型可以得到很好的结果，而依赖于大规模RL的模型需要巨大的计算能力，甚至可能达不到提炼的性能&lt;/li>
+&lt;li>尽管提炼策略既经济又有效，但要超越智能的界限，可能仍然需要更强大的基础模型和更大规模的强化学习&lt;/li>
+&lt;/ul>
+&lt;h4 id="未成功的尝试">未成功的尝试
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>过程奖励模型(Process Reward Model, PRM)&lt;/strong>
+&lt;ul>
+&lt;li>在一般推理中明确定义一个细粒度的步骤是一个挑战&lt;/li>
+&lt;li>确定当前中间步骤是否正确是一项具有挑战性的任务&lt;/li>
+&lt;li>一旦引入了基于模型的PRM，就不可避免地会导致奖励黑客行为。而重新培训奖励模型需要额外的培训资源，这使整个培训流程变得复杂&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>蒙特卡洛树搜索(Monte Carlo Tree Search, MCTS)&lt;/strong>
+&lt;ul>
+&lt;li>将答案分解为更小的部分，以允许模型系统地探索解决方案空间&lt;/li>
+&lt;li>为了方便这一点，提示模型生成多个标签，这些标签对应于搜索所需的特定推理步骤&lt;/li>
+&lt;li>难点：
+&lt;ul>
+&lt;li>token的生成有很多空间。解决方案：为每个节点设置最大扩展限制，但可能会陷入局部最优&lt;/li>
+&lt;li>价值模型直接影响生成的质量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item></channel></rss>

@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大数据 on 一只饺子</title><link>https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link><description>Recent content in 大数据 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Thu, 13 Mar 2025 01:24:12 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;p>The important features of NoSQL:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大数据 on 一只饺子</title><link>https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link><description>Recent content in 大数据 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 22 Mar 2025 14:18:54 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;h2 id="get-familiar-with-nosql-database">Get familiar with NoSQL Database
+&lt;/h2>&lt;h3 id="understanding-nosql-database">Understanding NoSQL Database
+&lt;/h3>&lt;p>&lt;strong>the important features of NoSQL&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Schema Flexibility&lt;/li>
-&lt;li>Horizontal Scalability&lt;/li>
-&lt;li>High Availability&lt;/li>
-&lt;li>Performance&lt;/li>
-&lt;li>Diverse Data Models&lt;/li>
-&lt;li>Cost-Effectiveness&lt;/li>
+&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: allows for the storage of various data types&lt;/li>
+&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scaled out by distributing data across multiple servers&lt;/li>
+&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: Build-in replication and sharding features&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: Optimized for specific use cases&lt;/li>
+&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: Support various data models&lt;/li>
+&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: The ability to scale out using commodity hardware and no need to invest the expensive, high-end servers&lt;/li>
 &lt;/ul>
-&lt;p>MongoDB features:&lt;/p>
+&lt;h3 id="introduction-to-nosql">Introduction to NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Two types of databases&lt;/strong>
 &lt;ul>
-&lt;li>
-&lt;p>data aggregation&lt;/p>
+&lt;li>&lt;strong>relational databases&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>non-relational databases&lt;/strong>, often called NoSQL databases&lt;/li>
+&lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>ACID transactions&lt;/p>
+&lt;li>&lt;strong>A NoSQL database&lt;/strong> is used to store large quantities of complex and diverse data&lt;/li>
+&lt;li>&lt;strong>MongoDB&lt;/strong> is one of the most established NoSQL databases
+&lt;ul>
+&lt;li>&lt;strong>data aggregation&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>ACID&lt;/strong>
 &lt;ul>
 &lt;li>Atomicity&lt;/li>
 &lt;li>Consistency&lt;/li>
@@ -21,28 +29,779 @@
 &lt;li>Durability&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>horizontal scaling&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Charts&lt;/p>
+&lt;li>&lt;strong>horizontal scaling&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>charts&lt;/strong>&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>Relational Database VS NoSQL:&lt;/p>
+&lt;h3 id="relational-database-vs-nosql">Relational Database VS NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Relational Database Management Systems&lt;/strong>
+&lt;ul>
+&lt;li>store &lt;strong>structured data&lt;/strong>&lt;/li>
+&lt;li>in the form of &lt;strong>tables&lt;/strong> that consist of rows and columns&lt;/li>
+&lt;li>have relationships with other tables&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>NoSQL Database Management Systems&lt;/strong>
+&lt;ul>
+&lt;li>store &lt;strong>unstructured and semi-structured data&lt;/strong>&lt;/li>
+&lt;li>store the data &lt;strong>without a schema&lt;/strong> and support &lt;strong>dynamic schema&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;table>
 &lt;thead>
 &lt;tr>
+&lt;th>Feature&lt;/th>
 &lt;th>Relational Database&lt;/th>
-&lt;th>NoSQL&lt;/th>
+&lt;th>NoSQL Database&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>Schema&lt;/td>
+&lt;td>1. follows a rigid schema 2. have a definition of all the desired columns and their types&lt;/td>
+&lt;td>1. does not impose a rigid schema 2. store the unstructured data with dynamic structures&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Data model/Storage Structure&lt;/td>
+&lt;td>1. data is stored in tables 2. each record is stored as a row&lt;/td>
+&lt;td>1. data is stored in different formats 2. storage structure are documents, graphs, key-values and wide columns&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Normalization&lt;/td>
+&lt;td>used to remove duplicate data and avoid data anomalies&lt;/td>
+&lt;td>focus more on fast data retrieval and the data can be normalized&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Scaling&lt;/td>
+&lt;td>hard to scale and generally scaled vertically&lt;/td>
+&lt;td>both vertical and horizontal scaling&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://example.com/post/img/9.png" alt="Featured image of post MongoDB基本语法" />&lt;h3 id="增">增
+&lt;/table>
+&lt;h3 id="types-of-nosql">Types of NoSQL
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Type&lt;/th>
+&lt;th>Typical Usage&lt;/th>
+&lt;th>Example&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Key-value&lt;/td>
+&lt;td>Image stores, Key-based filesystems, Object cache, Systems designed to scale&lt;/td>
+&lt;td>Berkeley DB, Memcache, Redis, Riak, DynamoDB&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Column family&lt;/td>
+&lt;td>Web crawler results, Big data problems that can relax consistency rules&lt;/td>
+&lt;td>Apache HBase&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Graph&lt;/td>
+&lt;td>Social networks, Fraud detection, Relationship-heavy data&lt;/td>
+&lt;td>Neo4j, AllergroGraph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Document&lt;/td>
+&lt;td>High-variability data, Document search&lt;/td>
+&lt;td>MongoDB, CouchDB&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="understanding-the-mongodb">Understanding the MongoDB
+&lt;/h2>&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
+&lt;/h2>&lt;h2 id="understand-the-similarities-and-difference-with-other-softwares">Understand the similarities and difference with Other Software&amp;rsquo;s
+&lt;/h2></description></item><item><title>Hadoop Chapter 1: Big Data Concept(CN)</title><link>https://example.com/p/hadoop-chapter-1-big-data-conceptcn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-1-big-data-conceptcn/</guid><description>&lt;img src="https://example.com/post/img/24.jpg" alt="Featured image of post Hadoop Chapter 1: Big Data Concept(CN)" />&lt;p>&lt;a class="link" href="https://xn--8mr985eba830aiye.vip/p/hadoop-chapter-1-big-data-concepten/" target="_blank" rel="noopener"
+>English Version Portal&lt;/a>&lt;/p>
+&lt;h2 id="什么是大数据">什么是大数据
+&lt;/h2>&lt;ul>
+&lt;li>指体积庞大的数据集合&lt;/li>
+&lt;li>随时间呈指数级增长&lt;/li>
+&lt;li>传统数据管理工具无法有效存储或处理&lt;/li>
+&lt;li>具有海量规模的数据&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据类型">大数据类型
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>结构化数据&lt;/strong>：能够以固定格式存储、访问和处理的数据&lt;/li>
+&lt;li>&lt;strong>非结构化数据&lt;/strong>：形式或结构未知的数据&lt;/li>
+&lt;li>&lt;strong>半结构化数据&lt;/strong>：同时包含两种形式的数据&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据特征">大数据特征
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>体量（Volume）&lt;/strong>：数据规模庞大&lt;/li>
+&lt;li>&lt;strong>多样性（Variety）&lt;/strong>：数据来源和性质的异构性&lt;/li>
+&lt;li>&lt;strong>速度（Velocity）&lt;/strong>：数据生成速率&lt;/li>
+&lt;li>&lt;strong>真实性（Veracity）&lt;/strong>：待分析的内容质量&lt;/li>
+&lt;/ul>
+&lt;h3 id="大数据处理优势">大数据处理优势
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>商业决策&lt;/strong>：可利用外部智能辅助决策&lt;/li>
+&lt;li>&lt;strong>客户服务提升&lt;/strong>：改善服务质量&lt;/li>
+&lt;li>&lt;strong>风险预警&lt;/strong>：早期识别产品/服务风险&lt;/li>
+&lt;li>&lt;strong>运营效率&lt;/strong>：提高运营效能&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop生态系统">Hadoop生态系统
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>数据存储&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>HDFS&lt;/strong>：分布式文件系统&lt;/li>
+&lt;li>&lt;strong>HBase&lt;/strong>：列式数据库存储&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据处理&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>MapReduce&lt;/strong>：集群计算框架&lt;/li>
+&lt;li>&lt;strong>YARN&lt;/strong>：集群资源管理系统&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据访问&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Hive&lt;/strong>：SQL查询引擎&lt;/li>
+&lt;li>&lt;strong>Pig&lt;/strong>：数据流处理&lt;/li>
+&lt;li>&lt;strong>Mahout&lt;/strong>：机器学习库&lt;/li>
+&lt;li>&lt;strong>Avro&lt;/strong>：远程过程调用&lt;/li>
+&lt;li>&lt;strong>Sqoop&lt;/strong>：数据迁移工具&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据管理&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Oozie&lt;/strong>：工作流调度&lt;/li>
+&lt;li>&lt;strong>Chukwa&lt;/strong>：系统监控&lt;/li>
+&lt;li>&lt;strong>ZooKeeper&lt;/strong>：协调服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hbase">HBase
+&lt;/h3>&lt;ul>
+&lt;li>开源非关系型分布式数据库&lt;/li>
+&lt;li>NoSQL数据库类型&lt;/li>
+&lt;li>支持所有数据类型&lt;/li>
+&lt;li>可处理Hadoop生态系统内的任何数据&lt;/li>
+&lt;li>运行于HDFS之上，提供类BigTable功能&lt;/li>
+&lt;li>使用Java编写，支持REST/Avro/Thrift API&lt;/li>
+&lt;/ul>
+&lt;h3 id="hive">Hive
+&lt;/h3>&lt;ul>
+&lt;li>构建于Hadoop之上&lt;/li>
+&lt;li>管理大规模分布式数据集&lt;/li>
+&lt;li>核心功能：
+&lt;ul>
+&lt;li>提供ETL（抽取/转换/加载）工具&lt;/li>
+&lt;li>存储、查询和分析HDFS/HBase数据&lt;/li>
+&lt;li>将SQL转换为MapReduce任务进行海量数据分析&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>特有查询语言HQL（类SQL语法）&lt;/li>
+&lt;li>支持SQL用户直接查询&lt;/li>
+&lt;li>允许开发者自定义MapReduce处理复杂分析&lt;/li>
+&lt;li>局限性：
+&lt;ul>
+&lt;li>不完全支持事务&lt;/li>
+&lt;li>无法修改表数据（更新/删除/插入）&lt;/li>
+&lt;li>查询延迟较高&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop">Hadoop
+&lt;/h3>&lt;ul>
+&lt;li>采用分布式存储处理海量信息&lt;/li>
+&lt;li>数据分片存储于多个独立节点&lt;/li>
+&lt;li>HDFS专为大规模数据集设计的文件系统&lt;/li>
+&lt;li>核心特性：
+&lt;ul>
+&lt;li>低成本&lt;/li>
+&lt;li>高扩展性&lt;/li>
+&lt;li>灵活性&lt;/li>
+&lt;li>高速处理&lt;/li>
+&lt;li>容错机制&lt;/li>
+&lt;li>高吞吐量&lt;/li>
+&lt;li>最小化网络流量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="storm">Storm
+&lt;/h3>&lt;ul>
+&lt;li>开源分布式实时计算系统&lt;/li>
+&lt;li>简化流式数据的可靠处理&lt;/li>
+&lt;li>高性能（单节点每秒百万级处理）&lt;/li>
+&lt;li>主要特点：
+&lt;ul>
+&lt;li>易扩展性&lt;/li>
+&lt;li>容错机制&lt;/li>
+&lt;li>低延迟处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="zookeeper">ZooKeeper
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop生态系统的协调者&lt;/li>
+&lt;li>分布式环境中的服务协调中枢&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop发展历程与版本">Hadoop发展历程与版本
+&lt;/h2>&lt;ul>
+&lt;li>大数据两大核心问题：
+&lt;ul>
+&lt;li>海量数据存储&lt;/li>
+&lt;li>存储数据处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Hadoop作为解决方案包含：
+&lt;ul>
+&lt;li>HDFS分布式文件系统&lt;/li>
+&lt;li>YARN资源管理器&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="发展大事记">发展大事记
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>2002&lt;/strong>：Apache Nutch项目启动&lt;/li>
+&lt;li>&lt;strong>2003&lt;/strong>：Google发布GFS论文&lt;/li>
+&lt;li>&lt;strong>2004&lt;/strong>：Google发布MapReduce论文&lt;/li>
+&lt;li>&lt;strong>2005&lt;/strong>：Nutch分布式文件系统诞生&lt;/li>
+&lt;li>&lt;strong>2006&lt;/strong>：Hadoop与HDFS正式发布&lt;/li>
+&lt;li>&lt;strong>2007&lt;/strong>：Yahoo部署千节点集群&lt;/li>
+&lt;li>&lt;strong>2013&lt;/strong>：Hadoop 2.0发布&lt;/li>
+&lt;li>&lt;strong>2017&lt;/strong>：Hadoop 3.0发布&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop发行版评估标准">Hadoop发行版评估标准
+&lt;/h2>&lt;h3 id="性能表现">性能表现
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>早期重点&lt;/strong>：高吞吐量&lt;/li>
+&lt;li>&lt;strong>当前趋势&lt;/strong>：兼顾低延迟&lt;/li>
+&lt;li>低延迟两大关键指标：
+&lt;ul>
+&lt;li>原生性能&lt;/li>
+&lt;li>扩展能力&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="扩展能力">扩展能力
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>文件系统&lt;/strong>：突破单NameNode架构瓶颈，实现分布式元数据管理&lt;/li>
+&lt;li>&lt;strong>节点规模&lt;/strong>：支持千节点级扩展&lt;/li>
+&lt;li>&lt;strong>存储密度&lt;/strong>：支持高密度磁盘节点扩展&lt;/li>
+&lt;/ul>
+&lt;h3 id="可靠性">可靠性
+&lt;/h3>&lt;p>Apache Hadoop设计具备从单服务器到数千节点的线性扩展能力，并具有高度容错特性。&lt;/p></description></item><item><title>Hadoop Chapter 1: Big Data Concept(EN)</title><link>https://example.com/p/hadoop-chapter-1-big-data-concepten/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-1-big-data-concepten/</guid><description>&lt;img src="https://example.com/post/img/" alt="Featured image of post Hadoop Chapter 1: Big Data Concept(EN)" />&lt;p>&lt;a class="link" href="https://xn--8mr985eba830aiye.vip/p/hadoop-chapter-1-big-data-conceptcn/" target="_blank" rel="noopener"
+>中文版传送门&lt;/a>&lt;/p>
+&lt;h2 id="what-is-big-data">What is Big Data
+&lt;/h2>&lt;ul>
+&lt;li>A collection of data that is huge in volume&lt;/li>
+&lt;li>growing exponentially with time&lt;/li>
+&lt;li>none of traditional data management tools can store it or process it efficiently&lt;/li>
+&lt;li>a data but with huge size&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-big-data">Types of Big Data
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Structured&lt;/strong>: Any data that can be stored, accessed and processed in the form of fixed format is termed as a &amp;lsquo;structured&amp;rsquo; data&lt;/li>
+&lt;li>&lt;strong>Unstructured&lt;/strong>: Any data with unknown form or the structure is classified as unstructured data.&lt;/li>
+&lt;li>&lt;strong>Semi-structured&lt;/strong>: Semi-structured data can contain both the forms of data.&lt;/li>
+&lt;/ul>
+&lt;h3 id="characteristics-of-big-data">Characteristics of Big Data
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Volume&lt;/strong>: enormous size&lt;/li>
+&lt;li>&lt;strong>Variety&lt;/strong>: heterogeneous sources and the nature of data&lt;/li>
+&lt;li>&lt;strong>Velocity&lt;/strong>: the speed of generation of data&lt;/li>
+&lt;li>&lt;strong>Veracity&lt;/strong>: the content quality that should be analyzed&lt;/li>
+&lt;/ul>
+&lt;h3 id="advantages-of-big-data-processing">Advantages Of Big Data Processing
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Businesses&lt;/strong> can utilize outside intelligence while taking decisions.&lt;/li>
+&lt;li>Improved &lt;strong>customer service&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Early identification&lt;/strong> of risk to the product/services, if any.&lt;/li>
+&lt;li>Better &lt;strong>operational efficiency&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-ecosystem">Hadoop Ecosystem
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Data Storage&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>HDFS&lt;/strong>: File System&lt;/li>
+&lt;li>&lt;strong>HBase&lt;/strong>: Column DB Storage&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Processing&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Map Reduce&lt;/strong>: Cluster Management&lt;/li>
+&lt;li>&lt;strong>YARN&lt;/strong>: Cluster &amp;amp; Resource Management&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Access&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Hive&lt;/strong>: SQL&lt;/li>
+&lt;li>&lt;strong>Pig&lt;/strong>: Dataflow&lt;/li>
+&lt;li>&lt;strong>Mahout&lt;/strong>: Machine Learning&lt;/li>
+&lt;li>&lt;strong>Avro&lt;/strong>: RPC&lt;/li>
+&lt;li>&lt;strong>Sqoop&lt;/strong>: Data Access&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Data Management&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Oozie&lt;/strong>: Workflow Monitoring&lt;/li>
+&lt;li>&lt;strong>Chukwa&lt;/strong>: Monitoring&lt;/li>
+&lt;li>&lt;strong>ZooKeeper&lt;/strong>: Management&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hbase">HBase
+&lt;/h3>&lt;ul>
+&lt;li>an open-source, non-relational distributed database&lt;/li>
+&lt;li>it is a NoSQL database&lt;/li>
+&lt;li>support all types of data&lt;/li>
+&lt;li>can handle anything and everything inside Hadoop ecosystem&lt;/li>
+&lt;li>run on top of HDFS and provides BigTable-like capabilities&lt;/li>
+&lt;li>written in Java, and HBase applications can be written in REST, Avro, and Thrift APIs&lt;/li>
+&lt;/ul>
+&lt;h3 id="hive">HIVE
+&lt;/h3>&lt;ul>
+&lt;li>built on Apache Hadoop&lt;/li>
+&lt;li>manage large distributed data sets&lt;/li>
+&lt;li>provides following features:
+&lt;ul>
+&lt;li>provides tools to extract/transform/load data(ETL)&lt;/li>
+&lt;li>store, query, and analyze large-scale data stored in HDFS(or HBase)&lt;/li>
+&lt;li>SQL is converted into MapReduce jobs and run on Hadoop to perform statistical analysis and processing of massive data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>defines a query language HQL(similar to SQL)&lt;/li>
+&lt;li>users familiar with SQL can query data directly
+using Hive&lt;/li>
+&lt;li>allows mapReducer-savvy developers to develop custom mappers and reducers to handle the complex analysis work&lt;/li>
+&lt;li>disadvantages
+&lt;ul>
+&lt;li>does not correctly support transactions&lt;/li>
+&lt;li>cannot modify table data(cannot update, delete, insert)&lt;/li>
+&lt;li>slow query speed&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop">Hadoop
+&lt;/h3>&lt;ul>
+&lt;li>use a distributed approach to store the massive volume of information&lt;/li>
+&lt;li>data was divided up and allocated to many individual databases&lt;/li>
+&lt;li>HDFS is a specially design file system for storing huge datasets&lt;/li>
+&lt;li>main features
+&lt;ul>
+&lt;li>cost&lt;/li>
+&lt;li>scalability&lt;/li>
+&lt;li>flexibility&lt;/li>
+&lt;li>speed&lt;/li>
+&lt;li>fault tolerance&lt;/li>
+&lt;li>high throughput&lt;/li>
+&lt;li>minimum network traffic&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="storm">STORM
+&lt;/h3>&lt;ul>
+&lt;li>a free, open source distributed real-time computing system&lt;/li>
+&lt;li>simplifies the reliable processing of streaming data&lt;/li>
+&lt;li>very fast, one test achieved one million group processing per second on a single node&lt;/li>
+&lt;li>storm features:
+&lt;ul>
+&lt;li>easy to expand&lt;/li>
+&lt;li>storm fault tolerance&lt;/li>
+&lt;li>low latency&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="zookeeper">Zookeeper
+&lt;/h3>&lt;ul>
+&lt;li>is the coordinator of any Hadoop job which includes a combination of services in a Hadoop Ecosystem&lt;/li>
+&lt;li>coordinates with various services in a distributed environment&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-history--versions">Hadoop History &amp;amp; Versions
+&lt;/h2>&lt;ul>
+&lt;li>Two main problems with big data
+&lt;ul>
+&lt;li>store such large amounts of data&lt;/li>
+&lt;li>process the stored data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Hadoop is the solution to the big data problem&lt;/li>
+&lt;li>consists two components
+&lt;ul>
+&lt;li>Hadoop Distributed File System(HDFS)&lt;/li>
+&lt;li>YARN&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-history">Hadoop History
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>2002&lt;/strong>: Apache Nutch was wtarted&lt;/li>
+&lt;li>&lt;strong>2003&lt;/strong>: Google publish Google File System paper&lt;/li>
+&lt;li>&lt;strong>2004&lt;/strong>: Google released paper on MapReduce&lt;/li>
+&lt;li>&lt;strong>2005&lt;/strong>: Nutch Distributed File System was introduced&lt;/li>
+&lt;li>&lt;strong>2006&lt;/strong>: Hadoop was introduced along HDFS&lt;/li>
+&lt;li>&lt;strong>2007&lt;/strong>: Yahoo runs two cluster of 1000 machines&lt;/li>
+&lt;li>&lt;strong>2013&lt;/strong>: Hadoop 2 was released&lt;/li>
+&lt;li>&lt;strong>2017&lt;/strong>: Hadoop 3 was released&lt;/li>
+&lt;/ul>
+&lt;h2 id="hadoop-distribution-evaluation-criteria">Hadoop Distribution evaluation criteria
+&lt;/h2>&lt;h3 id="performance">Performance
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>in the early days&lt;/strong>: fast throughput&lt;/li>
+&lt;li>&lt;strong>now&lt;/strong>: includes low latency&lt;/li>
+&lt;li>recent emphasis on low latency focuses on two key attributes
+&lt;ul>
+&lt;li>&lt;strong>raw performance&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>scalability&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="scalability">Scalability
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>File&lt;/strong> Hadoop&amp;rsquo;s default architecture consists of a single NameNode. Hadoop platform avoids single NameNode bottlenecks and has a distributed metadata architecture&lt;/li>
+&lt;li>&lt;strong>Node number&lt;/strong> your chosen Hadoop implementation may need to scale to 1,000 nodes or more&lt;/li>
+&lt;li>&lt;strong>Node capacity/density&lt;/strong> you need to scale nodes with higher disk density&lt;/li>
+&lt;/ul>
+&lt;h3 id="reliability">Reliability
+&lt;/h3>&lt;p>Apache Hadoop is designed to scale from a single server to thousands of computers and is highly fault-tolerant&lt;/p></description></item><item><title>Hadoop Chapter 2: Hadoop and Big Data Architecture(CN)</title><link>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architecturecn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architecturecn/</guid><description>&lt;img src="https://example.com/post/img/25.jpg" alt="Featured image of post Hadoop Chapter 2: Hadoop and Big Data Architecture(CN)" />&lt;h2 id="hadoop-操作系统模式">Hadoop 操作系统模式
+&lt;/h2>&lt;p>&lt;strong>Hadoop 四大核心运行模式&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>本地运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>伪分布式运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>完全分布式运行模式&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>高可用性(HA)运行模式&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-本地运行模式">Hadoop 本地运行模式
+&lt;/h3>&lt;ul>
+&lt;li>默认运行模式&lt;/li>
+&lt;li>以单个 Java 进程运行&lt;/li>
+&lt;li>又称作本地（独立）模式&lt;/li>
+&lt;/ul>
+&lt;h4 id="模式配置要求">模式配置要求
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>操作系统&lt;/strong>: Windows 或 Linux x64&lt;/li>
+&lt;li>&lt;strong>JDK 版本&lt;/strong>: JDK jdk1.8.0_241&lt;/li>
+&lt;li>&lt;strong>Hadoop 版本&lt;/strong>: 3.x&lt;/li>
+&lt;/ul>
+&lt;p>核心配置文件: hadoop-env.sh&lt;/p>
+&lt;h3 id="hadoop-伪分布式模式">Hadoop 伪分布式模式
+&lt;/h3>&lt;h4 id="模式概述">模式概述
+&lt;/h4>&lt;ul>
+&lt;li>模拟完全分布式环境
+&lt;ul>
+&lt;li>单节点运行 Hadoop&lt;/li>
+&lt;li>所有 Hadoop 守护进程运行于同一服务器节点&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>包含五大核心进程
+&lt;ul>
+&lt;li>名称节点（NameNode）&lt;/li>
+&lt;li>数据节点（DataNode）&lt;/li>
+&lt;li>第二名称节点（SecondaryNameNode）&lt;/li>
+&lt;li>资源管理器（ResourceManager）&lt;/li>
+&lt;li>节点管理器（NodeManager）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="hdfs-守护进程">HDFS 守护进程
+&lt;/h4>&lt;ul>
+&lt;li>HDFS 用于存储海量数据&lt;/li>
+&lt;li>正常运行所需进程
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>执行 &lt;code>start-dfs.sh&lt;/code> 命令启动 HDFS 守护进程对外提供服务&lt;/li>
+&lt;/ul>
+&lt;h4 id="yarn-守护进程">Yarn 守护进程
+&lt;/h4>&lt;ul>
+&lt;li>Hadoop 3.x 资源管理系统&lt;/li>
+&lt;li>核心进程
+&lt;ul>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>执行 &lt;code>start-yarn.sh&lt;/code> 启动服务&lt;/li>
+&lt;/ul>
+&lt;h4 id="伪分布式模式配置">伪分布式模式配置
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>HDFS 配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>core-site.xml&lt;/code>: 配置 NameNode RPC 远程通信地址，默认端口号 &lt;code>8020&lt;/code>&lt;/li>
+&lt;li>&lt;code>hdfs-site.xml&lt;/code>: 设置数据块副本数为 1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>YARN 配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>mapred-site.xml&lt;/code>: 指定 MapReduce 运行框架为 YARN&lt;/li>
+&lt;li>&lt;code>yarn-site.xml&lt;/code>: 配置 ResourceManager 通信地址及 NodeManager 辅助服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>其他配置&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>hadoop-env.sh&lt;/code>: 设置 hadoop.sh 中的 Java 环境变量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-高可用性运行模式">Hadoop 高可用性运行模式
+&lt;/h3>&lt;h4 id="hdfs-高可用架构">HDFS 高可用架构
+&lt;/h4>&lt;ul>
+&lt;li>通过主备双 NameNode 机制提升可用性
+&lt;ul>
+&lt;li>活跃 NameNode（Active）&lt;/li>
+&lt;li>备用 NameNode（Standby/Passive）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>需解决两大核心问题
+&lt;ul>
+&lt;li>主备 NameNode 状态实时同步&lt;/li>
+&lt;li>同一时刻仅允许一个活跃节点&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="ha-架构实现方案">HA 架构实现方案
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>仲裁日志节点方案&lt;/strong>
+&lt;ul>
+&lt;li>通过 JournalNodes 集群保持主备同步&lt;/li>
+&lt;li>活跃 NameNode 将 EditLog 更新至 JournalNodes&lt;/li>
+&lt;li>备用节点持续读取 JournalNodes 的 EditLog 变更并应用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>共享存储方案&lt;/strong>
+&lt;ul>
+&lt;li>通过共享存储设备保持主备同步&lt;/li>
+&lt;li>活跃 NameNode 将命名空间修改记录至共享存储的 EditLog&lt;/li>
+&lt;li>备用节点读取共享存储的 EditLog 变更并应用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>管理员必须配置至少一种隔离机制（fencing）&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-权限管理">Hadoop 权限管理
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>两级访问控制体系&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>系统级&lt;/strong>: 服务级别授权（ServiceLevel Authorization），控制指定服务是否可访问&lt;/li>
+&lt;li>&lt;strong>调度器级&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="动态扩容-datanode">动态扩容 DataNode
+&lt;/h3>&lt;ul>
+&lt;li>在主节点增加主机名配置，并同步至所有 DataNode 节点&lt;/li>
+&lt;li>Hadoop 已预制新 DataNode 配置参数，扩容步骤如下:
+&lt;ul>
+&lt;li>新增主机名至 hosts 文件&lt;/li>
+&lt;li>分发 hadoop 安装文件至新节点&lt;/li>
+&lt;li>启动新节点服务&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="动态缩容-datanode">动态缩容 DataNode
+&lt;/h3>&lt;ul>
+&lt;li>创建 exclude 排除文件&lt;/li>
+&lt;li>将待下线节点主机名加入排除文件&lt;/li>
+&lt;/ul>
+&lt;h3 id="负载均衡">负载均衡
+&lt;/h3>&lt;p>节点扩容后如需实现负载均衡，需执行平衡命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">bin/start-balancer.sh -threshold &lt;span class="m">10&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="hadoop-与大数据计算架构">Hadoop 与大数据计算架构
+&lt;/h2>&lt;h3 id="hadoop-大数据生态定位">Hadoop 大数据生态定位
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop 生态既非编程语言亦非服务&lt;/li>
+&lt;li>是解决大数据问题的平台框架&lt;/li>
+&lt;li>生态中多数服务围绕四大核心组件扩展
+&lt;ul>
+&lt;li>分布式存储 HDFS&lt;/li>
+&lt;li>资源调度 YARN&lt;/li>
+&lt;li>计算框架 MapReduce&lt;/li>
+&lt;li>公共组件库 Common&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-实时计算架构">Hadoop 实时计算架构
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/Big_Data_Technology_Ecosystem.jpg"
+loading="lazy"
+alt="Big Data Technology Ecosystem"
+>&lt;/p></description></item><item><title>Hadoop Chapter 2: Hadoop and Big Data Architecture(EN)</title><link>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architectureen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/hadoop-chapter-2-hadoop-and-big-data-architectureen/</guid><description>&lt;img src="https://example.com/post/img/25.jpg" alt="Featured image of post Hadoop Chapter 2: Hadoop and Big Data Architecture(EN)" />&lt;h2 id="hadoop-operating-modes">Hadoop Operating modes
+&lt;/h2>&lt;p>&lt;strong>four main modes of Hadoop operation&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Local runtime mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Pseudo-distributed operation mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Fully distributed operation mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>High availability(HA) operating mode&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-local-operation-mode">Hadoop Local operation mode
+&lt;/h3>&lt;ul>
+&lt;li>default mode&lt;/li>
+&lt;li>run as a single Java process&lt;/li>
+&lt;li>called Local(Standalone) mode&lt;/li>
+&lt;/ul>
+&lt;h4 id="mode-configuration">Mode Configuration
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>OS&lt;/strong>: Windows or Linux x64&lt;/li>
+&lt;li>&lt;strong>The JDK&lt;/strong>: JDK jdk1.8.0_241&lt;/li>
+&lt;li>&lt;strong>Hadoop&lt;/strong>: 3.x&lt;/li>
+&lt;/ul>
+&lt;p>configuration file: hadoop-env.sh&lt;/p>
+&lt;h3 id="hadoop-pseudo-distributed-mode">Hadoop pseudo-distributed mode
+&lt;/h3>&lt;h4 id="overview">Overview
+&lt;/h4>&lt;ul>
+&lt;li>simulate a fully distributed environment
+&lt;ul>
+&lt;li>Hadoop run on a single node&lt;/li>
+&lt;li>each Hadoop daemon running on a single server node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>five process
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="hdfs-daemon-process">HDFS Daemon Process
+&lt;/h4>&lt;ul>
+&lt;li>HDFS is used to store large amounts of data&lt;/li>
+&lt;li>required for the normal operation of the HDFS
+&lt;ul>
+&lt;li>NameNode&lt;/li>
+&lt;li>DataNode&lt;/li>
+&lt;li>SecondaryNameNode&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>run the &lt;code>start-dfs.sh&lt;/code> command to start the HDFS daemon process to provide external services&lt;/li>
+&lt;/ul>
+&lt;h4 id="yarn-daemon-process">Yarn Daemon Process
+&lt;/h4>&lt;ul>
+&lt;li>the resource management system in Hadoop 3.x&lt;/li>
+&lt;li>required
+&lt;ul>
+&lt;li>ResourceManager&lt;/li>
+&lt;li>NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>run &lt;code>start-yarn.sh&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h4 id="pattern-configurationpseudo-distributed-mode">Pattern Configuration(pseudo-distributed mode)
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>HDFS Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>core-site.xml&lt;/code>: NameNode RPC remote communication address. The default port number is &lt;code>8020&lt;/code>&lt;/li>
+&lt;li>&lt;code>HDFS-site.xml&lt;/code>: set the number of data block copies to 1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>YARN Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>mapred-site.xml&lt;/code>: set the MapReduce operating framework to YARN&lt;/li>
+&lt;li>&lt;code>yarn-site,xml&lt;/code>: set the ResourceManager communication address and aux-services of the NodeManager&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Other Configuration&lt;/strong>
+&lt;ul>
+&lt;li>&lt;code>hadoop-env.sh&lt;/code>: set the java environment variables in &lt;code>hadoop.sh&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-ha-running-mode">Hadoop HA Running Mode
+&lt;/h3>&lt;h4 id="hdfs-ha-architecture">HDFS HA Architecture
+&lt;/h4>&lt;ul>
+&lt;li>
+&lt;p>HA architecture solve the problem of NameNode availability by allowing us to have two NameNodes in an active/passive configuration.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Active NameNode&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Standby/Passive NameNode&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Two main issues in maintaining consistency&lt;/p>
+&lt;ul>
+&lt;li>Active and Standby NameNode should always be in sync with each other&lt;/li>
+&lt;li>There should be only one active NameNode at a time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="implementation-of-ha-architecture">Implementation of HA Architecture
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>Using Quorum Journal Nodes&lt;/strong>
+&lt;ul>
+&lt;li>JournalNodes helps the standby and active NameNode keep in sync&lt;/li>
+&lt;li>The active NameNode is responsible for updating the EditLogs present in the JournalNodes.&lt;/li>
+&lt;li>The StandbyNode reads the changes made to the EditLogs in the JournalNode and applies it to its own
+namespace in a constant manner.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Using Shared Storage&lt;/strong>
+&lt;ul>
+&lt;li>A shared storage device helps standby and active NameNode keep in sync&lt;/li>
+&lt;li>The active NameNode logs the record of any modification done in its namespace to an EditLog
+present in this shared storage.&lt;/li>
+&lt;li>The StandbyNode reads the changes made to the EditLogs in this shared
+storage and applies it to its own namespace.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The administrator must configure at least one fencing&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-authority-management">Hadoop Authority Management
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Hadoop access control is divided into two levels&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>system level&lt;/strong>: ServiceLevel Authorization. It is used to control whether specified services can be accessed.&lt;/li>
+&lt;li>&lt;strong>scheduler level&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-datanode">Add DataNode
+&lt;/h3>&lt;ul>
+&lt;li>Add a host name on the master node and copy it on any DataNode node.&lt;/li>
+&lt;li>Hadoop has configured the relevant parameters to the newly added DataNode and started it on the new node. Specific steps are as follows:
+&lt;ul>
+&lt;li>Increase hostname&lt;/li>
+&lt;li>Copy the hadoop installation file&lt;/li>
+&lt;li>Start new node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="reduce-datanode">Reduce DataNode
+&lt;/h3>&lt;ul>
+&lt;li>Create an exclude file&lt;/li>
+&lt;li>Add the node host name to be deleted in the exclude file&lt;/li>
+&lt;/ul>
+&lt;h3 id="load-balancing">Load Balancing
+&lt;/h3>&lt;p>After adding new nodes, if you want to achieve load balancing, you need to use the balance command: &lt;code>bin/start-balancer.sh -threshold 10&lt;/code>&lt;/p>
+&lt;h2 id="hadoop-and-big-data-computing-architecture">Hadoop and Big data Computing Architecture
+&lt;/h2>&lt;h3 id="hadoop-and-big-data-architecture">Hadoop and Big Data Architecture
+&lt;/h3>&lt;ul>
+&lt;li>Hadoop Ecosystem is neither a programming language nor a service&lt;/li>
+&lt;li>It is a platform or framework which solves big data problems&lt;/li>
+&lt;li>Most of the services available in the Hadoop ecosystem are to supplement the main four core components
+&lt;ul>
+&lt;li>HDFS&lt;/li>
+&lt;li>YARN&lt;/li>
+&lt;li>MapReduce&lt;/li>
+&lt;li>Common&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-real-time-computing-architecture">Hadoop Real-time Computing Architecture
+&lt;/h3>&lt;p>&lt;img src="https://example.com/img/Big_Data_Technology_Ecosystem.jpg"
+loading="lazy"
+alt="Big Data Technology Ecosystem"
+>&lt;/p></description></item><item><title>MongoDB基本语法</title><link>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/mongodb%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://example.com/post/img/9.png" alt="Featured image of post MongoDB基本语法" />&lt;h3 id="增">增
 &lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
