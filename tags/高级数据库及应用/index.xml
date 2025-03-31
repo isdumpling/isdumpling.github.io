@@ -1,52 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>高级数据库及应用 on 一只饺子</title><link>https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/</link><description>Recent content in 高级数据库及应用 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 22 Mar 2025 14:18:54 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;h2 id="get-familiar-with-nosql-database">Get familiar with NoSQL Database
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>高级数据库及应用 on 一只饺子</title><link>https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/</link><description>Recent content in 高级数据库及应用 on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 01 Apr 2025 01:42:54 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;h2 id="get-familiar-with-nosql-database">Get familiar with NoSQL Database
 &lt;/h2>&lt;h3 id="understanding-nosql-database">Understanding NoSQL Database
-&lt;/h3>&lt;p>&lt;strong>the important features of NoSQL&lt;/strong>&lt;/p>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>important features of NoSQL&lt;/strong>
 &lt;ul>
-&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: allows for the storage of various data types&lt;/li>
-&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scaled out by distributing data across multiple servers&lt;/li>
-&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: Build-in replication and sharding features&lt;/li>
+&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: NoSQL databases do not require a predefined schema&lt;/li>
+&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scale out by distributing data across multiple servers&lt;/li>
+&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: built-in replication and sharding features&lt;/li>
 &lt;li>&lt;strong>Performance&lt;/strong>: Optimized for specific use cases&lt;/li>
-&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: Support various data models&lt;/li>
-&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: The ability to scale out using commodity hardware and no need to invest the expensive, high-end servers&lt;/li>
+&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: support various data models&lt;/li>
+&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: the ability to scale out using commodity hardware&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="introduction-to-nosql">Introduction to NoSQL
 &lt;/h3>&lt;ul>
 &lt;li>&lt;strong>Two types of databases&lt;/strong>
 &lt;ul>
 &lt;li>&lt;strong>relational databases&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>non-relational databases&lt;/strong>, often called NoSQL databases&lt;/li>
+&lt;li>&lt;strong>non-relational databases&lt;/strong>: often called as NoSQL databases&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>A NoSQL database&lt;/strong> is used to store large quantities of complex and diverse data&lt;/li>
-&lt;li>&lt;strong>MongoDB&lt;/strong> is one of the most established NoSQL databases
+&lt;li>NoSQL is used to store large quantities of complex and diverse data&lt;/li>
+&lt;li>MongoDB is one of the most established NoSQL databases
 &lt;ul>
-&lt;li>&lt;strong>data aggregation&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>ACID&lt;/strong>
+&lt;li>data aggregation&lt;/li>
+&lt;li>ACID
 &lt;ul>
-&lt;li>Atomicity&lt;/li>
-&lt;li>Consistency&lt;/li>
-&lt;li>Isolation&lt;/li>
-&lt;li>Durability&lt;/li>
+&lt;li>atomicity&lt;/li>
+&lt;li>consistency&lt;/li>
+&lt;li>isolation&lt;/li>
+&lt;li>durability&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>horizontal scaling&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>charts&lt;/strong>&lt;/li>
+&lt;li>horizontal scaling&lt;/li>
+&lt;li>charts&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="relational-database-vs-nosql">Relational Database VS NoSQL
+&lt;h3 id="relational-database-vs-nosql">Relational Database Vs NoSQL
 &lt;/h3>&lt;ul>
-&lt;li>&lt;strong>Relational Database Management Systems&lt;/strong>
+&lt;li>&lt;strong>Relational Database Management&lt;/strong>
 &lt;ul>
-&lt;li>store &lt;strong>structured data&lt;/strong>&lt;/li>
-&lt;li>in the form of &lt;strong>tables&lt;/strong> that consist of rows and columns&lt;/li>
-&lt;li>have relationships with other tables&lt;/li>
+&lt;li>store structured data&lt;/li>
+&lt;li>the data is stored in the form of tables that consists of tows and columns&lt;/li>
+&lt;li>the tables can have relationships with other tables&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>NoSQL Database Management Systems&lt;/strong>
+&lt;li>&lt;strong>NoSQL Database Management System&lt;/strong>
 &lt;ul>
-&lt;li>store &lt;strong>unstructured and semi-structured data&lt;/strong>&lt;/li>
-&lt;li>store the data &lt;strong>without a schema&lt;/strong> and support &lt;strong>dynamic schema&lt;/strong>&lt;/li>
+&lt;li>store unstructured and semi-structured data&lt;/li>
+&lt;li>allow you to store the data without a schema and also support dynamic schema&lt;/li>
+&lt;li>also support dynamic schema&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -60,60 +64,115 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Schema&lt;/td>
-&lt;td>1. follows a rigid schema 2. have a definition of all the desired columns and their types&lt;/td>
-&lt;td>1. does not impose a rigid schema 2. store the unstructured data with dynamic structures&lt;/td>
+&lt;td>schema&lt;/td>
+&lt;td>follows a rigid schema&lt;/td>
+&lt;td>does not impose a rigid schema&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Data model/Storage Structure&lt;/td>
+&lt;td>data model/storage structure&lt;/td>
 &lt;td>1. data is stored in tables 2. each record is stored as a row&lt;/td>
-&lt;td>1. data is stored in different formats 2. storage structure are documents, graphs, key-values and wide columns&lt;/td>
+&lt;td>1. The data is stored in different formats 2. the standard storage structure are documents, graphs, key-values and wide columns&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Normalization&lt;/td>
-&lt;td>used to remove duplicate data and avoid data anomalies&lt;/td>
-&lt;td>focus more on fast data retrieval and the data can be normalized&lt;/td>
+&lt;td>normalization&lt;/td>
+&lt;td>1. used to remove duplicate data and avoid data anomalies 2. RDB use it to prevents data anomalies&lt;/td>
+&lt;td>data can be normalized&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Scaling&lt;/td>
-&lt;td>hard to scale and generally scaled vertically&lt;/td>
+&lt;td>scaling&lt;/td>
+&lt;td>hard to scale and are generally scaled vertically&lt;/td>
 &lt;td>both vertical and horizontal scaling&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="types-of-nosql">Types of NoSQL
-&lt;/h3>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Type&lt;/th>
-&lt;th>Typical Usage&lt;/th>
-&lt;th>Example&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Key-value&lt;/td>
-&lt;td>Image stores, Key-based filesystems, Object cache, Systems designed to scale&lt;/td>
-&lt;td>Berkeley DB, Memcache, Redis, Riak, DynamoDB&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Column family&lt;/td>
-&lt;td>Web crawler results, Big data problems that can relax consistency rules&lt;/td>
-&lt;td>Apache HBase&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Graph&lt;/td>
-&lt;td>Social networks, Fraud detection, Relationship-heavy data&lt;/td>
-&lt;td>Neo4j, AllergroGraph&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Document&lt;/td>
-&lt;td>High-variability data, Document search&lt;/td>
-&lt;td>MongoDB, CouchDB&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Key-value&lt;/strong>
+&lt;ul>
+&lt;li>Image stores&lt;/li>
+&lt;li>Key-based filesystems&lt;/li>
+&lt;li>Object cache&lt;/li>
+&lt;li>Systems designed to scale&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Column family&lt;/strong>
+&lt;ul>
+&lt;li>Web crawler results&lt;/li>
+&lt;li>Big data problems that can relax consistency rules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Graph&lt;/strong>
+&lt;ul>
+&lt;li>Social networks&lt;/li>
+&lt;li>Fraud detection&lt;/li>
+&lt;li>Relationship-heavy data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Document&lt;/strong>
+&lt;ul>
+&lt;li>High-variability data&lt;/li>
+&lt;li>Document search&lt;/li>
+&lt;li>Integration hubs&lt;/li>
+&lt;li>Web content management&lt;/li>
+&lt;li>Publishing&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-features-of-nosql">Key features of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Dynamic schema&lt;/strong>: do not have a fixed schema&lt;/li>
+&lt;li>&lt;strong>Horizontal scalability&lt;/strong>: scale out by adding more nodes to a database cluster&lt;/li>
+&lt;li>&lt;strong>Document-based&lt;/strong>: Some NoSQL databases, such as &lt;strong>MongoDB&lt;/strong>, use a document-based data model,. Data is stored in a &lt;!-- raw HTML omitted -->schema-less semi-structured format&lt;!-- raw HTML omitted -->, such as JOSN or BSON&lt;/li>
+&lt;li>&lt;strong>Key-value-Based&lt;/strong>: Other NoSQL databases, such as &lt;strong>Redis&lt;/strong>, use a key-value data model. Data is stored as a &lt;!-- raw HTML omitted -->collection of key-value pairs&lt;!-- raw HTML omitted -->&lt;/li>
+&lt;li>&lt;strong>Column-bases&lt;/strong>: Some NoSQL databases, such as &lt;strong>Cassandra&lt;/strong>, use a column-based data model. Data is organized into columns instead of rows&lt;/li>
+&lt;li>&lt;strong>Distributed and high availability&lt;/strong>: highly available and automatically handle node failures and data replication&lt;/li>
+&lt;li>&lt;strong>Flexibility&lt;/strong>: support for multiple data types and changing data structures&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: optimized for high performance and can handle a high volume of reads and writes&lt;/li>
+&lt;/ul>
+&lt;h3 id="advantage-and-disadvantage-of-nosql">Advantage and Disadvantage of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Advantages&lt;/strong>
+&lt;ul>
+&lt;li>High scalability&lt;/li>
+&lt;li>Flexibility&lt;/li>
+&lt;li>High availability&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>Performance&lt;/li>
+&lt;li>Cost-effectiveness&lt;/li>
+&lt;li>Agility&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Disadvantages&lt;/strong>
+&lt;ul>
+&lt;li>Lack of standardization&lt;/li>
+&lt;li>Lack of ACID co,pliance&lt;/li>
+&lt;li>Narrow focus&lt;/li>
+&lt;li>Open-source&lt;/li>
+&lt;li>Lack of support for complex queries&lt;/li>
+&lt;li>Lack of maturity&lt;/li>
+&lt;li>Management challenge&lt;/li>
+&lt;li>GUI is not available&lt;/li>
+&lt;li>Backup&lt;/li>
+&lt;li>Large document size&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="when-should-nosql-be-used">When Should NoSQL be used
+&lt;/h3>&lt;ol>
+&lt;li>When a huge amount of data needs to be stored and retrieved.&lt;/li>
+&lt;li>The relationship between the data you store is not that important&lt;/li>
+&lt;li>The data changes over time and is not structured.&lt;/li>
+&lt;li>Support of Constraints and Joins is not required at the database level&lt;/li>
+&lt;li>The data is growing continuously and you need to scale the database regularly to handle the data.&lt;/li>
+&lt;/ol>
 &lt;h2 id="understanding-the-mongodb">Understanding the MongoDB
-&lt;/h2>&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
+&lt;/h2>&lt;h3 id="why-mongodb">Why MongoDB
+&lt;/h3>&lt;ol>
+&lt;li>Flexible Schema&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>High Performance&lt;/li>
+&lt;li>Agile Development&lt;/li>
+&lt;/ol>
+&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
 &lt;/h2>&lt;h2 id="understand-the-similarities-and-difference-with-other-softwares">Understand the similarities and difference with Other Software&amp;rsquo;s
 &lt;/h2></description></item></channel></rss>

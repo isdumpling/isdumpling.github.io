@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一只饺子</title><link>https://example.com/post/</link><description>Recent content in Posts on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Sat, 22 Mar 2025 14:18:54 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一只饺子</title><link>https://example.com/post/</link><description>Recent content in Posts on 一只饺子</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>一只饺子</copyright><lastBuildDate>Tue, 01 Apr 2025 01:42:54 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>机器学习（李宏毅）笔记 1：预测本频道观测人数（上）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</link><pubDate>Tue, 25 Feb 2025 17:21:44 +0800</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-1%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8A/</guid><description>&lt;img src="https://example.com/post/img/4.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 1：预测本频道观测人数（上）" />&lt;ul>
 &lt;li>
 &lt;p>机器学习约等于寻找一个函数。比如：&lt;/p>
 &lt;ul>
@@ -45,53 +45,57 @@
 &lt;/ul>
 &lt;p>$y=b+\sum_i c_isigmoid(b_i+\sum_j w_{ij}x_j)$&lt;/p></description></item><item><title>NoSQL Chapter 1</title><link>https://example.com/p/nosql-chapter-1/</link><pubDate>Tue, 25 Feb 2025 16:32:11 +0800</pubDate><guid>https://example.com/p/nosql-chapter-1/</guid><description>&lt;img src="https://example.com/post/img/10.avif" alt="Featured image of post NoSQL Chapter 1" />&lt;h2 id="get-familiar-with-nosql-database">Get familiar with NoSQL Database
 &lt;/h2>&lt;h3 id="understanding-nosql-database">Understanding NoSQL Database
-&lt;/h3>&lt;p>&lt;strong>the important features of NoSQL&lt;/strong>&lt;/p>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>important features of NoSQL&lt;/strong>
 &lt;ul>
-&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: allows for the storage of various data types&lt;/li>
-&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scaled out by distributing data across multiple servers&lt;/li>
-&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: Build-in replication and sharding features&lt;/li>
+&lt;li>&lt;strong>Schema Flexibility&lt;/strong>: NoSQL databases do not require a predefined schema&lt;/li>
+&lt;li>&lt;strong>Horizontal Scalability&lt;/strong>: scale out by distributing data across multiple servers&lt;/li>
+&lt;li>&lt;strong>High Availability and Fault Tolerance&lt;/strong>: built-in replication and sharding features&lt;/li>
 &lt;li>&lt;strong>Performance&lt;/strong>: Optimized for specific use cases&lt;/li>
-&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: Support various data models&lt;/li>
-&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: The ability to scale out using commodity hardware and no need to invest the expensive, high-end servers&lt;/li>
+&lt;li>&lt;strong>Diverse Data Models&lt;/strong>: support various data models&lt;/li>
+&lt;li>&lt;strong>Cost-Effectiveness&lt;/strong>: the ability to scale out using commodity hardware&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="introduction-to-nosql">Introduction to NoSQL
 &lt;/h3>&lt;ul>
 &lt;li>&lt;strong>Two types of databases&lt;/strong>
 &lt;ul>
 &lt;li>&lt;strong>relational databases&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>non-relational databases&lt;/strong>, often called NoSQL databases&lt;/li>
+&lt;li>&lt;strong>non-relational databases&lt;/strong>: often called as NoSQL databases&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>A NoSQL database&lt;/strong> is used to store large quantities of complex and diverse data&lt;/li>
-&lt;li>&lt;strong>MongoDB&lt;/strong> is one of the most established NoSQL databases
+&lt;li>NoSQL is used to store large quantities of complex and diverse data&lt;/li>
+&lt;li>MongoDB is one of the most established NoSQL databases
 &lt;ul>
-&lt;li>&lt;strong>data aggregation&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>ACID&lt;/strong>
+&lt;li>data aggregation&lt;/li>
+&lt;li>ACID
 &lt;ul>
-&lt;li>Atomicity&lt;/li>
-&lt;li>Consistency&lt;/li>
-&lt;li>Isolation&lt;/li>
-&lt;li>Durability&lt;/li>
+&lt;li>atomicity&lt;/li>
+&lt;li>consistency&lt;/li>
+&lt;li>isolation&lt;/li>
+&lt;li>durability&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>horizontal scaling&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>charts&lt;/strong>&lt;/li>
+&lt;li>horizontal scaling&lt;/li>
+&lt;li>charts&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="relational-database-vs-nosql">Relational Database VS NoSQL
+&lt;h3 id="relational-database-vs-nosql">Relational Database Vs NoSQL
 &lt;/h3>&lt;ul>
-&lt;li>&lt;strong>Relational Database Management Systems&lt;/strong>
+&lt;li>&lt;strong>Relational Database Management&lt;/strong>
 &lt;ul>
-&lt;li>store &lt;strong>structured data&lt;/strong>&lt;/li>
-&lt;li>in the form of &lt;strong>tables&lt;/strong> that consist of rows and columns&lt;/li>
-&lt;li>have relationships with other tables&lt;/li>
+&lt;li>store structured data&lt;/li>
+&lt;li>the data is stored in the form of tables that consists of tows and columns&lt;/li>
+&lt;li>the tables can have relationships with other tables&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>NoSQL Database Management Systems&lt;/strong>
+&lt;li>&lt;strong>NoSQL Database Management System&lt;/strong>
 &lt;ul>
-&lt;li>store &lt;strong>unstructured and semi-structured data&lt;/strong>&lt;/li>
-&lt;li>store the data &lt;strong>without a schema&lt;/strong> and support &lt;strong>dynamic schema&lt;/strong>&lt;/li>
+&lt;li>store unstructured and semi-structured data&lt;/li>
+&lt;li>allow you to store the data without a schema and also support dynamic schema&lt;/li>
+&lt;li>also support dynamic schema&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -105,61 +109,116 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Schema&lt;/td>
-&lt;td>1. follows a rigid schema 2. have a definition of all the desired columns and their types&lt;/td>
-&lt;td>1. does not impose a rigid schema 2. store the unstructured data with dynamic structures&lt;/td>
+&lt;td>schema&lt;/td>
+&lt;td>follows a rigid schema&lt;/td>
+&lt;td>does not impose a rigid schema&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Data model/Storage Structure&lt;/td>
+&lt;td>data model/storage structure&lt;/td>
 &lt;td>1. data is stored in tables 2. each record is stored as a row&lt;/td>
-&lt;td>1. data is stored in different formats 2. storage structure are documents, graphs, key-values and wide columns&lt;/td>
+&lt;td>1. The data is stored in different formats 2. the standard storage structure are documents, graphs, key-values and wide columns&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Normalization&lt;/td>
-&lt;td>used to remove duplicate data and avoid data anomalies&lt;/td>
-&lt;td>focus more on fast data retrieval and the data can be normalized&lt;/td>
+&lt;td>normalization&lt;/td>
+&lt;td>1. used to remove duplicate data and avoid data anomalies 2. RDB use it to prevents data anomalies&lt;/td>
+&lt;td>data can be normalized&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Scaling&lt;/td>
-&lt;td>hard to scale and generally scaled vertically&lt;/td>
+&lt;td>scaling&lt;/td>
+&lt;td>hard to scale and are generally scaled vertically&lt;/td>
 &lt;td>both vertical and horizontal scaling&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="types-of-nosql">Types of NoSQL
-&lt;/h3>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Type&lt;/th>
-&lt;th>Typical Usage&lt;/th>
-&lt;th>Example&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Key-value&lt;/td>
-&lt;td>Image stores, Key-based filesystems, Object cache, Systems designed to scale&lt;/td>
-&lt;td>Berkeley DB, Memcache, Redis, Riak, DynamoDB&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Column family&lt;/td>
-&lt;td>Web crawler results, Big data problems that can relax consistency rules&lt;/td>
-&lt;td>Apache HBase&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Graph&lt;/td>
-&lt;td>Social networks, Fraud detection, Relationship-heavy data&lt;/td>
-&lt;td>Neo4j, AllergroGraph&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Document&lt;/td>
-&lt;td>High-variability data, Document search&lt;/td>
-&lt;td>MongoDB, CouchDB&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Key-value&lt;/strong>
+&lt;ul>
+&lt;li>Image stores&lt;/li>
+&lt;li>Key-based filesystems&lt;/li>
+&lt;li>Object cache&lt;/li>
+&lt;li>Systems designed to scale&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Column family&lt;/strong>
+&lt;ul>
+&lt;li>Web crawler results&lt;/li>
+&lt;li>Big data problems that can relax consistency rules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Graph&lt;/strong>
+&lt;ul>
+&lt;li>Social networks&lt;/li>
+&lt;li>Fraud detection&lt;/li>
+&lt;li>Relationship-heavy data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Document&lt;/strong>
+&lt;ul>
+&lt;li>High-variability data&lt;/li>
+&lt;li>Document search&lt;/li>
+&lt;li>Integration hubs&lt;/li>
+&lt;li>Web content management&lt;/li>
+&lt;li>Publishing&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-features-of-nosql">Key features of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Dynamic schema&lt;/strong>: do not have a fixed schema&lt;/li>
+&lt;li>&lt;strong>Horizontal scalability&lt;/strong>: scale out by adding more nodes to a database cluster&lt;/li>
+&lt;li>&lt;strong>Document-based&lt;/strong>: Some NoSQL databases, such as &lt;strong>MongoDB&lt;/strong>, use a document-based data model,. Data is stored in a &lt;!-- raw HTML omitted -->schema-less semi-structured format&lt;!-- raw HTML omitted -->, such as JOSN or BSON&lt;/li>
+&lt;li>&lt;strong>Key-value-Based&lt;/strong>: Other NoSQL databases, such as &lt;strong>Redis&lt;/strong>, use a key-value data model. Data is stored as a &lt;!-- raw HTML omitted -->collection of key-value pairs&lt;!-- raw HTML omitted -->&lt;/li>
+&lt;li>&lt;strong>Column-bases&lt;/strong>: Some NoSQL databases, such as &lt;strong>Cassandra&lt;/strong>, use a column-based data model. Data is organized into columns instead of rows&lt;/li>
+&lt;li>&lt;strong>Distributed and high availability&lt;/strong>: highly available and automatically handle node failures and data replication&lt;/li>
+&lt;li>&lt;strong>Flexibility&lt;/strong>: support for multiple data types and changing data structures&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: optimized for high performance and can handle a high volume of reads and writes&lt;/li>
+&lt;/ul>
+&lt;h3 id="advantage-and-disadvantage-of-nosql">Advantage and Disadvantage of NoSQL
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Advantages&lt;/strong>
+&lt;ul>
+&lt;li>High scalability&lt;/li>
+&lt;li>Flexibility&lt;/li>
+&lt;li>High availability&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>Performance&lt;/li>
+&lt;li>Cost-effectiveness&lt;/li>
+&lt;li>Agility&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Disadvantages&lt;/strong>
+&lt;ul>
+&lt;li>Lack of standardization&lt;/li>
+&lt;li>Lack of ACID co,pliance&lt;/li>
+&lt;li>Narrow focus&lt;/li>
+&lt;li>Open-source&lt;/li>
+&lt;li>Lack of support for complex queries&lt;/li>
+&lt;li>Lack of maturity&lt;/li>
+&lt;li>Management challenge&lt;/li>
+&lt;li>GUI is not available&lt;/li>
+&lt;li>Backup&lt;/li>
+&lt;li>Large document size&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="when-should-nosql-be-used">When Should NoSQL be used
+&lt;/h3>&lt;ol>
+&lt;li>When a huge amount of data needs to be stored and retrieved.&lt;/li>
+&lt;li>The relationship between the data you store is not that important&lt;/li>
+&lt;li>The data changes over time and is not structured.&lt;/li>
+&lt;li>Support of Constraints and Joins is not required at the database level&lt;/li>
+&lt;li>The data is growing continuously and you need to scale the database regularly to handle the data.&lt;/li>
+&lt;/ol>
 &lt;h2 id="understanding-the-mongodb">Understanding the MongoDB
-&lt;/h2>&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
+&lt;/h2>&lt;h3 id="why-mongodb">Why MongoDB
+&lt;/h3>&lt;ol>
+&lt;li>Flexible Schema&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>High Performance&lt;/li>
+&lt;li>Agile Development&lt;/li>
+&lt;/ol>
+&lt;h2 id="understanding-the-redis-database">Understanding the Redis Database
 &lt;/h2>&lt;h2 id="understand-the-similarities-and-difference-with-other-softwares">Understand the similarities and difference with Other Software&amp;rsquo;s
 &lt;/h2></description></item><item><title>git</title><link>https://example.com/p/git/</link><pubDate>Tue, 25 Feb 2025 16:21:44 +0800</pubDate><guid>https://example.com/p/git/</guid><description>&lt;img src="https://example.com/post/img/2.jpg" alt="Featured image of post git" />&lt;h2 id="与github仓库建立连接并提交修改">与GitHub仓库建立连接并提交修改
 &lt;/h2>&lt;ol>
@@ -4373,7 +4432,704 @@ $$&lt;/p></description></item><item><title>防晒衣购买指南</title><link>ht
 &lt;li>异形，包括球釜、本釜、弧形等等&lt;/li>
 &lt;/ul>
 &lt;h3 id="加热方式">加热方式
-&lt;/h3>&lt;p>远红外加热/多段IH电磁加热＞IH电磁加热＞三维立体加热＞底盘加热&lt;/p></description></item><item><title>机器学习（李宏毅）笔记 2：预测本频道观测人数（下）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</guid><description>&lt;img src="https://example.com/post/img/5.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 2：预测本频道观测人数（下）" />&lt;p>使用线性模型有很多缺点，比如&lt;strong>Model Bias&lt;/strong>（模型偏差）&lt;/p>
+&lt;/h3>&lt;p>远红外加热/多段IH电磁加热＞IH电磁加热＞三维立体加热＞底盘加热&lt;/p></description></item><item><title>故事汇：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</title><link>https://example.com/p/%E6%95%85%E4%BA%8B%E6%B1%87deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%95%85%E4%BA%8B%E6%B1%87deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</guid><description>&lt;img src="https://example.com/post/img/26.jpg" alt="Featured image of post 故事汇：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning" />&lt;h2 id="知识笔记">知识笔记
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>多阶段训练(multi-stage training)&lt;/strong>：指模型训练过程中分为多个阶段（阶段间目标或数据不同），每个阶段针对性地优化模型的不同能力，最终提升整体性能。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>冷启动数据(cold start data)&lt;/strong>：指在模型训练初期（或新任务启动时）使用的特定引导数据，用于解决模型初期因缺乏足够信息导致的性能低下或不稳定问题。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>训练后阶段&lt;/strong>：指在机器学习模型完成训练后的一系列操作，包括模型评估、优化、部署、监控等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>预训练与训练的差别&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>预训练&lt;/strong>：在大规模通用数据集上进行&lt;/li>
+&lt;li>&lt;strong>训练&lt;/strong>：在特定任务上调整模型参数的过程&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>推理导向的强化学习(Reasoning-Oriented RL)&lt;/strong>：动态奖励机制和结构化探索策略&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://arxiv.org/pdf/2501.12948" target="_blank" rel="noopener"
+>原文传送门&lt;/a>&lt;/p>
+&lt;p>膜拜大佬&lt;/p>
+&lt;h2 id="读书笔记">读书笔记
+&lt;/h2>&lt;h3 id="abstract">Abstract
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>DeepSeek-R1-Zero&lt;/strong>
+&lt;ul>
+&lt;li>通过强化学习训练，且没监督微调&lt;/li>
+&lt;li>推理能力优秀&lt;/li>
+&lt;li>可读性差，语言混合&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>DeepSeek-R1&lt;/strong>
+&lt;ul>
+&lt;li>在强化学习之前结合多阶段训练和冷启动数据&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;ul>
+&lt;li>训练后阶段可提高推理任务的准确性
+&lt;ul>
+&lt;li>所需计算资源比预训练少&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OpenAI o1引入了思考时间
+&lt;ul>
+&lt;li>有效的测试时间缩放的挑战依旧是一个问题&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使用纯强化学习过程的自我进化，使得DeepSeek-R1-Zero在推理基准测试上与OpenAI-01相当
+&lt;ul>
+&lt;li>使用DeepSeek-v3-Base作为基础模型&lt;/li>
+&lt;li>采用PRPO作为强化学习框架&lt;/li>
+&lt;li>可读性差，语言混乱&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>引入DeepSeek-R1。结合少量冷启动数据和多级训练流水线
+&lt;ul>
+&lt;li>&lt;strong>冷启动数据微调&lt;/strong>：修复基础语言能力
+&lt;ul>
+&lt;li>收集数千条高质量冷启动数据（例如：人工标注的数学解题步骤、语法规范的写作范文）&lt;/li>
+&lt;li>用这些数据对基础模型 &lt;code>DeepSeek-V3-Base&lt;/code> 进行监督微调（SFT）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>推理导向的RL训练&lt;/strong>：提升特定任务的推理能力
+&lt;ul>
+&lt;li>使用强化学习（如PPO算法）训练模型，奖励函数侧重推理正确性（如解题步骤分、最终答案分）。&lt;/li>
+&lt;li>训练接近收敛时，模型能稳定生成正确但可能可读性较差的答案&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>拒绝采样生成新SFT数据&lt;/strong>：从RL模型的结果中提取高质量数据，重新注入监督训练
+&lt;ul>
+&lt;li>让RL模型的结果中提取高质量数据，重新注入监督训练&lt;/li>
+&lt;li>通过规则或奖励模型筛选出推理正确且可读性高的结果（例如保留前10%的优质答案）&lt;/li>
+&lt;li>混入新RL数据和原有监督数据&lt;/li>
+&lt;li>用混合数据重新微调DeepSeek-V3-Base&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>全场景二次RL训练&lt;/strong>：在多任务竞争中进一步平衡性能
+&lt;ul>
+&lt;li>输入涵盖所有任务的提示（如同时包含数学题、写作要求、事实问答）&lt;/li>
+&lt;li>设计多维度奖励函数，如数学任务：步骤正确性+答案准确性；写作任务：流畅性+语法正确性&lt;/li>
+&lt;li>基于混合奖励进行RL训练，迫使模型兼顾多领域性能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="核心贡献">核心贡献
+&lt;/h4>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>后训练(Post-Training)&lt;/strong>：直接对基础模型进行大规模强化学习（RL）&lt;/p>
+&lt;ol>
+&lt;li>创新点
+&lt;ol>
+&lt;li>跳过监督微调(SFT)&lt;/li>
+&lt;li>激励模型自主探索思维链(CoT)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>意义：证明纯RL训练可激发LLM推理能力（无需SFT提供参考答案）&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-TEXT" data-lang="TEXT">&lt;span class="line">&lt;span class="cl">步骤1：将方程改写为 3x² - 2x - 8 = 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤2：尝试因式分解 → 失败 → 反思：“可能需要使用求根公式。”
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤3：应用求根公式 x = [2 ± √(4 + 96)] / 6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤4：计算判别式 √100 = 10 → x = (2 ± 10)/6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤5：验证解是否满足原方程 → 确认 x=2 和 x=-4/3 均为解
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>开发流程
+&lt;ol>
+&lt;li>&lt;strong>第一阶段RL&lt;/strong>：基于基础模型进行RL训练，奖励函数侧重推理正确性。探索更优推理模式（如数学解题策略、代码调试逻辑）&lt;/li>
+&lt;li>&lt;strong>第一阶段SFT&lt;/strong>：混合RL生成的优质推理数据与通用领域SFT数据。固化RL探索到的优质推理模式，并补充非推理能力（如写作、对话）。&lt;/li>
+&lt;li>&lt;strong>第二阶段RL&lt;/strong>：引入人类反馈（如人工标注偏好排序）优化奖励模型。对齐人类偏好（如可读性、安全性）&lt;/li>
+&lt;li>&lt;strong>第二阶段SFT&lt;/strong>：平衡多任务性能，防止RL过度优化单一领域&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>蒸馏(Distillation)&lt;/strong>：让小模型继承大模型推理能力&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>核心思想&lt;/strong>：用大模型生成的推理数据训练小模型，使其超越RL训练的小模型&lt;/li>
+&lt;li>降低推理成本，促进小模型实际应用&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="discussion">Discussion
+&lt;/h3>&lt;h4 id="蒸馏和强化学习的比较">蒸馏和强化学习的比较
+&lt;/h4>&lt;ul>
+&lt;li>将更强大的模型提炼成更小的模型可以得到很好的结果，而依赖于大规模RL的模型需要巨大的计算能力，甚至可能达不到提炼的性能&lt;/li>
+&lt;li>尽管提炼策略既经济又有效，但要超越智能的界限，可能仍然需要更强大的基础模型和更大规模的强化学习&lt;/li>
+&lt;/ul>
+&lt;h4 id="未成功的尝试">未成功的尝试
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>过程奖励模型(Process Reward Model, PRM)&lt;/strong>
+&lt;ul>
+&lt;li>在一般推理中明确定义一个细粒度的步骤是一个挑战&lt;/li>
+&lt;li>确定当前中间步骤是否正确是一项具有挑战性的任务&lt;/li>
+&lt;li>一旦引入了基于模型的PRM，就不可避免地会导致奖励黑客行为。而重新培训奖励模型需要额外的培训资源，这使整个培训流程变得复杂&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>蒙特卡洛树搜索(Monte Carlo Tree Search, MCTS)&lt;/strong>
+&lt;ul>
+&lt;li>将答案分解为更小的部分，以允许模型系统地探索解决方案空间&lt;/li>
+&lt;li>为了方便这一点，提示模型生成多个标签，这些标签对应于搜索所需的特定推理步骤&lt;/li>
+&lt;li>难点：
+&lt;ul>
+&lt;li>token的生成有很多空间。解决方案：为每个节点设置最大扩展限制，但可能会陷入局部最优&lt;/li>
+&lt;li>价值模型直接影响生成的质量&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>故事汇：Dynamic Distillation Network for Cross-Domain Few-Shot Recognition with Unlabeled Data</title><link>https://example.com/p/%E6%95%85%E4%BA%8B%E6%B1%87dynamic-distillation-network-for-cross-domain-few-shot-recognition-with-unlabeled-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%95%85%E4%BA%8B%E6%B1%87dynamic-distillation-network-for-cross-domain-few-shot-recognition-with-unlabeled-data/</guid><description>&lt;img src="https://example.com/post/img/15.jpg" alt="Featured image of post 故事汇：Dynamic Distillation Network for Cross-Domain Few-Shot Recognition with Unlabeled Data" />&lt;h2 id="原文链接">原文链接
+&lt;/h2>&lt;p>&lt;a class="link" href="https://arxiv.org/pdf/2106.07807" target="_blank" rel="noopener"
+>传送门&lt;/a>&lt;/p>
+&lt;h2 id="知识清单">知识清单
+&lt;/h2>&lt;h3 id="abstract">Abstract
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>小样本学习方法(few-shot learning)&lt;/strong>：让模型仅通过极少量样本（如1-5个样本，称为1-shot或5-shot）快速学习新任务&lt;/li>
+&lt;li>&lt;strong>元学习(meta-learning)&lt;/strong>：通过大量相似任务（如分类不同模型）训练模型
+&lt;ul>
+&lt;li>例如：训练时让模型学习“如何区分5种类别的鸟类”，测试时快速适应“区分5种新鸟类”。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>跨领域小样本学习(cross-domain few-shot)&lt;/strong>：基础数据集与目标数据集来自不同领域（如自然图像→医学影像），且目标数据极少或无标签&lt;/li>
+&lt;li>&lt;strong>STARTUP&lt;/strong>：解决跨领域小样本学习中目标数据无标签的问题
+&lt;ul>
+&lt;li>&lt;strong>自训练(self-training)&lt;/strong>：用预训练教师模型对无标签目标数据生成伪标签（即软标签），再结合少量标注数据训练学生模型&lt;/li>
+&lt;li>&lt;strong>固定教师&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>软标签(soft labels)&lt;/strong>：概率分布形式的标签（如[0.7, 0.3]表示“70%概率是类别A”），而非硬标签（如[1, 0]）&lt;/li>
+&lt;li>&lt;strong>弱增强(weakly-augmented)&lt;/strong>：对输入数据施加轻微变换的预处理操作，比强增强更温和&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>指数移动平均(EMA)&lt;/strong>：通过加权平均更新参数，赋予近期参数更高的权重，同时保留历史参数的衰减影响。&lt;/p>
+&lt;ul>
+&lt;li>教师网络的参数$\theta_t$由学生网络参数$\theta_s$通过EMA更新。其中$\beta$是衰减率&lt;/li>
+&lt;/ul>
+&lt;p>$$
+\theta_t \leftarrow \beta \cdot \theta_t + (1-\beta)\cdot \theta_s
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>蒸馏(Distillation)&lt;/strong>：知识蒸馏是一种将“教师模型”的知识迁移到“学生模型”的技术，通常通过让学生模仿教师的输出来实现。核心思想是让学生学习教师的软标签（概率分布），而不仅是真实标签的硬标签。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>教师生成软标签&lt;/strong>：输入数据经教师模型前向传播，输出概率分布（如分类任务的类别概率）&lt;/li>
+&lt;li>&lt;strong>学生匹配软标签&lt;/strong>：学生模型对相同（或增强后的）数据输出概率，并通过损失函数（如 KL 散度）逼近教师的输出。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>支持集(Support Set)&lt;/strong>：一小批带有标签的样本，用来“教”模型快速认识新任务中的类别。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>查询集(Query Set)&lt;/strong>：一批需要分类的样本，用来测试模型是否真正学会了新类别。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>注意：支持集和查询集、训练集和测试集是有不同的&lt;/p>
+&lt;ol>
+&lt;li>训练集/测试集的目的是训练一个模型解决单一固定任务&lt;/li>
+&lt;li>支持集/测试集让模型快速适应新任务&lt;/li>
+&lt;li>训练集 vs 支持集：如果只用支持集（如每类1张图）训练传统模型，模型会严重过拟合（只会背答案，无法泛化）。支持集必须配合元学习框架，让模型提前掌握“快速学习能力”。&lt;/li>
+&lt;li>测试集 vs 查询集：测试集是静态的，任务固定；查询集是动态的，每次任务不同（如今天分类鸟类，明天分类岩石）。查询集的评估目标是“模型能否快速适应新任务”，而非“是否精通某一任务”。&lt;/li>
+&lt;/ol>&lt;/blockquote>
+&lt;h3 id="related-work">Related Work
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>生成式方法&lt;/strong>：通过生成新样本来扩充数据
+&lt;ul>
+&lt;li>自己画一些假狗的照片（生成数据），结合真实照片一起训练
+&lt;ul>
+&lt;li>比如用尺子量新照片和样本照片的&amp;quot;鼻子长度&amp;quot;&amp;ldquo;耳朵形状&amp;quot;等特征，越像狗分越高&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>基于度量的方法&lt;/strong>：核心是学习样本间的相似度计算方式、
+&lt;ul>
+&lt;li>&lt;strong>Matching Networks&lt;/strong>：把照片变成数学向量，计算相似度&lt;/li>
+&lt;li>&lt;strong>Prototypical Networks&lt;/strong>：先计算所有样本的平均特征（比如哈士奇平均有蓝眼睛、竖耳朵），新照片和这个平均值对比&lt;/li>
+&lt;li>&lt;strong>Relation Networks&lt;/strong>：让AI自己发明一套「相似度计算公式」，而不是用现成的余弦相似度&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>基于自适应的方法&lt;/strong>：通过参数调整快速适应新任务
+&lt;ul>
+&lt;li>&lt;strong>MAML&lt;/strong>：提前把模型参数训练得像橡皮泥一样，遇到新任务只需微调几步
+&lt;ul>
+&lt;li>比如先学会识别动物轮廓，遇到新动物时快速调整细节（斑马条纹/长颈鹿脖子）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>元学习(Meta-learning)&lt;/strong>：“学会学习”的范式，通过多个任务训练模型获取可迁移的知识
+&lt;ul>
+&lt;li>先让AI玩100个「用5张图认新东西」的小游戏（每个游戏认不同动物）&lt;/li>
+&lt;li>AI在这些游戏中总结出经验：比耳朵形状比颜色更重要，先看轮廓再看细节&lt;/li>
+&lt;li>遇到新游戏（比如用5张企鹅照片认企鹅），就能快速应用这些经验&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>自训练(Self-training)&lt;/strong>：一种半监督学习方法，其核心思想是通过模型自身的预测结果（伪标签）逐步扩充训练数据
+&lt;ul>
+&lt;li>&lt;strong>基本流程&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>初始训练&lt;/strong>：使用少量有标签数据训练基础模型（Teacher Model）&lt;/li>
+&lt;li>&lt;strong>伪标签生成&lt;/strong>：用该模型预测无标签数据的类别，筛选高置信度预测结果作为伪标签&lt;/li>
+&lt;li>&lt;strong>数据扩充&lt;/strong>：将伪标签数据与原始有标签数据合并，重新训练模型（Student Model）&lt;/li>
+&lt;li>&lt;strong>迭代优化&lt;/strong>：重复步骤2-3，直至模型收敛或达到终止条件&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>通俗解释&lt;/strong>：假设你是一个学生
+&lt;ul>
+&lt;li>&lt;strong>第一步&lt;/strong>：老师先教你10道数学题（有标签数据），你学会了基本解法&lt;/li>
+&lt;li>&lt;strong>第二步&lt;/strong>：老师布置100道新题（无标签数据），你先用学会的方法做完，并挑出自己最有把握的50道题（高置信度伪标签）&lt;/li>
+&lt;li>&lt;strong>第三步&lt;/strong>：把这50道自认为正确的题当作「参考答案」，结合原来的10道题重新复习&lt;/li>
+&lt;li>&lt;strong>第四步&lt;/strong>：重复做题→选答案→复习的过程，直到你觉得所有题都会了&lt;/li>
+&lt;li>&lt;strong>注意风险&lt;/strong>：如果前几步自己做错了还当成正确答案，后面会越错越离谱（错误累积）。所以老师通常会要求：只相信95分以上的答案（置信度阈值），或者让多个同学互相对答案（多模型协同）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>半监督学习(Semi-supervised Learning)&lt;/strong>：用少量带答案（标签）和大量不带答案的数据（无标签）一起训练模型&lt;/li>
+&lt;li>&lt;strong>FixMatch&lt;/strong>：用自信的猜测教自己&lt;/li>
+&lt;li>&lt;strong>STARTUP(Self-Training Adaptation Using Pseudo-labels)&lt;/strong>：通过伪标签和自监督对比学习，，利用目标领域的未标注数据提升模型在跨域任务中的性能。
+&lt;ul>
+&lt;li>&lt;strong>核心问题设定&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;strong>基础域（Source Domain）&lt;/strong>：有大量标注数据（如自然图像）&lt;/li>
+&lt;li>&lt;strong>目标域（Target Domain）&lt;/strong>：仅有极少量标注数据（如医学图像），但可能有大量未标注数据。&lt;/li>
+&lt;li>&lt;strong>目标&lt;/strong>：让模型从基础域迁移到目标域，仅用少量目标域标注样本实现高精度分类。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>方法流程&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>预训练模型&lt;/strong>：在基础域上训练一个分类模型（如ResNet），作为固定（Frozen）的预训练模型。&lt;/li>
+&lt;li>&lt;strong>生成伪标签&lt;/strong>：使用预训练模型对目标域的未标注数据生成伪标签（即预测结果作为“软标签”）&lt;/li>
+&lt;li>&lt;strong>联合训练&lt;/strong>：结合基础域的标注数据（真实标签）和目标域的伪标签数据，重新训练模型。&lt;/li>
+&lt;li>&lt;strong>自监督对比学习&lt;/strong>：在未标注数据上加入对比损失（如SimCLR），学习对数据增强鲁棒的特征表示。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>大白话&lt;/strong>：先蒙答案，蒙完再改，改的时候还要自我检查&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="品细品">品，细品
+&lt;/h2>&lt;h3 id="abstract-1">Abstract
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>现有工作&lt;/strong>：依赖于在与目标数据集同域的大型基础数据集上进行网络元学习
+&lt;ul>
+&lt;li>&lt;strong>缺陷&lt;/strong>：在基础域和目标域存在显著差异的跨域小样本学习效果不行&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>本文提出&lt;/strong>：使用动态蒸馏，有效利用新/基础数据集的未标记图像
+&lt;ul>
+&lt;li>通过教师网络对未标记图像的弱增强版本生成预测&lt;/li>
+&lt;li>通过学生网络对同一图像的强增强版本进行预测&lt;/li>
+&lt;li>通过一致性正则化约束两者匹配&lt;/li>
+&lt;li>教师网络的参数通过学生网络参数的指数移动平均动态更新&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction-1">Introduction
+&lt;/h3>&lt;h4 id="典型小样本学习跨领域小样本学习本文提出的新设定的区别">典型小样本学习、跨领域小样本学习、本文提出的新设定的区别
+&lt;/h4>&lt;p>&lt;img src="https://example.com/img/%e4%b8%89%e7%a7%8d%e5%b0%8f%e6%a0%b7%e6%9c%ac.png"
+loading="lazy"
+alt="三者差别"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>典型小样本学习（左）&lt;/strong>
+&lt;ul>
+&lt;li>基础数据集和目标数据集来自同一领域&lt;/li>
+&lt;li>类别互不相交&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>跨领域小样本学习（中）&lt;/strong>
+&lt;ul>
+&lt;li>基础数据集与目标数据存在领域差异&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>本文提出的设定（右）&lt;/strong>
+&lt;ul>
+&lt;li>在元训练阶段引入无标签目标数据&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>通俗易懂的解释&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>典型小样本学习（左）&lt;/strong>：你是一个只会画“猫和狗”的画家，现在要快速学会画“鸟和鱼”。
+&lt;ul>
+&lt;li>&lt;strong>基础训练&lt;/strong>：你之前画过大量&lt;strong>不同品种的猫和狗&lt;/strong>（同一领域：动物）&lt;/li>
+&lt;li>&lt;strong>小样本任务&lt;/strong>：客户给你看&lt;strong>1张鸟的照片&lt;/strong>和&lt;strong>1张鱼的照片&lt;/strong>（支持集），要求你画出这两种动物的其他姿势（查询集）&lt;/li>
+&lt;li>&lt;strong>关键点&lt;/strong>
+&lt;ul>
+&lt;li>你学的（猫狗）和要画的（鸟鱼）都是&lt;strong>动物&lt;/strong>，只是品种不同（同一领域，类别不相交）&lt;/li>
+&lt;li>你靠之前的动物绘画经验（如毛发、眼睛的画法），快速模仿鸟和鱼的特征&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>类比总结&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>领域相同&lt;/strong>：全是动物&lt;/li>
+&lt;li>&lt;strong>挑战&lt;/strong>：用旧知识（画猫狗）解决同类新问题（画鸟鱼）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>跨领域小样本学习（中）&lt;/strong>：你是一个画“自然风景”的画家，现在要快速学会画“抽象几何图形”
+&lt;ul>
+&lt;li>&lt;strong>基础训练&lt;/strong>：你之前画过大量&lt;strong>山川、河流、树木&lt;/strong>（自然领域）&lt;/li>
+&lt;li>&lt;strong>小样本任务&lt;/strong>：客户给你看&lt;strong>1个三角形&lt;/strong>和&lt;strong>1个圆形&lt;/strong>（支持集），要求你画出其他几何图形（如六边形）&lt;/li>
+&lt;li>&lt;strong>关键点&lt;/strong>
+&lt;ul>
+&lt;li>自然风景（曲线、光影）和几何图形（直线、对称）属于&lt;strong>完全不同的领域&lt;/strong>&lt;/li>
+&lt;li>你只能用画风景的经验（如颜色搭配）去“硬猜”如何画几何图形，效果可能很差&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>类比总结&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>领域不同&lt;/strong>：自然风景 vs. 几何图形&lt;/li>
+&lt;li>&lt;strong>挑战&lt;/strong>：旧经验（自然）和新任务（几何）毫无关联，从头适应难如登天&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>本文提出的新设定&lt;/strong>：你是一个画“自然风景”的画家，但客户提前给了你一堆&lt;strong>未标注的几何图形草稿&lt;/strong>，现在要快速学会画“抽象几何图形”
+&lt;ul>
+&lt;li>&lt;strong>基础训练&lt;/strong>
+&lt;ul>
+&lt;li>你画过大量自然风景（带标签的源数据）&lt;/li>
+&lt;li>还看过很多&lt;strong>未标注的几何图形草稿&lt;/strong>（无标签目标数据），虽然不知道它们具体是什么，但熟悉了直线、对称等特征。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>小样本任务&lt;/strong>：客户给你看&lt;strong>1个三角形&lt;/strong>和&lt;strong>1个圆形&lt;/strong>（支持集），要求你画出其他几何图形。&lt;/li>
+&lt;li>&lt;strong>关键点&lt;/strong>
+&lt;ul>
+&lt;li>未标注的几何草稿让你提前适应了“几何领域”的风格（如直线比曲线多）。&lt;/li>
+&lt;li>结合自然风景的绘画技巧（如色彩搭配）和几何领域的特征，你能更快画出客户想要的图形。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>类比总结&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>领域不同&lt;/strong>：自然风景（源） vs. 几何图形（目标）。&lt;/li>
+&lt;li>&lt;strong>秘密武器&lt;/strong>：提前看过未标注的几何草稿（无标签目标数据），相当于“预习”了新领域的规则。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="related-work-1">Related Work
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Few-shot classification&lt;/strong>: 少样本分类可分为三大类：生成式、基于度量、基于适应。早期少样本学习工作基于元学习&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Self-training&lt;/strong>: 自训练通过训练学生模型来模仿教师模型的预测&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Semi-supervised Learning&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>核心思想&lt;/strong>：同时利用少量有标签数据和大量无标签数据进行训练&lt;/li>
+&lt;li>&lt;strong>FixMatch方法核心逻辑&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>弱增强生成伪标签&lt;/strong>：对无标签图像做弱增强（如平移、旋转），用模型预测其伪标签。&lt;/li>
+&lt;li>&lt;strong>强增强训练一致性&lt;/strong>：若伪标签置信度高，则对同一图像做强增强（如颜色失真、模糊），并让模型预测与伪标签一致。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>作者改进方法&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>一致性正则化&lt;/strong>：强制模型对同一数据的不同增强版本（如弱增强和强增强）输出一致。与FixMatch类似，但不假设无标签数据与有标签数据同领域。&lt;/li>
+&lt;li>&lt;strong>均值教师网络&lt;/strong>：用教师模型（Teacher Network）生成伪标签，学生模型（Student Network）学习。教师模型是学生模型的指数移动平均（EMA），稳定性更高，伪标签噪声更小。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cross-domain few-shot learning&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>现有最先进方法在跨域少样本学习上难以达到理想准确率&lt;/li>
+&lt;li>&lt;strong>现有方法：STARTUP&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>方法&lt;/strong>：用预训练模型为未标记的目标域数据生成伪标签，结合基础域标注数据和目标域伪标签训练模型。&lt;/li>
+&lt;li>&lt;strong>局限&lt;/strong>：伪标签依赖&lt;strong>固定预训练模型&lt;/strong>，若模型不适应目标领域，错误会累积（如用自然图像预训练的模型直接标注医学影像）。需要额外设计&lt;strong>自监督对比损失&lt;/strong>（如SimCLR），增加计算复杂度。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>本文方法：动态蒸馏(Dynamic Distillation)&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>监督学习&lt;/strong>：使用标记的基础数据集优化监督交叉熵损失。&lt;/li>
+&lt;li>&lt;strong>动态蒸馏&lt;/strong>
+&lt;ul>
+&lt;li>对目标图像的弱增强版本，用教师网络生成预测&lt;/li>
+&lt;li>对同一图像的强增强版本，由学生网络生成预测&lt;/li>
+&lt;li>通过蒸馏损失约束两者预测分布一致&lt;/li>
+&lt;li>教师预测应用温度锐化以鼓励学生输出低熵预测&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>参数更新&lt;/strong>：学生网络通过监督损失和蒸馏损失联合优化，教师网络参数采用学生网络的指数移动平均更新。&lt;/li>
+&lt;li>&lt;strong>少样本评估&lt;/strong>：仅需在少样本支撑集上学习新分类器头，直接对查询集进行评估。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://example.com/img/%e5%8a%a8%e6%80%81%e8%92%b8%e9%a6%8f.jpeg"
+loading="lazy"
+alt="动态蒸馏"
+>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="methodology">Methodology
+&lt;/h3>&lt;h4 id="proposed-method">Proposed Method
+&lt;/h4>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Encoder&lt;/strong>：通过知识蒸馏方法，在源数据集和目标数据集上联合训练基础编码器。将嵌入网络表示为$f_s$，它将输入图像$x$编码为一个$d$维向量$f_s(x)$。我们在$f_s$上添加一个分类头$g_s$，用于从嵌入向量中预测$n_c$个逻辑值(logits)，其中$n_c$是基数据集（base dataset）的类别总数。由于基数据集中的样本标签已知，我们计算监督交叉熵损失：
+$$
+l_{CE}(y,p)=H(y,p)\
+p=Softmax(g_s(f_s(x)))
+H(a,b)=-alog b
+$$&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>核心目标&lt;/strong>：通过&lt;strong>知识蒸馏&lt;/strong>（类似“老师教学生”），让编码器同时学习源数据集（如动物图片）和目标数据集（如医疗X光片）的特征，提升跨域任务的泛化能力。&lt;/li>
+&lt;li>&lt;strong>模型结构&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>编码器&lt;/strong>$f_s$：将输入图像（如一张x光片）转换为一个向量，这个向量代表图像的特征（如形状、纹理）&lt;/li>
+&lt;li>&lt;strong>分类器头&lt;/strong>$g_s$：接在编码器后面，将特征向量映射到类别概率&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>监督损失&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>输入&lt;/strong>：源数据集（带标签）的图片&lt;/li>
+&lt;li>计算步骤：
+&lt;ol>
+&lt;li>编码器提取特征 $\rightarrow f_s(x)$&lt;/li>
+&lt;li>分类器预测类别概率 $\rightarrow p = Softmax(g_s(f_s(x)))$&lt;/li>
+&lt;li>用交叉熵损失$l_{CE}$衡量预测概率$p$和真实标签$y$的差距&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>通俗解释&lt;/strong>：如果真实标签是“肺炎”，但模型预测概率为0.1，损失会很大；如果预测概率是0.9，损失就小。这个过程迫使编码器和分类器学习源数据集的分类能力。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dynamic distillation&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>核心思想&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>教师-学生模式&lt;/strong>：教师网络生成“参考答案”（伪标签），学生网络通过模仿教师来学习&lt;/li>
+&lt;li>&lt;strong>动态更新&lt;/strong>：教师网络不是固定的，而是随着学生网络的训练逐步更新，类似“老师跟着学生一起进步”。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>关键步骤&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>数据增强&lt;/strong>：迫使模型对不同增强版本预测一致，提升鲁棒性&lt;/li>
+&lt;li>&lt;strong>伪标签生成&lt;/strong>：
+&lt;ol>
+&lt;li>教师网络处理弱增强图像$x_i^w$，生成软目标$p_i^w$（概率分布，而非硬标签）&lt;/li>
+&lt;li>学生网络处理强增强图像$x_i^s$，生成预测$p_i^s$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>损失计算&lt;/strong>
+&lt;ul>
+&lt;li>监督损失$l_{CE}$：在源数据（带标签）上计算交叉熵损失&lt;/li>
+&lt;li>蒸馏损失$l_U$：迫使学生网络的预测$p_i^s$与教师网络的伪标签$p_i^w$一致&lt;/li>
+&lt;li>总损失是两者的加权和（$\lambda$控制未标记数据的重要性）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>教师网络更新&lt;/strong>
+&lt;ul>
+&lt;li>教师网络的权重是学生网络权重的历史平均（动量更新）&lt;/li>
+&lt;li>动态更新使得教师网络更稳定，避免伪标签噪声过大。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="experiments">Experiments
+&lt;/h3>&lt;h4 id="experimental-setup">Experimental Setup
+&lt;/h4>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>数据集&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>基数据集(Base Dataset)&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>miniImageNet&lt;/strong>：从&lt;code>ImageNet&lt;/code>中选取的100个类别，每个类别含600张图像（总计60,000张），类别覆盖通用物体（如动物、日常用品），用于监督预训练。&lt;/li>
+&lt;li>&lt;strong>tieredImageNet&lt;/strong>：更大的基数据集，包含608个类别（34个超类），分为训练（351类）、验证（97类）、测试（160类），用于验证模型对大规模数据的泛化性。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>新领域数据集(Novel Dataset)&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>CropDisease&lt;/strong>：农业植物病害图像，类别与miniImageNet的语义差异显著（领域差异大）。&lt;/li>
+&lt;li>&lt;strong>EuroSAT&lt;/strong>：遥感卫星图像（土地利用分类），与自然图像分布不同（低分辨率、多光谱特征）。&lt;/li>
+&lt;li>&lt;strong>ISIC&lt;/strong>：皮肤病医学影像（皮肤镜图像），模态差异明显（纹理、颜色分布独特）。&lt;/li>
+&lt;li>&lt;strong>ChestX&lt;/strong>：胸部X光影像（肺炎分类），灰度图像且解剖结构复杂。&lt;/li>
+&lt;li>&lt;strong>选择依据&lt;/strong>：按与miniImageNet的领域差异递增排序（CropDisease差异最小，ChestX差异最大），用于测试跨域小样本泛化性。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>数据划分协议&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>无标签集&lt;/strong>$D_U$：从每个新数据集中随机抽取20%样本（例如，CropDisease若含1,000张，则取200张作为$D_U$）&lt;/li>
+&lt;li>&lt;strong>评估集&lt;/strong>：剩余80%样本用于&lt;code>5-way K-shot&lt;/code> &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>分类任务（支持集采样K张/类，查询集评估）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>小样本评估&lt;/strong>：在支持集上训练逻辑回归分类器，在查询集测试性能&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>实验1：BSCD-FSL基准测试duibi&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/dc-table1.png"
+loading="lazy"
+alt="Table 1"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>模型对比&lt;/strong>：
+&lt;ul>
+&lt;li>传统元学习（MetaOpt、MAML、ProtoNet）&lt;/li>
+&lt;li>自监督学习（SimCLR）&lt;/li>
+&lt;li>混合方法（Transfer+SimCLR）&lt;/li>
+&lt;li>最新跨域方法（STARTUP）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>训练设置&lt;/strong>
+&lt;ul>
+&lt;li>基础数据集：miniImageNet（80 类）&lt;/li>
+&lt;li>目标数据集：未标记数据（20% 目标集）&lt;/li>
+&lt;li>主干网络：ResNet-10（miniImageNet）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>评估指标&lt;/strong>：5 分类 1-shot/5-shot 准确率（600 次运行的均值 ±95% 置信区间）&lt;/li>
+&lt;li>&lt;strong>优点&lt;/strong>
+&lt;ul>
+&lt;li>Ours 在所有数据集上均超越 STARTUP（平均提升 5.5%~8.8%）&lt;/li>
+&lt;li>动态教师网络生成的伪标签随训练优化，优于固定教师（STARTUP）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>实验2：tiredImageNet基础数据实验&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/dc-table2.png"
+loading="lazy"
+alt="Table 2"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>目的&lt;/strong>：验证方法在大规模基础数据集上的泛化性&lt;/li>
+&lt;li>&lt;strong>数据集&lt;/strong>：tieredImageNet（608 类，划分为 34 个超级类别）&lt;/li>
+&lt;li>&lt;strong>模型对比&lt;/strong>：
+&lt;ul>
+&lt;li>基于 miniImageNet 的基准&lt;/li>
+&lt;li>基于 tieredImageNet 的基线&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>训练设置&lt;/strong>
+&lt;ul>
+&lt;li>更大主干网络：ResNet-18&lt;/li>
+&lt;li>元训练策略：MAML 框架&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>评估指标&lt;/strong>：5 分类 1-shot/5-shot 准确率&lt;/li>
+&lt;li>&lt;strong>关键发现&lt;/strong>：
+&lt;ul>
+&lt;li>使用 tieredImageNet 预训练未显著提升性能（对比 miniImageNet）&lt;/li>
+&lt;li>验证跨域少样本学习中&lt;strong>数据质量＞数据量&lt;/strong>的假设&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>实验3：相似域少样本性能&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/dc-table3.png"
+loading="lazy"
+alt="Table 3"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>目的&lt;/strong>：验证方法在同域 / 相似域的有效性&lt;/li>
+&lt;li>&lt;strong>数据集&lt;/strong>
+&lt;ul>
+&lt;li>miniImageNet（同域）&lt;/li>
+&lt;li>tieredImageNet（相似域）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>训练设置&lt;/strong>：
+&lt;ul>
+&lt;li>未标记数据来自目标域测试集的 20%&lt;/li>
+&lt;li>主干网络：ResNet-10（miniImageNet）、ResNet-18（tieredImageNet）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>对比对象&lt;/strong>：
+&lt;ul>
+&lt;li>Transfer（仅监督训练）&lt;/li>
+&lt;li>STARTUP（同域无效）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>关键发现&lt;/strong>：
+&lt;ul>
+&lt;li>Ours 在同域任务中仍优于 STARTUP（tieredImageNet 1-shot 提升 7.7%）&lt;/li>
+&lt;li>动态蒸馏对域差异不敏感，兼具跨域和同域适应性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>实验4：动态蒸馏效果分析&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/dc-table4.png"
+loading="lazy"
+alt="Table 4"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/img/dc-figure3.png"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>目的&lt;/strong>：揭示动态蒸馏如何优化特征表示&lt;/li>
+&lt;li>&lt;strong>量化分析&lt;/strong>（表 4）：
+&lt;ul>
+&lt;li>方法：K 均值聚类 + V-measure 评分&lt;/li>
+&lt;li>指标：真实标签与聚类结果的一致性（V-score）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>可视化分析&lt;/strong>（图 3）：
+&lt;ul>
+&lt;li>方法：t-SNE 降维展示特征分布&lt;/li>
+&lt;li>对比：Transfer 基准 vs Ours&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>关键发现&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>聚类质量&lt;/strong>：Ours 在 EuroSAT（85.2%）和 CropDisease（91.3%）上 V-score 最高&lt;/li>
+&lt;li>&lt;strong>特征分离&lt;/strong>：可视化显示 Ours 生成的嵌入具有更好的类间区分性&lt;/li>
+&lt;li>&lt;strong>机制验证&lt;/strong>：蒸馏损失隐式促进特征聚类，无需显式对比学习&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>5-way指在小样本学习任务中，对5个类别进行分类。K-shot指每个分类提供k个带标签的样本作为训练支持集&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>机器学习（李宏毅）笔记 2：预测本频道观测人数（下）</title><link>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9D%8E%E5%AE%8F%E6%AF%85%E7%AC%94%E8%AE%B0-2%E9%A2%84%E6%B5%8B%E6%9C%AC%E9%A2%91%E9%81%93%E8%A7%82%E6%B5%8B%E4%BA%BA%E6%95%B0%E4%B8%8B/</guid><description>&lt;img src="https://example.com/post/img/5.jpg" alt="Featured image of post 机器学习（李宏毅）笔记 2：预测本频道观测人数（下）" />&lt;p>使用线性模型有很多缺点，比如&lt;strong>Model Bias&lt;/strong>（模型偏差）&lt;/p>
 &lt;p>&lt;img src="https://example.com/img/%e5%87%bd%e6%95%b0.png"
 loading="lazy"
 alt="函数"
@@ -4886,171 +5642,14 @@ loading="lazy"
 &lt;ul>
 &lt;li>如果在某一个方向上，gradient值很小（比较平稳），那么应该把学习效率调高；&lt;/li>
 &lt;li>如果在某一个方向上，gradient值很大（比较陡峭），那么应该把学习效率调低。&lt;/li>
-&lt;/ul></description></item><item><title>论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</title><link>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning/</guid><description>&lt;img src="https://example.com/post/img/26.jpg" alt="Featured image of post 论文笔记：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning" />&lt;h2 id="知识笔记">知识笔记
-&lt;/h2>&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>多阶段训练(multi-stage training)&lt;/strong>：指模型训练过程中分为多个阶段（阶段间目标或数据不同），每个阶段针对性地优化模型的不同能力，最终提升整体性能。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>冷启动数据(cold start data)&lt;/strong>：指在模型训练初期（或新任务启动时）使用的特定引导数据，用于解决模型初期因缺乏足够信息导致的性能低下或不稳定问题。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>训练后阶段&lt;/strong>：指在机器学习模型完成训练后的一系列操作，包括模型评估、优化、部署、监控等。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>预训练与训练的差别&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>预训练&lt;/strong>：在大规模通用数据集上进行&lt;/li>
-&lt;li>&lt;strong>训练&lt;/strong>：在特定任务上调整模型参数的过程&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>推理导向的强化学习(Reasoning-Oriented RL)&lt;/strong>：动态奖励机制和结构化探索策略&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;a class="link" href="https://arxiv.org/pdf/2501.12948" target="_blank" rel="noopener"
->原文传送门&lt;/a>&lt;/p>
-&lt;p>膜拜大佬&lt;/p>
-&lt;h2 id="读书笔记">读书笔记
-&lt;/h2>&lt;h3 id="abstract">Abstract
+&lt;/ul></description></item><item><title>手搓Transformer</title><link>https://example.com/p/%E6%89%8B%E6%90%93transformer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E6%89%8B%E6%90%93transformer/</guid><description>&lt;h2 id="思路">思路
+&lt;/h2>&lt;h3 id="位置编码">位置编码
 &lt;/h3>&lt;ul>
-&lt;li>&lt;strong>DeepSeek-R1-Zero&lt;/strong>
-&lt;ul>
-&lt;li>通过强化学习训练，且没监督微调&lt;/li>
-&lt;li>推理能力优秀&lt;/li>
-&lt;li>可读性差，语言混合&lt;/li>
+&lt;li>位置编码(Positional Encoding)用于在序列数据中引入位置信息&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>DeepSeek-R1&lt;/strong>
-&lt;ul>
-&lt;li>在强化学习之前结合多阶段训练和冷启动数据&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="introduction">Introduction
-&lt;/h3>&lt;ul>
-&lt;li>训练后阶段可提高推理任务的准确性
-&lt;ul>
-&lt;li>所需计算资源比预训练少&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>OpenAI o1引入了思考时间
-&lt;ul>
-&lt;li>有效的测试时间缩放的挑战依旧是一个问题&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>使用纯强化学习过程的自我进化，使得DeepSeek-R1-Zero在推理基准测试上与OpenAI-01相当
-&lt;ul>
-&lt;li>使用DeepSeek-v3-Base作为基础模型&lt;/li>
-&lt;li>采用PRPO作为强化学习框架&lt;/li>
-&lt;li>可读性差，语言混乱&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>引入DeepSeek-R1。结合少量冷启动数据和多级训练流水线
-&lt;ul>
-&lt;li>&lt;strong>冷启动数据微调&lt;/strong>：修复基础语言能力
-&lt;ul>
-&lt;li>收集数千条高质量冷启动数据（例如：人工标注的数学解题步骤、语法规范的写作范文）&lt;/li>
-&lt;li>用这些数据对基础模型 &lt;code>DeepSeek-V3-Base&lt;/code> 进行监督微调（SFT）。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>推理导向的RL训练&lt;/strong>：提升特定任务的推理能力
-&lt;ul>
-&lt;li>使用强化学习（如PPO算法）训练模型，奖励函数侧重推理正确性（如解题步骤分、最终答案分）。&lt;/li>
-&lt;li>训练接近收敛时，模型能稳定生成正确但可能可读性较差的答案&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>拒绝采样生成新SFT数据&lt;/strong>：从RL模型的结果中提取高质量数据，重新注入监督训练
-&lt;ul>
-&lt;li>让RL模型的结果中提取高质量数据，重新注入监督训练&lt;/li>
-&lt;li>通过规则或奖励模型筛选出推理正确且可读性高的结果（例如保留前10%的优质答案）&lt;/li>
-&lt;li>混入新RL数据和原有监督数据&lt;/li>
-&lt;li>用混合数据重新微调DeepSeek-V3-Base&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>全场景二次RL训练&lt;/strong>：在多任务竞争中进一步平衡性能
-&lt;ul>
-&lt;li>输入涵盖所有任务的提示（如同时包含数学题、写作要求、事实问答）&lt;/li>
-&lt;li>设计多维度奖励函数，如数学任务：步骤正确性+答案准确性；写作任务：流畅性+语法正确性&lt;/li>
-&lt;li>基于混合奖励进行RL训练，迫使模型兼顾多领域性能&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="核心贡献">核心贡献
-&lt;/h4>&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>后训练(Post-Training)&lt;/strong>：直接对基础模型进行大规模强化学习（RL）&lt;/p>
-&lt;ol>
-&lt;li>创新点
-&lt;ol>
-&lt;li>跳过监督微调(SFT)&lt;/li>
-&lt;li>激励模型自主探索思维链(CoT)&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>意义：证明纯RL训练可激发LLM推理能力（无需SFT提供参考答案）&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-TEXT" data-lang="TEXT">&lt;span class="line">&lt;span class="cl">步骤1：将方程改写为 3x² - 2x - 8 = 0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤2：尝试因式分解 → 失败 → 反思：“可能需要使用求根公式。”
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤3：应用求根公式 x = [2 ± √(4 + 96)] / 6
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤4：计算判别式 √100 = 10 → x = (2 ± 10)/6
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">步骤5：验证解是否满足原方程 → 确认 x=2 和 x=-4/3 均为解
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="3">
-&lt;li>开发流程
-&lt;ol>
-&lt;li>&lt;strong>第一阶段RL&lt;/strong>：基于基础模型进行RL训练，奖励函数侧重推理正确性。探索更优推理模式（如数学解题策略、代码调试逻辑）&lt;/li>
-&lt;li>&lt;strong>第一阶段SFT&lt;/strong>：混合RL生成的优质推理数据与通用领域SFT数据。固化RL探索到的优质推理模式，并补充非推理能力（如写作、对话）。&lt;/li>
-&lt;li>&lt;strong>第二阶段RL&lt;/strong>：引入人类反馈（如人工标注偏好排序）优化奖励模型。对齐人类偏好（如可读性、安全性）&lt;/li>
-&lt;li>&lt;strong>第二阶段SFT&lt;/strong>：平衡多任务性能，防止RL过度优化单一领域&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>蒸馏(Distillation)&lt;/strong>：让小模型继承大模型推理能力&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>核心思想&lt;/strong>：用大模型生成的推理数据训练小模型，使其超越RL训练的小模型&lt;/li>
-&lt;li>降低推理成本，促进小模型实际应用&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="discussion">Discussion
-&lt;/h3>&lt;h4 id="蒸馏和强化学习的比较">蒸馏和强化学习的比较
-&lt;/h4>&lt;ul>
-&lt;li>将更强大的模型提炼成更小的模型可以得到很好的结果，而依赖于大规模RL的模型需要巨大的计算能力，甚至可能达不到提炼的性能&lt;/li>
-&lt;li>尽管提炼策略既经济又有效，但要超越智能的界限，可能仍然需要更强大的基础模型和更大规模的强化学习&lt;/li>
-&lt;/ul>
-&lt;h4 id="未成功的尝试">未成功的尝试
-&lt;/h4>&lt;ul>
-&lt;li>&lt;strong>过程奖励模型(Process Reward Model, PRM)&lt;/strong>
-&lt;ul>
-&lt;li>在一般推理中明确定义一个细粒度的步骤是一个挑战&lt;/li>
-&lt;li>确定当前中间步骤是否正确是一项具有挑战性的任务&lt;/li>
-&lt;li>一旦引入了基于模型的PRM，就不可避免地会导致奖励黑客行为。而重新培训奖励模型需要额外的培训资源，这使整个培训流程变得复杂&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>蒙特卡洛树搜索(Monte Carlo Tree Search, MCTS)&lt;/strong>
-&lt;ul>
-&lt;li>将答案分解为更小的部分，以允许模型系统地探索解决方案空间&lt;/li>
-&lt;li>为了方便这一点，提示模型生成多个标签，这些标签对应于搜索所需的特定推理步骤&lt;/li>
-&lt;li>难点：
-&lt;ul>
-&lt;li>token的生成有很多空间。解决方案：为每个节点设置最大扩展限制，但可能会陷入局部最优&lt;/li>
-&lt;li>价值模型直接影响生成的质量&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;h3 id="多头注意力">多头注意力
+&lt;/h3>&lt;h3 id="前馈神经网络feedforward和层归一化normlayer">前馈神经网络(FeedForward)和层归一化(NormLayer)
+&lt;/h3>&lt;h3 id="encoder">Encoder
+&lt;/h3>&lt;h3 id="decoder">Decoder
+&lt;/h3>&lt;h3 id="transformer整体框架">Transformer整体框架
+&lt;/h3></description></item></channel></rss>
